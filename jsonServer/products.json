@@ -1,0 +1,26 @@
+{
+    "gilan_seramic": [
+      {
+        "id": 1,
+        "productName": "wer",
+        "productSize": "wer",
+        "productPrice": "wer",
+        "productImage": "wer",
+        "productMadeCountry": "Azerbaijan"
+      },
+      {
+        "productName": "123asdasd",
+        "productSize": "123",
+        "productPrice": "qweasdasd",
+        "productImage": "asdasd",
+        "id": 2
+      },
+      {
+        "productName": "asd",
+        "productSize": "asd",
+        "productPrice": "asfda",
+        "productImage": "zxczc",
+        "id": 3
+      }
+    ]
+  }

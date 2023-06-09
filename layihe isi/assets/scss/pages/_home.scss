@@ -1,0 +1,132 @@
+// bootstrap my class (for  corusell);
+.myClassImgSize{
+    width: 100%;
+    height: 100vh;
+}
+
+// porduct info div
+.carouselMyCaption{
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 10;
+    h5{
+        font-size: 72px;
+        color: rgb(255, 255, 255);
+        font-weight: 1000;
+    }
+    p{
+        color: rgb(6, 12, 102);
+        font-weight: 900;
+
+    }
+    #dahaEtrafli{
+        width: 130px;
+        height: 32px;
+        border: none;
+        border-radius: 30px;
+        &:hover{
+            background-color: rgb(82, 82, 82);
+            color: rgb(6, 12, 102);
+            font-weight: 600;
+            transition: 300ms;
+        }
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .carouselMyCaption{
+        z-index: 20;
+    }
+}
+
+// mehsullarimiz section 
+#someProducts{
+    .mainDivSomeProducts{
+        // width: 100%;
+        
+        .məhsullarimiz{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            h1{
+                font-size: 72px;
+                font-weight: 700;
+                color: blue;
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+        #productsCard{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            .productsCard_api{
+                position: relative;
+                width: 33.333%;
+                height: 350px;
+                background-image: url("https://www.gilanseramik.az/storage/products/January2021/AUrnTuYYYaYYCQ3Rt9MJ.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                #herthIcon{
+                    position: absolute;
+                    font-size: 32px;
+                    right: 20px;
+                    top: 10px;
+                    width: 48px;
+                    height: 48px;
+                    text-align: center;
+                    border-radius: 50%;
+                    &:hover{
+                        transition: 500ms;
+                        transform: scale(1.3);
+                        background-color: rgb(226, 22, 22);
+                    }
+                 
+                }
+                .productName{
+                    width: 50%;
+                    height: 44px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // border: 1px solid #d41818;
+                    position: absolute;
+                    bottom: 0px;
+                    a{
+                        color: #ffffff;
+                        font-size: 32px;
+                    }
+                }
+                &:hover{
+                    .productName{
+
+                        height: 72px;
+                        transition: 500ms;
+                        background-color: rgb(202, 197, 197);
+                        a{
+                            font-size: 32px;
+                            transition: 200ms;
+                            color: blue
+                        }
+                    }
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                
+            }
+
+        }
+    }
+}
+

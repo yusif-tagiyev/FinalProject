@@ -1,0 +1,60 @@
+#addNewProduct{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    h1{
+        font-size: 42px;
+    }
+    #newInfoForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 700px;
+        padding-top: 30px;
+        input{
+            width: 70%;
+            height: 35px;
+            padding-left: 15px;
+            border-radius: 20px;
+            border: double;
+            text-align: start;
+        }
+        div{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            #addBtn{
+                width: 70%;
+                height: 25px;
+                background-color: white;
+                &:hover{
+                    background-color: rgb(8, 180, 8);
+                    border: none;
+                    color: white;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;;
+                    transition: 500ms;
+                }
+            }
+            #closeBtn{
+                width: 30%;
+                height: 25px;
+                background-color: white;
+                &:hover{
+                    background-color: red;
+                    border: none;
+                    color: white;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;;
+                    transition: 500ms;
+                }
+
+            }
+        }
+        
+    }
+}

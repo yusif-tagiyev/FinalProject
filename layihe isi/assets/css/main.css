@@ -1,0 +1,231 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .mainDivNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .mainDivNavbar .navInfo ul {
+  display: flex;
+  gap: 20px;
+}
+nav .mainDivNavbar .navInfo ul li {
+  list-style-type: none;
+}
+nav .mainDivNavbar .navInfo ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .mainDivNavbar .navInfo ul li a .line {
+  opacity: 0;
+  width: 0px;
+  height: 2px;
+  background-color: blue;
+}
+nav .mainDivNavbar .navInfo ul li a:hover {
+  color: blue;
+}
+nav .mainDivNavbar .navInfo ul li a:hover .line {
+  opacity: 1;
+  width: 100%;
+  transition: 500ms;
+}
+nav .mainDivNavbar .numberAndIcon .phonNumber a {
+  text-decoration: none;
+}
+nav .mainDivNavbar .numberAndIcon .iconsDiv {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.myClassImgSize {
+  width: 100%;
+  height: 100vh;
+}
+
+.carouselMyCaption {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  left: 15%;
+  text-align: center;
+  z-index: 10;
+}
+.carouselMyCaption h5 {
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+}
+.carouselMyCaption p {
+  color: rgb(6, 12, 102);
+  font-weight: 900;
+}
+.carouselMyCaption #dahaEtrafli {
+  width: 130px;
+  height: 32px;
+  border: none;
+  border-radius: 30px;
+}
+.carouselMyCaption #dahaEtrafli:hover {
+  background-color: rgb(82, 82, 82);
+  color: rgb(6, 12, 102);
+  font-weight: 600;
+  transition: 300ms;
+}
+
+@media only screen and (max-width: 768px) {
+  .carouselMyCaption {
+    z-index: 20;
+  }
+}
+#someProducts .mainDivSomeProducts .məhsullarimiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+#someProducts .mainDivSomeProducts .məhsullarimiz h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: blue;
+}
+#someProducts .mainDivSomeProducts .məhsullarimiz p {
+  text-align: center;
+  font-size: 16px;
+}
+#someProducts .mainDivSomeProducts #productsCard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api {
+  position: relative;
+  width: 33.333%;
+  height: 350px;
+  background-image: url("https://www.gilanseramik.az/storage/products/January2021/AUrnTuYYYaYYCQ3Rt9MJ.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api #herthIcon {
+  position: absolute;
+  font-size: 32px;
+  right: 20px;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border-radius: 50%;
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api #herthIcon:hover {
+  transition: 500ms;
+  transform: scale(1.3);
+  background-color: rgb(226, 22, 22);
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api .productName {
+  width: 50%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api .productName a {
+  color: #ffffff;
+  font-size: 32px;
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api:hover .productName {
+  height: 72px;
+  transition: 500ms;
+  background-color: rgb(202, 197, 197);
+}
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api:hover .productName a {
+  font-size: 32px;
+  transition: 200ms;
+  color: blue;
+}
+#someProducts .mainDivSomeProducts #productsCard:hover {
+  cursor: pointer;
+}
+
+#addNewProduct {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+#addNewProduct h1 {
+  font-size: 42px;
+}
+#addNewProduct #newInfoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 700px;
+  padding-top: 30px;
+}
+#addNewProduct #newInfoForm input {
+  width: 70%;
+  height: 35px;
+  padding-left: 15px;
+  border-radius: 20px;
+  border: double;
+  text-align: start;
+}
+#addNewProduct #newInfoForm div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+#addNewProduct #newInfoForm div #addBtn {
+  width: 70%;
+  height: 25px;
+  background-color: white;
+}
+#addNewProduct #newInfoForm div #addBtn:hover {
+  background-color: rgb(8, 180, 8);
+  border: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  transition: 500ms;
+}
+#addNewProduct #newInfoForm div #closeBtn {
+  width: 30%;
+  height: 25px;
+  background-color: white;
+}
+#addNewProduct #newInfoForm div #closeBtn:hover {
+  background-color: red;
+  border: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  transition: 500ms;
+}/*# sourceMappingURL=main.css.map */
