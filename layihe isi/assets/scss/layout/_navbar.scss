@@ -49,7 +49,95 @@ nav {
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
+                i{
+                    &:hover{
+                        color: red;
+                    }
+                }
             }
         }
+        .navAdimPanel{
+            
+            text-align: center;
+            .adminPAnelP{
+                cursor: pointer;
+                color: blue;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+        
+    }
+}
+
+.adminPanelPassword{
+    width: 100%;
+    height: 200px;
+    height: 0;
+    overflow: hidden;
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            width: 300px;
+            height: 48px;
+            padding-left: 10px;
+        }
+        #adminPageBtn{
+            border: none;
+            width: 300px;
+            height: 32px;
+            background-color: rgb(1, 10, 136);
+            color: white;
+            &:hover{
+                background-color: rgb(131, 123, 245);
+                color: black;
+            }
+        }
+    }
+    &.adminPanelHidden{
+        height: 250px;
+        opacity: 1;
+        transition: 800ms;
+    }
+
+}
+
+.topdanSatisQeydiyyat{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input{
+            width: 300px;
+            height: 48px;
+            padding-left: 10px;
+        }
+        #enterTheUserBtn{
+            border: none;
+            height: 32px;
+            background-color: rgb(1, 10, 136);
+            color: white;
+            &:hover{
+                background-color: rgb(131, 123, 245);
+                color: black;
+            }
+        }
+    }
+    &.qeydiyyat{
+        height: 250px;
+        opacity: 1;
+        transition: 800ms;
     }
 }

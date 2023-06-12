@@ -9,6 +9,11 @@ a {
   text-decoration: none;
 }
 
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 nav {
   width: 100%;
   height: 100px;
@@ -55,6 +60,89 @@ nav .mainDivNavbar .numberAndIcon .iconsDiv {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+nav .mainDivNavbar .numberAndIcon .iconsDiv i:hover {
+  color: red;
+}
+nav .mainDivNavbar .navAdimPanel {
+  text-align: center;
+}
+nav .mainDivNavbar .navAdimPanel .adminPAnelP {
+  cursor: pointer;
+  color: blue;
+}
+nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
+  color: red;
+}
+
+.adminPanelPassword {
+  width: 100%;
+  height: 200px;
+  height: 0;
+  overflow: hidden;
+}
+.adminPanelPassword form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.adminPanelPassword form input {
+  width: 300px;
+  height: 48px;
+  padding-left: 10px;
+}
+.adminPanelPassword form #adminPageBtn {
+  border: none;
+  width: 300px;
+  height: 32px;
+  background-color: rgb(1, 10, 136);
+  color: white;
+}
+.adminPanelPassword form #adminPageBtn:hover {
+  background-color: rgb(131, 123, 245);
+  color: black;
+}
+.adminPanelPassword.adminPanelHidden {
+  height: 250px;
+  opacity: 1;
+  transition: 800ms;
+}
+
+.topdanSatisQeydiyyat {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+}
+.topdanSatisQeydiyyat form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.topdanSatisQeydiyyat form input {
+  width: 300px;
+  height: 48px;
+  padding-left: 10px;
+}
+.topdanSatisQeydiyyat form #enterTheUserBtn {
+  border: none;
+  height: 32px;
+  background-color: rgb(1, 10, 136);
+  color: white;
+}
+.topdanSatisQeydiyyat form #enterTheUserBtn:hover {
+  background-color: rgb(131, 123, 245);
+  color: black;
+}
+.topdanSatisQeydiyyat.qeydiyyat {
+  height: 250px;
+  opacity: 1;
+  transition: 800ms;
 }
 
 .myClassImgSize {
@@ -117,19 +205,19 @@ nav .mainDivNavbar .numberAndIcon .iconsDiv {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
 #someProducts .mainDivSomeProducts #productsCard .productsCard_api {
   position: relative;
-  width: 33.333%;
+  width: 32.3333%;
   height: 350px;
   background-image: url("https://www.gilanseramik.az/storage/products/January2021/AUrnTuYYYaYYCQ3Rt9MJ.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-#someProducts .mainDivSomeProducts #productsCard .productsCard_api #herthIcon {
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api .herthIcon {
   position: absolute;
   font-size: 32px;
   right: 20px;
@@ -139,7 +227,7 @@ nav .mainDivNavbar .numberAndIcon .iconsDiv {
   text-align: center;
   border-radius: 50%;
 }
-#someProducts .mainDivSomeProducts #productsCard .productsCard_api #herthIcon:hover {
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api .herthIcon:hover {
   transition: 500ms;
   transform: scale(1.3);
   background-color: rgb(226, 22, 22);
@@ -167,8 +255,61 @@ nav .mainDivNavbar .numberAndIcon .iconsDiv {
   transition: 200ms;
   color: blue;
 }
-#someProducts .mainDivSomeProducts #productsCard:hover {
+#someProducts .mainDivSomeProducts #productsCard .productsCard_api:hover {
   cursor: pointer;
+}
+#someProducts .mainDivSomeProducts .loadMoreDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+#someProducts .mainDivSomeProducts .loadMoreDiv #loadMoreBtn {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 24px;
+  background-color: blue;
+  color: white;
+}
+#someProducts .mainDivSomeProducts .loadMoreDiv #loadMoreBtn:hover {
+  background-color: rgb(3, 126, 126);
+  color: black;
+  transition: 600ms;
+}
+
+#storeLocation .mainDivStoreLocation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 100px;
+}
+#storeLocation .mainDivStoreLocation .filiallarimiz h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: blue;
+}
+#storeLocation .mainDivStoreLocation .mapLocation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+#storeLocation .mainDivStoreLocation .mapLocation a {
+  color: black;
+}
+#storeLocation .mainDivStoreLocation .mapLocation a:hover {
+  color: blue;
+}
+#storeLocation .mainDivStoreLocation .storeImgDiv {
+  width: 100%;
+}
+#storeLocation .mainDivStoreLocation .storeImgDiv img {
+  width: 100%;
+  height: 100vh;
 }
 
 #addNewProduct {
@@ -228,4 +369,76 @@ nav .mainDivNavbar .numberAndIcon .iconsDiv {
   color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   transition: 500ms;
+}
+
+footer {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(94, 94, 94);
+}
+footer .footerMainDuv {
+  width: 100%;
+  display: flex;
+}
+footer .footerMainDuv .pageLogoFooter {
+  width: 40%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footerMainDuv .pageLogoFooter p {
+  padding-top: 30px;
+}
+footer .footerMainDuv .mehsullarimizFooter {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer .footerMainDuv .mehsullarimizFooter ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footerMainDuv .mehsullarimizFooter ul h1 {
+  padding-bottom: 30px;
+}
+footer .footerMainDuv .mehsullarimizFooter ul li a {
+  color: blue;
+  font-size: 24px;
+}
+footer .footerMainDuv .mehsullarimizFooter ul li a:hover {
+  color: red;
+  transition: 300ms;
+}
+footer .footerMainDuv .elaqeFooter {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footerMainDuv .elaqeFooter ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footerMainDuv .elaqeFooter ul h1 {
+  padding-bottom: 10px;
+  color: white;
+}
+footer .footerMainDuv .elaqeFooter ul h3 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: white;
+}
+footer .footerMainDuv .elaqeFooter ul li {
+  color: blue;
+  font-size: 20px;
+}
+footer .footerMainDuv .elaqeFooter ul li a {
+  color: red;
 }/*# sourceMappingURL=main.css.map */

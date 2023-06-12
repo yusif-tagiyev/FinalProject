@@ -45,7 +45,6 @@
 // mehsullarimiz section 
 #someProducts{
     .mainDivSomeProducts{
-        // width: 100%;
         
         .məhsullarimiz{
             display: flex;
@@ -67,17 +66,17 @@
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
             padding-top: 50px;
             padding-bottom: 100px;
             .productsCard_api{
                 position: relative;
-                width: 33.333%;
+                width: 32.3333%;
                 height: 350px;
                 background-image: url("https://www.gilanseramik.az/storage/products/January2021/AUrnTuYYYaYYCQ3Rt9MJ.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
-                #herthIcon{
+                .herthIcon{
                     position: absolute;
                     font-size: 32px;
                     right: 20px;
@@ -107,9 +106,9 @@
                         font-size: 32px;
                     }
                 }
+                
                 &:hover{
                     .productName{
-
                         height: 72px;
                         transition: 500ms;
                         background-color: rgb(202, 197, 197);
@@ -120,13 +119,73 @@
                         }
                     }
                 }
-            }
-            &:hover{
-                cursor: pointer;
+                &:hover{
+                    cursor: pointer;
+                    
+                }
                 
             }
 
         }
+        .loadMoreDiv{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 80px;
+            #loadMoreBtn{
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 24px ;
+                background-color: blue;
+                color: white;
+                &:hover{
+                    background-color: rgb(3, 126, 126);
+                    color: black;
+                    transition: 600ms;
+                }
+                
+            }
+        }
+    }
+}
+
+#storeLocation{
+    .mainDivStoreLocation{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-block: 100px;
+        .filiallarimiz{
+            h1{
+                font-size: 72px;
+                font-weight: 700;
+                color: blue;
+            }
+        }
+        .mapLocation{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            a{
+                color: black;
+                &:hover{
+                    color: blue;
+                }
+            }
+        }
+        .storeImgDiv{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100vh;
+            }
+        }
+
     }
 }
 

@@ -1,26 +1,161 @@
 {
-    "gilan_seramic": [
-      {
-        "id": 1,
-        "productName": "wer",
-        "productSize": "wer",
-        "productPrice": "wer",
-        "productImage": "wer",
-        "productMadeCountry": "Azerbaijan"
-      },
-      {
-        "productName": "123asdasd",
-        "productSize": "123",
-        "productPrice": "qweasdasd",
-        "productImage": "asdasd",
-        "id": 2
-      },
-      {
-        "productName": "asd",
-        "productSize": "asd",
-        "productPrice": "asfda",
-        "productImage": "zxczc",
-        "id": 3
+  "gilan_seramic": [
+    {
+      "id": 1,
+      "productName": "Florensiya",
+      "productSize": "24 X 39",
+      "productPrice": "10.5 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/January2021/nsX5x7X3j9iXJDREAwS6.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Florensiya--40X40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Florensiya-Dark-24x39.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Florensiya-Light-24x39.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Florensiya-Fon-dekor24x39.jpg"
       }
-    ]
-  }
+    },
+
+    {
+      "productName": "Imperiya",
+      "productSize": "24 X 39",
+      "productPrice": "10.50",
+      "productImage": "https://www.gilanseramik.az/storage/products/Imperia-1-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Imperiya--40X40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Imperiya-Dark-24x39.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Imperiya-Light-24x39.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Imperiya-Fon-Dekor-24x39.jpg"
+      },
+      "id": 2
+    },
+    {
+      "productName": "Ibiza",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Ibiza-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/IBIZA-SEVILLA-40x40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Ibiza-25x40.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 4
+    },
+    {
+      "productName": "Abşeron",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Absheron-Beyaz-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Forma-white-40-x-40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Forma-white-40-x-40.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 5
+    },
+    {
+      "productName": "Ağdərə Bej",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Agdere-Bej-1-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Agdere-Bej.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/A%C4%9Fd%C9%99r%C9%99-bej-25x40.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/A%C4%9Fd%C9%99r%C9%99-bej-25x40.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/A%C4%9Fd%C9%99r%C9%99-bej-dekor25x40.jpg"
+      },
+      "id": 6
+    },
+    {
+      "productName": "Ağdərə Mavi",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Agdere-Mavi-1-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Agdere-Mavi-33x33.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/A%C4%9Fd%C9%99r%C9%99-Mavi-25x40.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/A%C4%9Fd%C9%99r%C9%99-A%C3%A7%C4%B1q-Mavi-25x40.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/A%C4%9Fd%C9%99r%C9%99-Mavi-dekor--25x40.jpg"
+      },
+      "id": 7
+    },
+    {
+      "productName": "Mebelarası - 3",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Mebel-Arasi-1b0001.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-White-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Kitchen-A1-30x60.jpg"
+      },
+      "id": 8
+    },
+    {
+      "productName": "Rectain Yellow",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rectain-Yellow.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Rectan-Yellow-30x60.jpg",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 9
+    },
+    {
+      "productName": "Monako",
+      "productSize": "24 X 39",
+      "productPrice": "10.50",
+      "productImage": "https://www.gilanseramik.az/storage/products/Monaco-1-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Monako--40X40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Monako-Dark-24x39.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/MONAKO-LIGHT-24x39.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Monako-Fon-Dekor24x39.jpg"
+      },
+      "id": 10
+    },
+    {
+      "productName": "Şəki Bəyaz",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Beyaz-1-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Sheki-Beyaz-40x40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Seki-beyaz-25x40.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 11
+    },
+    {
+      "productName": "Roma",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Roma-1-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Roma-Dark-40x40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Roma-Dark-20x50.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Roma-Light-20x50.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Roma-dekor-20x50.jpg"
+      },
+      "id": 12
+    },
+    {
+      "productName": "Şəki Bej",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Bej-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Sheki-bej-25x40-(1).jpg",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 13
+    }
+  ]
+}
