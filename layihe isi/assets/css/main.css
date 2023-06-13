@@ -9,6 +9,9 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
 ul li {
   text-decoration: none;
   list-style-type: none;
@@ -74,7 +77,67 @@ nav .mainDivNavbar .navAdimPanel .adminPAnelP {
 nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
   color: red;
 }
+nav .mainDivNavbar #resMenuIcon {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #000000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
 
+#mobilNav {
+  width: 100%;
+  border: 1px solid black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#mobilNav .navInfoMobil {
+  width: 100%;
+}
+#mobilNav .navInfoMobil ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#mobilNav .navInfoMobil ul li a {
+  font-size: 16px;
+}
+#mobilNav .numberAndIconMobil {
+  display: flex;
+  flex-direction: column;
+}
+#mobilNav .numberAndIconMobil .iconsDivMobil {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .mainDivNavbar img {
+    width: 120px;
+  }
+  nav .mainDivNavbar .navInfo {
+    display: none;
+  }
+  nav .mainDivNavbar .numberAndIcon {
+    display: none;
+  }
+  nav .mainDivNavbar .navAdimPanel {
+    display: none;
+  }
+  nav .mainDivNavbar #resMenuIcon {
+    display: block;
+  }
+}
 .adminPanelPassword {
   width: 100%;
   height: 200px;
@@ -182,7 +245,7 @@ nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
 
 @media only screen and (max-width: 768px) {
   .carouselMyCaption {
-    z-index: 20;
+    display: block !important;
   }
 }
 #someProducts .mainDivSomeProducts .məhsullarimiz {
@@ -233,7 +296,7 @@ nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
   background-color: rgb(226, 22, 22);
 }
 #someProducts .mainDivSomeProducts #productsCard .productsCard_api .productName {
-  width: 50%;
+  width: 60%;
   height: 44px;
   display: flex;
   justify-content: center;
@@ -243,17 +306,17 @@ nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
 }
 #someProducts .mainDivSomeProducts #productsCard .productsCard_api .productName a {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 25px;
 }
 #someProducts .mainDivSomeProducts #productsCard .productsCard_api:hover .productName {
   height: 72px;
   transition: 500ms;
-  background-color: rgb(202, 197, 197);
+  background-color: green;
+  background-image: linear-gradient(rgb(197, 188, 188), rgb(0, 0, 0));
 }
 #someProducts .mainDivSomeProducts #productsCard .productsCard_api:hover .productName a {
-  font-size: 32px;
   transition: 200ms;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 #someProducts .mainDivSomeProducts #productsCard .productsCard_api:hover {
   cursor: pointer;
@@ -310,6 +373,101 @@ nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
 #storeLocation .mainDivStoreLocation .storeImgDiv img {
   width: 100%;
   height: 100vh;
+}
+
+#calculator {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  margin-bottom: 100px;
+  background-color: rgb(81, 81, 238);
+}
+#calculator .calculatorMainDiv {
+  width: 100%;
+  display: flex;
+}
+#calculator .calculatorMainDiv .kafelMetlaxDiv {
+  background-image: url("https://www.gilanseramik.az/images/bricks.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 45%;
+  display: flex;
+}
+#calculator .calculatorMainDiv .kafelMetlaxDiv .calculatorIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator .calculatorMainDiv .kafelMetlaxDiv .calculatorIcon i {
+  font-size: 72px;
+  color: white;
+}
+#calculator .calculatorMainDiv .kafelMetlaxDiv .calculatorInfo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+#calculator .calculatorMainDiv .calculatorAction {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#calculator .calculatorMainDiv .calculatorAction form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#calculator .calculatorMainDiv .calculatorAction form .firstDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#calculator .calculatorMainDiv .calculatorAction form .firstDiv .inputDiv {
+  width: 32.333%;
+}
+#calculator .calculatorMainDiv .calculatorAction form .firstDiv .inputDiv input {
+  width: auto;
+}
+#calculator .calculatorMainDiv .calculatorAction form .secondDiv {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator .calculatorMainDiv .calculatorAction form .secondDiv select {
+  width: 40%;
+}
+#calculator .calculatorMainDiv .calculatorAction #resultCalculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+#calculator .calculatorMainDiv .calculatorAction #resultCalculator p {
+  font-size: 16px;
+  font-weight: 700;
+}
+#calculator .calculatorMainDiv .calculatorAction #resultButtonCalculator {
+  width: 120px;
+  border: none;
+  height: 32px;
+}
+#calculator .calculatorMainDiv .calculatorAction #resultButtonCalculator:hover {
+  border: 2px solid rgb(255, 15, 15);
+  background-color: black;
+  color: rgb(255, 255, 255);
+  transition: 400ms;
+  scale: 1.1;
 }
 
 #addNewProduct {
@@ -371,10 +529,68 @@ nav .mainDivNavbar .navAdimPanel .adminPAnelP:hover {
   transition: 500ms;
 }
 
+main #topdanSatisHeader div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #topdanSatisTable {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("https://www.gilanseramik.az/images/logo.svg");
+  background-repeat: no-repeat;
+  background-color: rgb(88, 115, 115);
+  background-position: center;
+  background-size: 40%;
+}
+main #topdanSatisTable .mainDivTable {
+  width: 100%;
+}
+main #topdanSatisTable .mainDivTable #productTable {
+  width: 100%;
+}
+main #topdanSatisTable .mainDivTable #productTable .staticTr .staticTh {
+  color: rgb(255, 255, 255);
+  border: 2px solid black;
+  text-align: center;
+  height: 42px;
+}
+main #topdanSatisTable .mainDivTable #productTable .staticTr .mehsulQiymeti {
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  text-align: center;
+}
+main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh {
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  width: 100px;
+}
+main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .addBtn {
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 80%;
+  border: none;
+  border: 1px solid #000000;
+}
+main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .xBtn {
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 80%;
+  border: none;
+  border: 1px solid #000000;
+}
+main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .xBtn.clickXBtn {
+  background-color: yellov;
+  transition: 1ms;
+}
+
 footer {
   width: 100%;
   height: 80vh;
-  background-color: rgb(94, 94, 94);
+  background-image: linear-gradient(rgb(56, 56, 56), rgb(252, 252, 252));
 }
 footer .footerMainDuv {
   width: 100%;

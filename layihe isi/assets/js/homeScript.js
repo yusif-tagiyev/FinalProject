@@ -9,7 +9,8 @@ const adminPanelPassword = document.querySelector(".adminPanelPassword");
 adminPanel.addEventListener("click", () => {
   adminPanelPassword.classList.toggle("adminPanelHidden");
 });
-
+// slick csript
+$(".your-class").slick();
 // admin panele kecid
 
 const adminPageBtn = document.getElementById("adminPageBtn");
@@ -31,13 +32,16 @@ const adminsParol = [
 //
 adminPageBtn.addEventListener("click", (e) => {
   // console.log("salam");
+  let count = 0;
 
   for (let i = 0; i < 6; i++) {
-    if (adminName.value === adminsName[i] && parol.value === adminsParol[i]) {
+    if (adminName.value == adminsName[i] && parol.value == adminsParol[i]) {
       window.location.assign("./adminPanel.html");
-    } else {
-      alert("ad ve parolu daxil");
+      count++;
     }
+  }
+  if (count == 0) {
+    alert("Please");
   }
 
   e.preventDefault();
@@ -66,21 +70,28 @@ enterTheUserBtn.addEventListener("click", (e) => {
 
   e.preventDefault();
 });
+
 // api den gelen kardt
+let cardStart = 0;
+let cardEnd = 3;
 
 function productIpa() {
   fetch("http://localhost:3000/gilan_seramic")
     .then((res) => res.json())
     .then((data) => {
       // console.log(data);
+      // if(cardEnd === data.length){
+      //   return;
+      // }
       const productsCard = document.getElementById("productsCard");
-      let cardStart = 0;
-      let cardEnd = 3;
       // sehifede olan e kard
       for (let i = cardStart; i < cardEnd; i++) {
+        console.log("evvelinci qiymet", cardStart);
+        console.log("sonuncu  qiymet", cardEnd);
+
         const mainDiv = document.createElement("div");
         mainDiv.classList.add("productsCard_api");
-        mainDiv.style.backgroundImage = "url(" + data[i].productImage + ")";
+        mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
         mainDiv.style.backgroundSize = "cover";
         mainDiv.style.backgroundRepeat = "no-repeat";
         productsCard.appendChild(mainDiv);
@@ -116,3 +127,44 @@ loadMoreBtn.addEventListener("click", () => {
   // console.log("salam");
   productIpa();
 });
+
+// calculator
+
+function startCalculator() {
+  const en = document.getElementById("en");
+  console.log(en);
+  const uzunluq = document.getElementById("uzunluq");
+  console.log(uzunluq);
+  const productSizeCalculator = document.getElementById(
+    "productSizeCalculator"
+  );
+  // console.log(productSizeCalculator.value);
+  const resultButtonCalculator = document.getElementById(
+    "resultButtonCalculator"
+  );
+
+  const resultCalculator = document.getElementById("resultCalculator");
+
+
+  resultButtonCalculator.addEventListener("click", () => {
+    // console.log("sala,");
+    // console.log(en.value);
+    resultCalculator.innerHTML = "";
+    console.log(productSizeCalculator.value);
+    const tileWidth = +productSizeCalculator.value.substring(0, 2);
+    const tileHeight = +productSizeCalculator.value.substring(2,4)
+    console.log(tileWidth);
+    console.log(tileHeight);
+
+    let S = en.value * uzunluq.value ;
+    let pilteSayi = Math.floor(S / ((tileWidth * tileHeight)/10000)); 
+    let qutuSayi = Math.ceil(pilteSayi / 10 ) ;
+    const pTag = document.createElement("p");
+    pTag.innerText = `Ümumi sahə: ${S} m² \n Ehtiyac olunan plitə sayı : ${pilteSayi}  \n Qutu sayı : ${qutuSayi}` ;
+    resultCalculator.appendChild(pTag);
+
+    
+  });
+}
+
+startCalculator();

@@ -67,7 +67,78 @@ nav {
                 }
             }
         }
+        #resMenuIcon{
+            display: none;
+            width: 42px;
+            height: 42px;
+            border: 2px solid #000000;
+            // display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
         
+    }
+}
+
+#mobilNav{
+    width: 100%;
+    border: 1px solid black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .navInfoMobil{
+        width: 100%;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            li{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .numberAndIconMobil{
+        display: flex;
+        flex-direction: column;
+        .iconsDivMobil{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    nav{
+        .mainDivNavbar{
+            img{
+                width: 120px;
+            }
+            .navInfo{
+                display: none;
+            }
+            .numberAndIcon{
+                display: none;
+            }
+            .navAdimPanel{
+                display: none;
+            }
+            #resMenuIcon{
+                display: block;
+                
+            }
+        }
     }
 }
 
