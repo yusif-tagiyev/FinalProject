@@ -29,29 +29,66 @@ nav .mainDivNavbar {
   justify-content: space-between;
   align-items: center;
 }
-nav .mainDivNavbar .navInfo ul {
+nav .mainDivNavbar .navInfo .mainUl {
   display: flex;
   gap: 20px;
 }
-nav .mainDivNavbar .navInfo ul li {
+nav .mainDivNavbar .navInfo .mainUl li {
   list-style-type: none;
 }
-nav .mainDivNavbar .navInfo ul li a {
+nav .mainDivNavbar .navInfo .mainUl li a {
   text-decoration: none;
   color: black;
 }
-nav .mainDivNavbar .navInfo ul li a .line {
+nav .mainDivNavbar .navInfo .mainUl li a .line {
   opacity: 0;
   width: 0px;
   height: 2px;
   background-color: blue;
 }
-nav .mainDivNavbar .navInfo ul li a:hover {
+nav .mainDivNavbar .navInfo .mainUl li a:hover {
   color: blue;
 }
-nav .mainDivNavbar .navInfo ul li a:hover .line {
+nav .mainDivNavbar .navInfo .mainUl li a:hover .line {
   opacity: 1;
   width: 100%;
+  transition: 500ms;
+}
+nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown {
+  width: 160px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  z-index: 5;
+  background-color: blue;
+  opacity: 0;
+}
+nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl {
+  width: 100%;
+}
+nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div:hover {
+  background-color: white;
+}
+nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div:hover a {
+  color: black;
+  transition: 500ms;
+}
+nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div a {
+  padding-left: 20px;
+  color: white;
+}
+nav .mainDivNavbar .navInfo .mainUl #dorpdownLi:hover #mehsullarDropDown {
+  opacity: 1;
   transition: 500ms;
 }
 nav .mainDivNavbar .numberAndIcon .phonNumber a {
@@ -89,6 +126,31 @@ nav .mainDivNavbar #resMenuIcon {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 992px) {
+  nav img {
+    width: 100px;
+  }
+  nav .mainDivNavbar .navInfo {
+    display: none;
+  }
+  nav .mainDivNavbar #resMenuIcon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  nav .mainDivNavbar .numberAndIcon {
+    display: none;
+  }
+  nav .mainDivNavbar .navInfo {
+    display: none;
+  }
+  nav .mainDivNavbar .navAdimPanel {
+    display: none;
+  }
+  nav .mainDivNavbar #resMenuIcon {
+    display: block;
+  }
+}
 #mobilNav {
   width: 100%;
   border: 1px solid black;
@@ -109,6 +171,10 @@ nav .mainDivNavbar #resMenuIcon {
 #mobilNav .navInfoMobil ul li a {
   font-size: 16px;
 }
+#mobilNav .navInfoMobil.hiddenNav {
+  height: 300px;
+  transition: 1s;
+}
 #mobilNav .numberAndIconMobil {
   display: flex;
   flex-direction: column;
@@ -121,23 +187,6 @@ nav .mainDivNavbar #resMenuIcon {
   gap: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-  nav .mainDivNavbar img {
-    width: 120px;
-  }
-  nav .mainDivNavbar .navInfo {
-    display: none;
-  }
-  nav .mainDivNavbar .numberAndIcon {
-    display: none;
-  }
-  nav .mainDivNavbar .navAdimPanel {
-    display: none;
-  }
-  nav .mainDivNavbar #resMenuIcon {
-    display: block;
-  }
-}
 .adminPanelPassword {
   width: 100%;
   height: 200px;
@@ -583,14 +632,196 @@ main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .xBtn {
   border: 1px solid #000000;
 }
 main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .xBtn.clickXBtn {
-  background-color: yellov;
+  background-color: yellow;
   transition: 1ms;
+}
+
+main #zavod {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("https://www.gilanseramik.az/images/bricks.png");
+  background-repeat: no-repeat;
+}
+main #zavod .mainDivZavod {
+  display: flex;
+  width: 100%;
+}
+main #zavod .mainDivZavod .zavodHaqqda {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+main #zavod .mainDivZavod .zavodHaqqda h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: blue;
+}
+main #zavod .mainDivZavod .gilanSeramicMMC {
+  padding-top: 100px;
+  width: 50%;
+}
+main #factoryImg .mainDivFactoryImg {
+  width: 100%;
+}
+main #factoryImg .mainDivFactoryImg img {
+  width: 100%;
+  height: 100vh;
+}
+main #factoryImg .mainDivFactoryImg p {
+  padding-top: 20px;
+  color: rgb(152, 152, 152);
+}
+main #ourDifference {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main #ourDifference .mainDivOurDifference {
+  width: 100%;
+  display: flex;
+}
+main #ourDifference .mainDivOurDifference .ferqliliyimiz {
+  width: 35%;
+  position: relative;
+}
+main #ourDifference .mainDivOurDifference .ferqliliyimiz h3 {
+  padding-left: 50px;
+  font-size: 24px;
+  color: grey;
+  font-weight: 700;
+}
+main #ourDifference .mainDivOurDifference .ferqliliyimiz .line {
+  position: absolute;
+  width: 150px;
+  top: 14px;
+  right: 12px;
+  border: 1px solid #c7c7c7;
+}
+main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari {
+  width: 65%;
+}
+main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari p {
+  width: 70%;
+}
+main #factoryDifferentImg {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+main #factoryDifferentImg .maindivDifferentImg {
+  display: flex;
+  gap: 20px;
+}
+main #factoryDifferentImg .maindivDifferentImg .firstImg {
+  flex-grow: 3;
+}
+main #factoryDifferentImg .maindivDifferentImg .firstImg img {
+  width: 100%;
+}
+main #factoryDifferentImg .maindivDifferentImg .firstImg img:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 600ms;
+}
+main #factoryDifferentImg .maindivDifferentImg .secondImg {
+  flex-grow: 2;
+}
+main #factoryDifferentImg .maindivDifferentImg .secondImg img {
+  width: 100%;
+}
+main #factoryDifferentImg .maindivDifferentImg .secondImg img:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 600ms;
+}
+main #factoryDifferentImg .maindivDifferentImg .thirdImg {
+  flex-grow: 2;
+}
+main #factoryDifferentImg .maindivDifferentImg .thirdImg img {
+  width: 100%;
+}
+main #factoryDifferentImg .maindivDifferentImg .thirdImg img:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 600ms;
+}
+main #missiyamiz {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+main #missiyamiz .mainDivForMissiamiz {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 200px;
+}
+main #missiyamiz .mainDivForMissiamiz h1 {
+  font-size: 24px;
+  color: grey;
+}
+main #missiyamiz .mainDivForMissiamiz .nailiyyetler {
+  padding-right: 250px;
+}
+main #sertifikatlar {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F7F9FD;
+}
+main #sertifikatlar .mainDivForSertifikatlar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main #sertifikatlar .mainDivForSertifikatlar .yuksekStandart {
+  padding-left: 100px;
+}
+main #sertifikatlar .mainDivForSertifikatlar .yuksekStandart h1 {
+  font-weight: 700;
+  color: blue;
+}
+main #sertifikatlar .mainDivForSertifikatlar .yuksekStandart p {
+  color: rgb(73, 73, 73);
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages {
+  padding-top: 60px;
+  display: flex;
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat {
+  width: 100%;
+  display: flex;
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .imgDiv {
+  width: 40%;
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .imgDiv img {
+  width: 100%;
+  height: 300px;
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo h3 {
+  padding-top: 34px;
+  font-size: 16px;
+}
+main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo p {
+  padding-left: 25px;
 }
 
 footer {
   width: 100%;
   height: 80vh;
-  background-image: linear-gradient(rgb(56, 56, 56), rgb(252, 252, 252));
+  background-image: url("https://www.gilanseramik.az/images/bricks.png");
+  background-repeat: no-repeat;
+  background-color: #7E828B;
 }
 footer .footerMainDuv {
   width: 100%;

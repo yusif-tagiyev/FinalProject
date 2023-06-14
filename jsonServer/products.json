@@ -14,12 +14,10 @@
         "fonDekor": "https://www.gilanseramik.az/storage/assorments/Florensiya-Fon-dekor24x39.jpg"
       }
     },
-
     {
       "productName": "Imperiya",
       "productSize": "24 X 39",
       "productPrice": "10.50 AZN",
-
       "productStatus": "Anbarda Var",
       "productImage": "https://www.gilanseramik.az/storage/products/Imperia-1-02.jpg",
       "productMoreInfo": {
@@ -118,7 +116,6 @@
       "productName": "Monako",
       "productSize": "24 X 39",
       "productPrice": "10.50 AZN",
-
       "productStatus": "Anbarda Var",
       "productImage": "https://www.gilanseramik.az/storage/products/Monaco-1-02.jpg",
       "productMoreInfo": {
@@ -170,6 +167,396 @@
         "fonDekor": "Yoxdur"
       },
       "id": 13
+    },
+    {
+      "productName": "Şəki qəhvəyi",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Gehveyi-1-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/seki-q%C9%99hv%C9%99yi-33x33.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/seki-q%C9%99hv%C9%99yi-25x40.jpg",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 14
+    },
+    {
+      "productName": "Qarabağ boz",
+      "productSize": "25 X 40",
+      "productPrice": "11 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Qarabax-1-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qarabag-Boz33x33.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Yeni-Qaraba%C4%9F-Boz-25x40.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Yeni-Qaraba%C4%9F-A%C3%A7%C4%B1q-Boz-25x40.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Qarabag-Boz-Dekor-25x40.jpg"
+      },
+      "id": 15
+    },
+    {
+      "productName": "Opal",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Opal-2-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Opal-40x40-.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Opal-Dark-30x60-.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Opal-Light-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Galaxy-fon-dekor-30x60.jpg"
+      },
+      "id": 16
+    },
+    {
+      "productName": "Glossy white",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Glossy-white-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Glosy-white--30-x-60-.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 17
+    },
+    {
+      "productName": "Calacata",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Calacata-2-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Calacatta-40x40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Calacatta-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Calacatta-Dekor-30x60.jpg"
+      },
+      "id": 18
+    },
+    {
+      "productName": "Galaxy",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Galaxy-2-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Galaxy--40x40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Galaxy-Dark-30x60.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Galaxy-Light-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Galaxy-fon-dekor-30x60.jpg"
+      },
+      "id": 19
+    },
+    {
+      "productName": "Paris",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Paris-1-01.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Paris-40x40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Paris-Dark-30x60.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Paris-Light-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Paris-Fon-Dekor-30x60-.jpg"
+      },
+      "id": 20
+    },
+    {
+      "productName": "Verdana",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Verdana-2-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Verdana-40x40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Verdana-Dark-30x60.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Verdana-Light-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Verdana-fon-dekor-30x60.jpg"
+      },
+      "id": 21
+    },
+    {
+      "productName": "Talya",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Talya-2-02.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Talya--40x40.jpg",
+        "forWallDark": "https://www.gilanseramik.az/storage/assorments/Talya-Dark-30x60.jpg",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Talya-Light-30x60.jpg",
+        "fonDekor": "https://www.gilanseramik.az/storage/assorments/Talya-Fon-Dekor-30x60.jpg"
+      },
+      "id": 22
+    },
+    {
+      "productName": "White",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-White.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-White-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 23
+    },
+    {
+      "productName": "Kitchen rose",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rose.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-rose-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 24
+    },
+    {
+      "productName": "Romb brown",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Romb-Brown.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-Romb-Brown-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 25
+    },
+    {
+      "productName": "Romb beige",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Romb-Beige.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-Romb-Beige-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 26
+    },
+    {
+      "productName": "Brown",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Brown-edited.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-Brown-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 27
+    },
+    {
+      "productName": "Brown flower",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Brown-Flower-edited.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-Brown-Flower-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 28
+    },
+    {
+      "productName": "Rectain Beige",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rectain-Bej.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Rectan-Beige-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 29
+    },
+    {
+      "productName": "Bone",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Bone-B1.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-Bone--30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 30
+    },
+    {
+      "productName": "Mebel arası - 5 ",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Mebel-Arasi-1.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/B4-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 31
+    },
+    {
+      "productName": "Mebel arası - 4",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-B3.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/B3-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 32
+    },
+    {
+      "productName": "Mebel arası - 1",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux---Mebel-Arasi-20002.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/B1-A--30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 33
+    },
+    {
+      "productName": "Mebel arası - 2",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Mebel-Arasi-1a0001.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/B1.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 34
+    },
+    {
+      "productName": "Fincan",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Fincan-edit.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-A3-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 35
+    },
+    {
+      "productName": "Portağal",
+      "productSize": "30 X 60",
+      "productPrice": "13 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Kux-Portga-editl.jpg",
+      "productMoreInfo": {
+        "metlagImg": "Yoxdur",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "https://www.gilanseramik.az/storage/assorments/Kitchen-A2-30x60.jpg",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 36
+    },
+    {
+      "productName": "Qum gri",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Gum-Gri.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qum-Gri-40x40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 37
+    },
+    {
+      "productName": "Granit gri",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Granite-Gri.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Granit-Grii-40x40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 38
+    },
+    {
+      "productName": "Granit bej",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Granite-Bej.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Granit-Bej-40x40.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 39
+    },
+    {
+      "productName": "Şərur ",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Sherur.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/%C5%9E%C9%99rur.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 40
+    },
+    {
+      "productName": "Qusar",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Gusar-1.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qusar.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 41
+    },
+    {
+      "productName": "Qubadlı",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Qubadli.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qubadl%C4%B1.jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 42
+    },
+    {
+      "productName": "Qax",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Qax.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qax-(Semyglossy-37-73).jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 43
     }
   ]
 }

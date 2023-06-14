@@ -41,22 +41,41 @@
       <div class="mainDivNavbar container">
         <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
         <div class="navInfo">
-          <ul>
-            <li>
+          <ul class="mainUl">
+            <li id="dorpdownLi">
               <a href="#"
                 >Mehsullar
                 <div class="line"></div
               ></a>
+              <div id="mehsullarDropDown">
+                <ul class="mehsullarUl">
+                  <li>
+                    <div><a href="#">Dest 24 X 39</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Dest 25 X 40</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Dest 30 X 60</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Metbex 30 X 60</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Doseme 40 X 40</a></div>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="./about.html"
-                >Haqqimizda
+                >Haqqımızda
                 <div class="line"></div
               ></a>
             </li>
             <li>
-              <a href="./contactPage.html"
-                >Bizimle elaqe
+              <a href="./productionPage.html">
+                İstehsalat
                 <div class="line"></div
               ></a>
             </li>
@@ -81,6 +100,7 @@
         </div>
       </div>
     </nav>
+
     <!-- mobil navbar -->
     <div id="mobilNav" class="container">
       <div class="navInfoMobil">
@@ -136,6 +156,8 @@
         <button id="enterTheUserBtn">Daxil ol</button>
       </form>
     </div>
+
+    
     <main>
       <!-- product  slider section   -->
       <section id="productSlider">
@@ -282,7 +304,10 @@
             >
           </div>
           <div class="storeImgDiv">
-            <img src="./assets/images/Image 10.jpg" alt="" />
+            <img
+              src="https://www.gilanseramik.az/storage/abouts/January2021/HlJUo9Xeb8UCVM3BR3GJ.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -312,14 +337,8 @@
                 </div>
                 <div class="inputDiv">
                   <label for="uzunluq">Uzunluq</label>
-                  <input
-                    type="number"
-                    id="uzunluq"
-                    placeholder="Metr ilə"
-                  />
+                  <input type="number" id="uzunluq" placeholder="Metr ilə" />
                 </div>
-                
-                
               </div>
               <div class="secondDiv">
                 <select id="productSizeCalculator">
@@ -331,15 +350,13 @@
                 </select>
               </div>
             </form>
-            <div id="resultCalculator"> 
-             
-            </div>
-            <button  id="resultButtonCalculator" type="button">Hesabla</button>
+            <div id="resultCalculator"></div>
+            <button id="resultButtonCalculator" type="button">Hesabla</button>
           </div>
         </div>
       </section>
     </main>
-<!-- footer strated -->
+    <!-- footer strated -->
     <footer>
       <div class="footerMainDuv">
         <div class="pageLogoFooter">

@@ -9,8 +9,7 @@ const adminPanelPassword = document.querySelector(".adminPanelPassword");
 adminPanel.addEventListener("click", () => {
   adminPanelPassword.classList.toggle("adminPanelHidden");
 });
-// slick csript
-$(".your-class").slick();
+
 // admin panele kecid
 
 const adminPageBtn = document.getElementById("adminPageBtn");
@@ -71,7 +70,41 @@ enterTheUserBtn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
+// tablet navbar 
+
+const resMenuIcon = document.getElementById("resMenuIcon");
+console.log(resMenuIcon);
+const mobilNav = document.getElementById("mobilNav");
+
+resMenuIcon.addEventListener("click", () => {
+  console.log("salam icondan gelendi");
+  mobilNav.classList.toggle("hiddenNav");
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // api den gelen kardt
+
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+
 let cardStart = 0;
 let cardEnd = 3;
 
@@ -80,9 +113,9 @@ function productIpa() {
     .then((res) => res.json())
     .then((data) => {
       // console.log(data);
-      // if(cardEnd === data.length){
-      //   return;
-      // }
+      if(cardEnd === data.length){
+        loadMoreBtn.style.display = "none";
+      }
       const productsCard = document.getElementById("productsCard");
       // sehifede olan e kard
       for (let i = cardStart; i < cardEnd; i++) {
@@ -122,7 +155,6 @@ function productIpa() {
 
 productIpa();
 
-const loadMoreBtn = document.getElementById("loadMoreBtn");
 loadMoreBtn.addEventListener("click", () => {
   // console.log("salam");
   productIpa();

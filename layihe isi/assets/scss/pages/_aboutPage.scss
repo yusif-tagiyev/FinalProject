@@ -1,0 +1,203 @@
+main {
+  // zavod haqqda ,elumat
+  #zavod {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("https://www.gilanseramik.az/images/bricks.png");
+    background-repeat: no-repeat;
+    .mainDivZavod {
+      display: flex;
+      width: 100%;
+      .zavodHaqqda {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        h1 {
+          font-size: 72px;
+          font-weight: 800;
+          color: blue;
+        }
+      }
+      .gilanSeramicMMC {
+        padding-top: 100px;
+        width: 50%;
+      }
+    }
+  }
+
+  // zavodun sekili
+
+  #factoryImg {
+    .mainDivFactoryImg {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100vh;
+      }
+      p {
+        padding-top: 20px;
+        color: rgb(152, 152, 152);
+      }
+    }
+  }
+
+  // ferqliliyimiz zavod haqda diger melumatlar
+
+  #ourDifference {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .mainDivOurDifference {
+      width: 100%;
+      display: flex;
+      .ferqliliyimiz {
+        width: 35%;
+        position: relative;
+        h3 {
+          padding-left: 50px;
+          font-size: 24px;
+          color: grey;
+          font-weight: 700;
+        }
+        .line {
+          position: absolute;
+          width: 150px;
+          top: 14px;
+          right: 12px;
+          border: 1px solid #c7c7c7;
+        }
+      }
+      .sirketinTexnologiyalari {
+        width: 65%;
+        p {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  // muxtelif wekiller
+
+  #factoryDifferentImg {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 100%;
+    .maindivDifferentImg {
+      display: flex;
+      gap: 20px;
+      .firstImg {
+        flex-grow: 3;
+        img {
+          width: 100%;
+          &:hover {
+            cursor: pointer;
+            scale: (1.1);
+            transition: 600ms;
+          }
+        }
+      }
+      .secondImg {
+        flex-grow: 2;
+        img {
+          width: 100%;
+          &:hover {
+            cursor: pointer;
+            scale: (1.1);
+            transition: 600ms;
+          }
+        }
+      }
+      .thirdImg {
+        flex-grow: 2;
+
+        img {
+          width: 100%;
+          &:hover {
+            cursor: pointer;
+            scale: (1.1);
+            transition: 600ms;
+          }
+        }
+      }
+    }
+  }
+
+  // missiamiz
+
+  #missiyamiz {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .mainDivForMissiamiz {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        padding-left: 200px;
+        h1{
+            font-size: 24px;
+            color: grey;
+
+        }
+        .nailiyyetler{
+            padding-right: 250px;
+        }
+    }
+  }
+
+//   sertifikatlar
+
+#sertifikatlar{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#F7F9FD;
+    .mainDivForSertifikatlar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .yuksekStandart{
+            padding-left: 100px;
+            h1{
+                font-weight: 700;
+                color: blue;
+            }
+            p{
+                color: rgb(73, 73, 73);
+            }
+        }
+        .sertificateImages{
+            padding-top: 60px;
+            display: flex;
+            .kafelSertifikat{
+                width: 100%;
+                display: flex;
+                .imgDiv{
+                    width: 40%;
+                    img{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+                .uyqunluqNo{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: rgb(0, 0, 0);
+                    h3{
+                        padding-top: 34px;
+                        font-size: 16px;
+                    }
+                    p{
+                        padding-left: 25px;
+                    }
+                   
+                }
+            }
+        }
+
+    }
+}
+}

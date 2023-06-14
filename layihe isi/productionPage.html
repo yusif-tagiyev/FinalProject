@@ -34,6 +34,13 @@
         <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
         <div class="navInfo">
           <ul class="mainUl">
+            <li>
+              <a href="./homePage.html"
+                >Esas sehife
+                <div class="line"></div>
+              </a>
+            </li>
+
             <li id="dorpdownLi">
               <a href="#"
                 >Mehsullar
@@ -59,6 +66,7 @@
                 </ul>
               </div>
             </li>
+
             <li>
               <a href="./about.html"
                 >Haqqımızda
@@ -83,83 +91,73 @@
             <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
           </div>
         </div>
-        
+        <div class="navAdimPanel">
+          <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
+          <p class="adminPAnelP" id="adminPanel">Admin</p>
+        </div>
         <div id="resMenuIcon">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </nav>
-
-      <!-- mobil navbar -->
-      <div id="mobilNav" class="container">
-        <div class="navInfoMobil">
-          <ul>
-            <li>
-              <a href="#"
-                >Mehsullar
-                <div class="line"></div
-              ></a>
-            </li>
-            <li>
-              <a href="./about.html"
-                >Haqqimizda
-                <div class="line"></div
-              ></a>
-            </li>
-            <li>
-              <a href="./contactPage.html"
-                >Bizimle elaqe
-                <div class="line"></div
-              ></a>
-            </li>
-          </ul>
+    <!-- mobil navbar -->
+    <div id="mobilNav" class="container">
+      <div class="navInfoMobil">
+        <ul>
+          <li>
+            <a href="#"
+              >Mehsullar
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./about.html"
+              >Haqqimizda
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./contactPage.html"
+              >Bizimle elaqe
+              <div class="line"></div
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="numberAndIconMobil">
+        <div class="phonNumber">
+          <a href="#">+99450-615-33-24</a>
         </div>
-        <div class="numberAndIconMobil">
-          <div class="phonNumber">
-            <a href="#">+99450-615-33-24</a>
-          </div>
-          <div class="iconsDivMobil">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
-          </div>
-        </div>
-        <div class="navAdimPanelMobil">
-          <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-          <p class="adminPAnelP" id="adminPanel">Admin</p>
+        <div class="iconsDivMobil">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
         </div>
       </div>
-      
+      <div class="navAdimPanelMobil">
+        <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
+        <p class="adminPAnelP" id="adminPanel">Admin</p>
+      </div>
+    </div>
+    <!-- admin panele giris -->
+    <div class="adminPanelPassword">
+      <form>
+        <input id="adminName" type="text" placeholder="Admin adı" />
+        <input id="parol" type="password" placeholder="Parol" />
+        <button id="adminPageBtn">Enter the Admin page</button>
+      </form>
+    </div>
+    <!-- topdan satis seyfesine giriw -->
+    <div class="topdanSatisQeydiyyat">
+      <form>
+        <input id="musteriAdi" type="text" placeholder="Müştəri adı soyadı" />
+        <input id="sheher" type="text" placeholder="Şəhər" />
+        <button id="enterTheUserBtn">Daxil ol</button>
+      </form>
+    </div>
+
     <main>
       <!-- sectionlsr -->
-      <!-- topdan alis veris -->
-      <section id="topdanSatisHeader">
-        <div class="container">
-          <h1>Topdan alış-veriş</h1>
-        </div>
-      </section>
-      <!-- mehsullarin siyahisi -->
-      <section id="topdanSatisTable">
-        <div class="container mainDivTable">
-          <table id="productTable">
-            <tr class="staticTr">
-              <th class="staticTh">Mehsulun Kodu</th>
-              <th class="staticTh">Mehsulun olcusu</th>
-              <th class="staticTh">Mehsulun statusu</th>
-              <th class="mehsulQiymeti">Mehsulun topdan qiymeti</th>
-              <th class="emptyTh">
-                <button class="addBtn">
-                  <i class="fa-regular fa-square-check"></i>
-                </button>
-                <button class="xBtn">  
-                  <i class="fa-regular fa-rectangle-xmark"></i>
-
-                </button>
-              </th>
-            </tr>
-          </table>
-        </div>
-      </section>
     </main>
 
     <footer>
@@ -199,6 +197,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/topdanSatis.js"></script>
+
+    <script src="./assets/js/homeScript.js"></script>
   </body>
 </html>

@@ -1,71 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <!-- animasiya linki -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-   />
-   <!-- iconlar linki -->
-   <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-     crossorigin="anonymous"
-     referrerpolicy="no-referrer"
-   />
-   <!-- bootstrapt v5.3.0 linki -->
-   <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-     crossorigin="anonymous"
-   />
-   <!-- css linki -->
-   <link rel="stylesheet" href="./assets/css/main.css" />
-</head>
-<body>
+    <!-- animasiya linki -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- iconlar linki -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrapt v5.3.0 linki -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- css linki -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
     <nav>
-        <div class="mainDivNavbar container">
-          <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
-          <div class="navInfo">
-            <ul>
-              <li>
-                <a href="./homePage.html"
-                  >Mehsullar
-                  <div class="line"></div
-                ></a>
-              </li>
-              <li>
-                <a href="./about.html"
-                  >Haqqimizda
-                  <div class="line"></div
-                ></a>
-              </li>
-              <li>
-                <a href="./contactPage.html"
-                  >Bizimle elaqe
-                  <div class="line"></div
-                ></a>
-              </li>
-            </ul>
+      <div class="mainDivNavbar container">
+        <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
+        <div class="navInfo">
+          <ul class="mainUl">
+            <li>
+              <a href="./homePage.html"
+                >Esas sehife
+                <div class="line"></div>
+              </a>
+            </li>
+
+            <li id="dorpdownLi">
+              <a href="#"
+                >Mehsullar
+                <div class="line"></div
+              ></a>
+              <div id="mehsullarDropDown">
+                <ul class="mehsullarUl">
+                  <li>
+                    <div><a href="#">Dest 24 X 39</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Dest 25 X 40</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Dest 30 X 60</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Metbex 30 X 60</a></div>
+                  </li>
+                  <li>
+                    <div><a href="#">Doseme 40 X 40</a></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="./about.html"
+                >Haqqımızda
+                <div class="line"></div
+              ></a>
+            </li>
+            <li>
+              <a href="./productionPage.html">
+                İstehsalat
+                <div class="line"></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="numberAndIcon">
+          <div class="phonNumber">
+            <a href="#">+99450-615-33-24</a>
           </div>
-          <div class="numberAndIcon">
-            <div class="phonNumber">
-              <a href="#">+99450-615-33-24</a>
+          <div class="iconsDiv">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+        </div>
+        <div class="navAdimPanel">
+          <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
+          <p class="adminPAnelP" id="adminPanel">Admin</p>
+        </div>
+        <div id="resMenuIcon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- mobil navbar -->
+    <div id="mobilNav" class="container">
+      <div class="navInfoMobil">
+        <ul>
+          <li>
+            <a href="#"
+              >Mehsullar
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./about.html"
+              >Haqqimizda
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./contactPage.html"
+              >Bizimle elaqe
+              <div class="line"></div
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="numberAndIconMobil">
+        <div class="phonNumber">
+          <a href="#">+99450-615-33-24</a>
+        </div>
+        <div class="iconsDivMobil">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+      </div>
+      <div class="navAdimPanelMobil">
+        <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
+        <p class="adminPAnelP" id="adminPanel">Admin</p>
+      </div>
+    </div>
+    <!-- admin panele giris -->
+    <div class="adminPanelPassword">
+      <form>
+        <input id="adminName" type="text" placeholder="Admin adı" />
+        <input id="parol" type="password" placeholder="Parol" />
+        <button id="adminPageBtn">Enter the Admin page</button>
+      </form>
+    </div>
+    <!-- topdan satis seyfesine giriw -->
+    <div class="topdanSatisQeydiyyat">
+      <form>
+        <input id="musteriAdi" type="text" placeholder="Müştəri adı soyadı" />
+        <input id="sheher" type="text" placeholder="Şəhər" />
+        <button id="enterTheUserBtn">Daxil ol</button>
+      </form>
+    </div>
+
+    <!-- main start -->
+    <main> 
+      <!-- zavod haqda melumat -->
+
+
+      <!-- <section id="zavod">
+        <div class="mainDivZavod container">
+          <div class="zavodHaqqda">
+            <h1>ZAVOD HAQQINDA</h1>
+          </div>
+          <div class="gilanSeramicMMC">
+            <p>
+              “Gilan Seramik” MMC – seramik plitələr zavodunun inşasına 2009-cu
+              ilin sonlarında başlanılmışdır. Bu zavodun inşası yeni, güclü
+              sənayeləşmə prosesinin getdiyi, böyük infrastruktur layihələrin
+              həyata keçirildiyi bir dövrə təsadüf etmişdir. Hacıqabul-Kürdəmir
+              şossesinin 9-cu kilometrində inşa edilmiş istehsal korpusundan və
+              yardımçı sahələrdən ibarət olan zavod İtaliya Respublikasının
+              “Sacmi“ şirkətinin müasir innovativ avadanlıqları ilə təchiz
+              edilmişdir.
+            </p>
+          </div>
+        </div>
+      </section> -->
+      <!-- zavodun sekili  -->
+
+
+      <!-- <section id="factoryImg">
+        <div class="mainDivFactoryImg container">
+          <img
+            src="https://www.gilanseramik.az/storage/abouts/January2021/HlJUo9Xeb8UCVM3BR3GJ.jpg"
+            alt=""
+          />
+          <p>Gilan Seramik Zavodu</p>
+        </div>
+      </section> -->
+      <!-- zavod haqda diger melumatlar  -->
+
+
+
+      <!-- <section id="ourDifference">
+        <div class="mainDivOurDifference container">
+          <div class="ferqliliyimiz">
+            <h3>FƏRQLİLİYİMİZ</h3>
+            <div class="line"></div>
+          </div>
+          <div class="sirketinTexnologiyalari">
+            <p>
+              Bu şirkətin texnologiyaları əsasında dünyanın 26 ölkəsində 83-dək
+              belə seramik plitələr istehsalı zavodu inşa edilmişdir ki,
+              bunlardan biri də Cənubi Qafqazda yalnız Azərbaycanda inşa
+              edilmişdir. Zavodun istehsal gücü ölkə əhalisinin seramik
+              məhsullara olan tələbatının yetərli hissəsini ödəməyə imkan verir.
+            </p>
+            <p>
+              “Gilan Seramik” Zavodunun yaradılmasına 40,2 milyon manat
+              investisiya qoyulmuşdur. Avadanlığın alınması və tikintinin həyata
+              keçirilməsi məqsədi ilə İqtisadi İnkişaf Nazirliyinin Sahibkarlığa
+              Kömək Milli Fondundan beş milyon manat güzəştli kredit
+              ayrılmışdır. İstehsal avadanlığı italiyalı mütəxəssislər
+              tərəfindən quraşdırılmışdır. Müəssisənin xammala olan illik
+              tələbatının əsas hissəsi isə yerli xammal ehtiyatları hesabına
+              ödənilir. Yalnız bəzi qatqılar Türkiyə və Ukraynadan gətirilir.
+            </p>
+          </div>
+        </div>
+      </section> -->
+      <!-- zavodun muxtelif wekilleri -->
+
+
+      <!-- <section id="factoryDifferentImg">
+        <div class="maindivDifferentImg container">
+          <div class="firstImg">
+            <img
+              src="https://www.gilanseramik.az/storage/abouts/img07.png"
+              alt=""
+            />
+          </div>
+          <div class="secondImg">
+            <img
+              src="https://www.gilanseramik.az/storage/abouts/img09.png"
+              alt=""
+            />
+          </div>
+          <div class="thirdImg">
+            <img
+              src="https://www.gilanseramik.az/storage/abouts/img08.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section> -->
+      <!-- missiyamiz -->
+
+
+      <!-- <section id="missiyamiz">
+        <div class="mainDivForMissiamiz container">
+          <h1>MİSSİYAMIZ</h1>
+          <p class="nailiyyetler">
+            Zavodun əldə etdiyi təcrübi nailiyyətlər keramik məhsul istehsal
+            edən bir neçə zavoddan ibarət texnoparkın bünövrəsini təşkil edəcək.
+            Zavodun cənub hissəsində müxtəlif duş kabinələri, vannalar və digər
+            sanitar qovşağı avadanlığı istehsal edən müəssisənin tikintisi
+            nəzərdə tutulmuşdur. Bu layihələrin həyata keçirilməsi rayonun
+            sosial-iqtisadi inkişafında və əhalinin məşğulluğunun artırılmasında
+            mühüm rol oynayacaqdır.
+          </p>
+        </div>
+      </section> -->
+      <!-- sertifikatlarimiz  -->
+
+
+      <!-- <section id="sertifikatlar">
+        <div class="mainDivForSertifikatlar container">
+          <div class="yuksekStandart">
+            <h1>SERTİFİKATLAR</h1>
+            <p>
+              Yüksək standartlara uyğun keyfiyyətli məhsullar istehsal edirik.
+            </p>
+          </div>
+          <div class="sertificateImages">
+            <div class="kafelSertifikat">
+              <div class="imgDiv">
+                <img
+                  src="https://www.gilanseramik.az/storage/sertificates/January2021/6jkM5sAab3gtyYH1WUZj.png"
+                  alt=""
+                />
+              </div>
+              <div class="uyqunluqNo">
+                <h3>Uyğunluq sertifikatı № 000065</h3>
+                <p>
+                  Azərbaycan Respublikasinin Standartlasdirma,Metrologiya ve
+                  Patend uzre Dovlet Komitesinin "Gilan Seramik" MMC-nin
+                  istehsal etdiyi "Divar uzluyu ucun Keramik piliteler[Kafel]"
+                  mehsulu ucun verdiyi uyqunuq sertifikati
+                </p>
+              </div>
             </div>
-            <div class="iconsDiv">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+            <div class="kafelSertifikat">
+              <div class="imgDiv">
+                <img
+                  src="https://www.gilanseramik.az/storage/sertificates/January2021/EZqFALJmz5IR5hXzdiPF.png"
+                  alt=""
+                />
+              </div>
+              <div class="uyqunluqNo">
+                <h3>Uyğunluq sertifikatı № 000064</h3>
+                <p>
+                  Azərbaycan Respublikasinin Standartlasdirma,Metrologiya ve
+                  Patend uzre Dovlet Komitesinin "Gilan Seramik" MMC-nin
+                  istehsal etdiyi "Yer dosemesi ucun Keramik piliteler[Metlax]"
+                  mehsulu ucun verdiyi uyqunuq sertifikati
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-  
-</body>
+      </section> -->
+    </main>
+    <!-- footer strated -->
+    <!-- <footer>
+      <div class="footerMainDuv">
+        <div class="pageLogoFooter">
+          <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
+          <p>© 2023 Bütün hüquqlar qorunur</p>
+        </div>
+        <div class="mehsullarimizFooter">
+          <ul>
+            <h1>Məhsullarimiz</h1>
+            <li><a href="#">Dəst 24x39</a></li>
+            <li><a href="#">Dəst 25x40</a></li>
+            <li><a href="#">Dəst 30x60</a></li>
+            <li><a href="#">Mətbəx 30x60</a></li>
+            <li><a href="#">Döşəmə 40x40</a></li>
+          </ul>
+        </div>
+        <div class="elaqeFooter">
+          <ul>
+            <h1>Əlaqə</h1>
+            <li>Huseyn <a href="#"> +994 50 734-44-34</a></li>
+            <li>Shamil<a href="#"> +994 55 349-00-09</a></li>
+            <li>Royal<a href="#"> +994 51 100 34-10</a></li>
+          </ul>
+          <ul>
+            <h3>Anbar</h3>
+            <li>Nureddin<a href="#"> +994 55 401-00-12</a></li>
+            <li>Elcan<a href="#"> +994 77 908-77-71</a></li>
+            <li>Semed <a href="#"> +994 50 876-26-65</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="./assets/js/about.js"></script>
+  </body>
 </html>
