@@ -17,6 +17,14 @@ ul li {
   list-style-type: none;
 }
 
+p {
+  margin: 0 !important;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
 nav {
   width: 100%;
   height: 100px;
@@ -54,41 +62,52 @@ nav .mainDivNavbar .navInfo .mainUl li a:hover .line {
   width: 100%;
   transition: 500ms;
 }
-nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown {
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown {
+  width: 160px;
+  z-index: 6;
+  position: absolute;
+  top: 48px;
+  height: 180px;
+  background-color: transparent;
+  display: none;
+}
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown #mehsullarDropDown {
   width: 160px;
   height: 180px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 70px;
+  top: 16px;
   z-index: 5;
   background-color: blue;
-  opacity: 0;
 }
-nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl {
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown #mehsullarDropDown .mehsullarUl {
   width: 100%;
 }
-nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div {
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown #mehsullarDropDown .mehsullarUl li div {
   width: 100%;
   height: 36px;
   display: flex;
   align-items: center;
 }
-nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div:hover {
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown #mehsullarDropDown .mehsullarUl li div:hover {
   background-color: white;
 }
-nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div:hover a {
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown #mehsullarDropDown .mehsullarUl li div:hover a {
   color: black;
   transition: 500ms;
 }
-nav .mainDivNavbar .navInfo .mainUl li #mehsullarDropDown .mehsullarUl li div a {
+nav .mainDivNavbar .navInfo .mainUl li .mainDivDorpdown #mehsullarDropDown .mehsullarUl li div a {
   padding-left: 20px;
   color: white;
 }
-nav .mainDivNavbar .navInfo .mainUl #dorpdownLi:hover #mehsullarDropDown {
-  opacity: 1;
+nav .mainDivNavbar .navInfo .mainUl #dorpdownLi:hover .mainDivDorpdown {
+  display: block;
+}
+nav .mainDivNavbar .navInfo .mainUl #dorpdownLi:hover .mainDivDorpdown #mehsullarDropDown {
+  display: block;
   transition: 500ms;
 }
 nav .mainDivNavbar .numberAndIcon .phonNumber a {
@@ -103,6 +122,56 @@ nav .mainDivNavbar .numberAndIcon .iconsDiv {
 }
 nav .mainDivNavbar .numberAndIcon .iconsDiv i:hover {
   color: red;
+}
+nav .mainDivNavbar #serachIconDiv {
+  position: absolute;
+  right: 280px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 15;
+}
+nav .mainDivNavbar #serachIconDiv:hover {
+  border: 1px solid black;
+  transition: 1s;
+}
+nav .mainDivNavbar #closeSearchIcon {
+  position: absolute;
+  right: 280px;
+  display: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 15;
+}
+nav .mainDivNavbar #closeSearchIcon:hover {
+  color: blue;
+}
+nav .mainDivNavbar .searchMainDiv {
+  position: absolute;
+  display: none;
+  width: 740px;
+  height: 48px;
+  left: 330px;
+  border: 1px solid #919090;
+  border-radius: 30px;
+}
+nav .mainDivNavbar .searchMainDiv #search {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  padding-left: 30px;
+}
+nav .mainDivNavbar .searchMainDiv #search:focus-visible {
+  outline: none;
 }
 nav .mainDivNavbar .navAdimPanel {
   text-align: center;
@@ -578,6 +647,48 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 500ms;
 }
 
+#topdanSatisTable {
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("https://www.gilanseramik.az/images/logo.svg");
+  background-repeat: no-repeat;
+  background-color: rgb(88, 115, 115);
+  background-position: center;
+  background-size: 40%;
+}
+#topdanSatisTable .mainDivTable {
+  width: 100%;
+}
+#topdanSatisTable .mainDivTable #productTable {
+  width: 100%;
+}
+#topdanSatisTable .mainDivTable #productTable .staticTr .staticTh {
+  color: rgb(255, 255, 255);
+  border: 2px solid black;
+  text-align: center;
+  height: 42px;
+}
+#topdanSatisTable .mainDivTable #productTable .staticTr .mehsulQiymeti {
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  text-align: center;
+}
+#topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh {
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  width: 100px;
+}
+
+.deleteBtn {
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 80%;
+  border: none;
+  border: 1px solid #000000;
+}
+
 main #topdanSatisHeader div {
   width: 100%;
   height: 100px;
@@ -617,23 +728,252 @@ main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh {
   color: rgb(255, 255, 255);
   width: 100px;
 }
-main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .addBtn {
+
+.addBtn {
   margin-left: 10px;
   margin-top: 3px;
   width: 80%;
   border: none;
   border: 1px solid #000000;
 }
-main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .xBtn {
-  margin-left: 10px;
-  margin-top: 3px;
-  width: 80%;
-  border: none;
-  border: 1px solid #000000;
+
+main #products {
+  width: 100%;
 }
-main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh .xBtn.clickXBtn {
-  background-color: yellow;
-  transition: 1ms;
+main #products .mainDivProducts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #products .mainDivProducts .mehsullarimizProducts {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #products .mainDivProducts .mehsullarimizProducts h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: blue;
+}
+main #products .mainDivProducts .kafelinOlcusu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 20%;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv h3 {
+  font-size: 16px;
+  color: rgb(177, 175, 175);
+  padding-bottom: 10px;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForSize {
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  background-color: #f7f9fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForSize a {
+  color: blue;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForSize #sizeIcon {
+  color: rgb(58, 58, 58);
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForSize #sizeIcon.rotate {
+  transform: rotate(180deg);
+  transition: 500ms;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor {
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  background-color: #f7f9fd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor a {
+  color: grey;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor #colorIcon {
+  color: rgb(58, 58, 58);
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor #colorIcon.rotate {
+  transform: rotate(180deg);
+  transition: 500ms;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul {
+  display: none;
+  width: 180px;
+  height: auto;
+  background-color: rgb(238, 234, 234);
+  color: white;
+  position: absolute;
+  top: 86px;
+  padding-left: 20px;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul ul li {
+  color: grey;
+  cursor: pointer;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul ul li a {
+  color: grey;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul ul li a:hover {
+  color: blue;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul.dBlock {
+  display: block;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul {
+  display: none;
+  width: 180px;
+  height: auto;
+  background-color: rgb(238, 234, 234);
+  color: white;
+  position: absolute;
+  top: 86px;
+  padding-left: 30px;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul a {
+  color: rgb(73, 73, 73);
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul a:hover {
+  color: blue;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorBeyaz {
+  top: 5px;
+  left: -25px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: white;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorQara {
+  top: 34px;
+  left: -25px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorBej {
+  top: 63px;
+  left: -25px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #FFF2CC;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorBoz {
+  top: 93px;
+  left: -25px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: grey;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorMavi {
+  top: 121px;
+  left: -25px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: blue;
+}
+main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul.dBlock {
+  display: block;
+}
+main #allProductCart {
+  width: 100%;
+  border: 1px solid black;
+}
+main #allProductCart #allProductCardForProductsPage {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api {
+  position: relative;
+  width: 32.3333%;
+  height: 350px;
+  background-image: url("https://www.gilanseramik.az/storage/products/January2021/AUrnTuYYYaYYCQ3Rt9MJ.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api .herthIcon {
+  position: absolute;
+  font-size: 32px;
+  right: 20px;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border-radius: 50%;
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api .herthIcon:hover {
+  transition: 500ms;
+  transform: scale(1.3);
+  background-color: rgb(226, 22, 22);
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api .productName {
+  width: 60%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api .productName a {
+  color: #ffffff;
+  font-size: 25px;
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api:hover .productName {
+  height: 72px;
+  transition: 500ms;
+  background-color: green;
+  background-image: linear-gradient(rgb(197, 188, 188), rgb(0, 0, 0));
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api:hover .productName a {
+  transition: 200ms;
+  color: rgb(255, 255, 255);
+}
+main #allProductCart #allProductCardForProductsPage .productsCard_api:hover {
+  cursor: pointer;
 }
 
 main #zavod {

@@ -37,36 +37,36 @@
             <li>
               <a href="./homePage.html"
                 >Esas sehife
-                <div class="line"></div>
-              </a>
+                <div class="line"></div
+              ></a>
             </li>
-
             <li id="dorpdownLi">
-              <a href="#"
+              <a href="./productsPage.html"
                 >Mehsullar
                 <div class="line"></div
               ></a>
-              <div id="mehsullarDropDown">
-                <ul class="mehsullarUl">
-                  <li>
-                    <div><a href="#">Dest 24 X 39</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Dest 25 X 40</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Dest 30 X 60</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Metbex 30 X 60</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Doseme 40 X 40</a></div>
-                  </li>
-                </ul>
+              <div class="mainDivDorpdown">
+                <div id="mehsullarDropDown">
+                  <ul class="mehsullarUl">
+                    <li>
+                      <div><a href="#">Dest 24 X 39</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Dest 25 X 40</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Dest 30 X 60</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Metbex 30 X 60</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Doseme 40 X 40</a></div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
-
             <li>
               <a href="./about.html"
                 >Haqqımızda
@@ -83,13 +83,22 @@
         </div>
         <div class="numberAndIcon">
           <div class="phonNumber">
-            <a href="#">+99450-615-33-24</a>
+            <a href="#">info@gilanseramik.az</a>
           </div>
           <div class="iconsDiv">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
           </div>
+        </div>
+        <div id="serachIconDiv">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="closeSearchIcon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="searchMainDiv">
+          <input type="search" id="search" placeholder="Search product" />
         </div>
         <div class="navAdimPanel">
           <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
@@ -157,11 +166,10 @@
     </div>
 
     <!-- main start -->
-    <main> 
+    <main>
       <!-- zavod haqda melumat -->
 
-
-      <!-- <section id="zavod">
+      <section id="zavod">
         <div class="mainDivZavod container">
           <div class="zavodHaqqda">
             <h1>ZAVOD HAQQINDA</h1>
@@ -179,11 +187,10 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- zavodun sekili  -->
 
-
-      <!-- <section id="factoryImg">
+      <section id="factoryImg">
         <div class="mainDivFactoryImg container">
           <img
             src="https://www.gilanseramik.az/storage/abouts/January2021/HlJUo9Xeb8UCVM3BR3GJ.jpg"
@@ -191,12 +198,10 @@
           />
           <p>Gilan Seramik Zavodu</p>
         </div>
-      </section> -->
+      </section>
       <!-- zavod haqda diger melumatlar  -->
 
-
-
-      <!-- <section id="ourDifference">
+      <section id="ourDifference">
         <div class="mainDivOurDifference container">
           <div class="ferqliliyimiz">
             <h3>FƏRQLİLİYİMİZ</h3>
@@ -222,11 +227,10 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- zavodun muxtelif wekilleri -->
 
-
-      <!-- <section id="factoryDifferentImg">
+      <section id="factoryDifferentImg">
         <div class="maindivDifferentImg container">
           <div class="firstImg">
             <img
@@ -247,11 +251,10 @@
             />
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- missiyamiz -->
 
-
-      <!-- <section id="missiyamiz">
+      <section id="missiyamiz">
         <div class="mainDivForMissiamiz container">
           <h1>MİSSİYAMIZ</h1>
           <p class="nailiyyetler">
@@ -264,11 +267,10 @@
             mühüm rol oynayacaqdır.
           </p>
         </div>
-      </section> -->
+      </section>
       <!-- sertifikatlarimiz  -->
 
-
-      <!-- <section id="sertifikatlar">
+      <section id="sertifikatlar">
         <div class="mainDivForSertifikatlar container">
           <div class="yuksekStandart">
             <h1>SERTİFİKATLAR</h1>
@@ -313,10 +315,10 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer strated -->
-    <!-- <footer>
+    <footer>
       <div class="footerMainDuv">
         <div class="pageLogoFooter">
           <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
@@ -347,8 +349,15 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
+    <!-- bootstrapt linki -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/homeScript.js"></script>
     <script src="./assets/js/about.js"></script>
   </body>
 </html>

@@ -39,24 +39,26 @@
                 >Mehsullar
                 <div class="line"></div
               ></a>
-              <div id="mehsullarDropDown">
-                <ul class="mehsullarUl">
-                  <li>
-                    <div><a href="#">Dest 24 X 39</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Dest 25 X 40</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Dest 30 X 60</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Metbex 30 X 60</a></div>
-                  </li>
-                  <li>
-                    <div><a href="#">Doseme 40 X 40</a></div>
-                  </li>
-                </ul>
+              <div class="mainDivDorpdown">
+                <div id="mehsullarDropDown">
+                  <ul class="mehsullarUl">
+                    <li>
+                      <div><a href="#">Dest 24 X 39</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Dest 25 X 40</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Dest 30 X 60</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Metbex 30 X 60</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Doseme 40 X 40</a></div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li>
@@ -75,7 +77,7 @@
         </div>
         <div class="numberAndIcon">
           <div class="phonNumber">
-            <a href="#">+99450-615-33-24</a>
+            <a href="#">info@gilanseramik.az</a>
           </div>
           <div class="iconsDiv">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -83,53 +85,79 @@
             <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
           </div>
         </div>
-        
+        <div id="serachIconDiv">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="closeSearchIcon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="searchMainDiv">
+          <input type="search" id="search" placeholder="Search product" />
+        </div>
+        <div class="navAdimPanel">
+          <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
+          <p class="adminPAnelP" id="adminPanel">Admin</p>
+        </div>
         <div id="resMenuIcon">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </nav>
 
-      <!-- mobil navbar -->
-      <div id="mobilNav" class="container">
-        <div class="navInfoMobil">
-          <ul>
-            <li>
-              <a href="#"
-                >Mehsullar
-                <div class="line"></div
-              ></a>
-            </li>
-            <li>
-              <a href="./about.html"
-                >Haqqimizda
-                <div class="line"></div
-              ></a>
-            </li>
-            <li>
-              <a href="./contactPage.html"
-                >Bizimle elaqe
-                <div class="line"></div
-              ></a>
-            </li>
-          </ul>
+    <!-- mobil navbar -->
+    <div id="mobilNav" class="container">
+      <div class="navInfoMobil">
+        <ul>
+          <li>
+            <a href="./homePage.html"
+              >Esas sehife
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./productsPage.html"
+              >Mehsullar
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./about.html"
+              >Haqqimizda
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./contactPage.html"
+              >Bizimle elaqe
+              <div class="line"></div
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="numberAndIconMobil">
+        <div class="phonNumber">
+          <a href="#">+99450-615-33-24</a>
         </div>
-        <div class="numberAndIconMobil">
-          <div class="phonNumber">
-            <a href="#">+99450-615-33-24</a>
-          </div>
-          <div class="iconsDivMobil">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
-          </div>
-        </div>
-        <div class="navAdimPanelMobil">
-          <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-          <p class="adminPAnelP" id="adminPanel">Admin</p>
+        <div class="iconsDivMobil">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
         </div>
       </div>
-      
+      <div class="navAdimPanelMobil">
+        <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
+        <p class="adminPAnelP" id="adminPanel">Admin</p>
+      </div>
+    </div>
+    <!-- admin panele giris -->
+    <div class="adminPanelPassword">
+      <form>
+        <input id="adminName" type="text" placeholder="Admin adı" />
+        <input id="parol" type="password" placeholder="Parol" />
+        <button id="adminPageBtn">Enter the Admin page</button>
+      </form>
+    </div>
+
     <main>
       <!-- sectionlsr -->
       <!-- topdan alis veris -->
@@ -148,13 +176,12 @@
               <th class="staticTh">Mehsulun statusu</th>
               <th class="mehsulQiymeti">Mehsulun topdan qiymeti</th>
               <th class="emptyTh">
-                <button class="addBtn">
+                <!-- <button class="addBtn">
                   <i class="fa-regular fa-square-check"></i>
                 </button>
-                <button class="xBtn">  
+                <button class="xBtn">
                   <i class="fa-regular fa-rectangle-xmark"></i>
-
-                </button>
+                </button> -->
               </th>
             </tr>
           </table>
@@ -199,6 +226,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="./assets/js/homeScript.js"></script> -->
     <script src="./assets/js/topdanSatis.js"></script>
   </body>
 </html>

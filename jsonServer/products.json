@@ -6,6 +6,7 @@
       "productSize": "24 X 39",
       "productPrice": "10.5 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/January2021/nsX5x7X3j9iXJDREAwS6.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Florensiya--40X40.jpg",
@@ -19,6 +20,8 @@
       "productSize": "24 X 39",
       "productPrice": "10.50 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Qara",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Imperia-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Imperiya--40X40.jpg",
@@ -29,10 +32,26 @@
       "id": 2
     },
     {
+      "productName": "Qax",
+      "productSize": "40 X 40",
+      "productPrice": "12.50 AZN",
+      "productColor": "Bej",
+      "productImage": "https://www.gilanseramik.az/storage/products/Yer-Qax.jpg",
+      "productMoreInfo": {
+        "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qax-(Semyglossy-37-73).jpg",
+        "forWallDark": "Yoxdur",
+        "forWallLight": "Yoxdur",
+        "fonDekor": "Yoxdur"
+      },
+      "id": 3
+    },
+    {
       "productName": "Ibiza",
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Ibiza-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/IBIZA-SEVILLA-40x40.jpg",
@@ -47,6 +66,8 @@
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Absheron-Beyaz-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Forma-white-40-x-40.jpg",
@@ -61,6 +82,8 @@
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Agdere-Bej-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Agdere-Bej.jpg",
@@ -75,6 +98,8 @@
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Mavi",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Agdere-Mavi-1-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Agdere-Mavi-33x33.jpg",
@@ -89,6 +114,8 @@
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Mebel-Arasi-1b0001.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -103,6 +130,8 @@
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rectain-Yellow.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -117,6 +146,8 @@
       "productSize": "24 X 39",
       "productPrice": "10.50 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Monaco-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Monako--40X40.jpg",
@@ -131,6 +162,8 @@
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Beyaz-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Sheki-Beyaz-40x40.jpg",
@@ -145,6 +178,8 @@
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Roma-1-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Roma-Dark-40x40.jpg",
@@ -159,6 +194,8 @@
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
+      "productColor": "Bej",
+
       "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Bej-01.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -172,6 +209,8 @@
       "productName": "Şəki qəhvəyi",
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Gehveyi-1-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/seki-q%C9%99hv%C9%99yi-33x33.jpg",
@@ -185,6 +224,8 @@
       "productName": "Qarabağ boz",
       "productSize": "25 X 40",
       "productPrice": "11 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Boz",
       "productImage": "https://www.gilanseramik.az/storage/products/Qarabax-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qarabag-Boz33x33.jpg",
@@ -198,6 +239,8 @@
       "productName": "Opal",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Boz",
       "productImage": "https://www.gilanseramik.az/storage/products/Opal-2-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Opal-40x40-.jpg",
@@ -211,6 +254,8 @@
       "productName": "Glossy white",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Glossy-white-01.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -224,6 +269,8 @@
       "productName": "Calacata",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Calacata-2-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Calacatta-40x40.jpg",
@@ -237,6 +284,8 @@
       "productName": "Galaxy",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Boz",
       "productImage": "https://www.gilanseramik.az/storage/products/Galaxy-2-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Galaxy--40x40.jpg",
@@ -250,6 +299,8 @@
       "productName": "Paris",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Paris-1-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Paris-40x40.jpg",
@@ -263,6 +314,8 @@
       "productName": "Verdana",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Verdana-2-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Verdana-40x40.jpg",
@@ -276,6 +329,8 @@
       "productName": "Talya",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Boz",
       "productImage": "https://www.gilanseramik.az/storage/products/Talya-2-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Talya--40x40.jpg",
@@ -289,6 +344,8 @@
       "productName": "White",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-White.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -302,6 +359,8 @@
       "productName": "Kitchen rose",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rose.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -315,6 +374,8 @@
       "productName": "Romb brown",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Romb-Brown.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -328,6 +389,8 @@
       "productName": "Romb beige",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Romb-Beige.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -341,6 +404,8 @@
       "productName": "Brown",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Brown-edited.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -354,6 +419,8 @@
       "productName": "Brown flower",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Brown-Flower-edited.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -367,6 +434,8 @@
       "productName": "Rectain Beige",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rectain-Bej.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -380,6 +449,8 @@
       "productName": "Bone",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Bone-B1.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -406,6 +477,8 @@
       "productName": "Mebel arası - 4",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-B3.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -419,6 +492,8 @@
       "productName": "Mebel arası - 1",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux---Mebel-Arasi-20002.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -432,6 +507,8 @@
       "productName": "Mebel arası - 2",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Mebel-Arasi-1a0001.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -445,6 +522,8 @@
       "productName": "Fincan",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Fincan-edit.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -458,6 +537,8 @@
       "productName": "Portağal",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Portga-editl.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -471,6 +552,8 @@
       "productName": "Qum gri",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Boz",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Gum-Gri.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qum-Gri-40x40.jpg",
@@ -484,6 +567,8 @@
       "productName": "Granit gri",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Boz",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Granite-Gri.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Granit-Grii-40x40.jpg",
@@ -497,6 +582,8 @@
       "productName": "Granit bej",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Granite-Bej.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Granit-Bej-40x40.jpg",
@@ -510,6 +597,8 @@
       "productName": "Şərur ",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Beyaz",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Sherur.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/%C5%9E%C9%99rur.jpg",
@@ -523,6 +612,8 @@
       "productName": "Qusar",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Gusar-1.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qusar.jpg",
@@ -536,6 +627,8 @@
       "productName": "Qubadlı",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Qubadli.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qubadl%C4%B1.jpg",
@@ -549,6 +642,8 @@
       "productName": "Qax",
       "productSize": "40 X 40",
       "productPrice": "12.50 AZN",
+      "productStatus": "Anbarda Var",
+      "productColor": "Bej",
       "productImage": "https://www.gilanseramik.az/storage/products/Yer-Qax.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Qax-(Semyglossy-37-73).jpg",

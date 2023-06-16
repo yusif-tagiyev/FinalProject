@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- slick linki -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <!-- animasiya linki -->
     <link
       rel="stylesheet"
@@ -29,6 +35,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <!-- page navbar start -->
     <nav>
       <div class="mainDivNavbar container">
         <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
@@ -41,7 +48,7 @@
               ></a>
             </li>
             <li id="dorpdownLi">
-              <a href="./productsPage.html"
+              <a href="#"
                 >Mehsullar
                 <div class="line"></div
               ></a>
@@ -98,7 +105,7 @@
           <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="searchMainDiv">
-          <input type="search" id="search" placeholder="Search product" />
+          <input type="text" id="search" placeholder="Search product" />
         </div>
         <div class="navAdimPanel">
           <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
@@ -109,10 +116,17 @@
         </div>
       </div>
     </nav>
+
     <!-- mobil navbar -->
     <div id="mobilNav" class="container">
       <div class="navInfoMobil">
         <ul>
+          <li>
+            <a href="./homePage.html"
+              >Esas sehife
+              <div class="line"></div>
+            </a>
+          </li>
           <li>
             <a href="#"
               >Mehsullar
@@ -166,47 +180,83 @@
     </div>
 
     <main>
-      <!-- sectionlsr -->
-    </main>
+      <!-- mehsullarin renge ve olcuye gore filteri -->
+      <section id="products" class="container">
+        <div class="mainDivProducts">
+          <div class="mehsullarimizProducts">
+            <h1>Mehsullarimiz</h1>
+          </div>
+          <div class="kafelinOlcusu">
+            <div class="kafelinOlcusu__mainDiv">
+              <h3>Kafelin olcusu</h3>
+              <div class="hamisiDivForSize">
+                <p>Hamisi</p>
+                <i id="sizeIcon" class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div id="sizeDiv__ul">
+                <ul>
+                  <li>Hamisi</li>
+                  <li> <a href="#">Dest 24 X 39</a></li>
+                  <li> <a href="#">Dest 25 X 40</a></li>
+                  <li> <a href="#">Dest 30 X 60</a></li>
+                  <li> <a href="#">Metbex 30 X 60</a></li>
+                  <li> <a href="#">Doseme 40 X 40</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="kafelinOlcusu__mainDiv">
+              <h3>Kafelin rengi</h3>
+              <div class="hamisiDivForColor">
+                <p>Hamisi</p>
+                <i id="colorIcon" class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div id="colorDiv__ul">
+                <ul>
+                  <li>
+                    <div class="colorBeyaz"></div>
+                    <a href="#">Beyaz</a> 
+                  </li>
+                  <li>
+                    <div class="colorQara"></div>
+                    <a href="#">Qara</a> 
+                  </li>
+                  <li>
+                    <div class="colorBej"></div>
+                    <a href="#">Bej</a>
+                  </li>
+                  <li>
+                    <div class="colorBoz"></div>
+                    <a href="#">Boz</a>
+                  </li>
+                  <li>
+                    <div class="colorMavi"></div>
+                    <a href="#">Mavi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- butun mehsllar -->
+      <section id="allProductCart">
+        <div id="allProductCardForProductsPage" class="container">
 
-    <footer>
-      <div class="footerMainDuv">
-        <div class="pageLogoFooter">
-          <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
-          <p>© 2023 Bütün hüquqlar qorunur</p>
         </div>
-        <div class="mehsullarimizFooter">
-          <ul>
-            <h1>Məhsullarimiz</h1>
-            <li><a href="#">Dəst 24x39</a></li>
-            <li><a href="#">Dəst 25x40</a></li>
-            <li><a href="#">Dəst 30x60</a></li>
-            <li><a href="#">Mətbəx 30x60</a></li>
-            <li><a href="#">Döşəmə 40x40</a></li>
-          </ul>
-        </div>
-        <div class="elaqeFooter">
-          <ul>
-            <h1>Əlaqə</h1>
-            <li>Huseyn <a href="#"> +994 50 734-44-34</a></li>
-            <li>Shamil<a href="#"> +994 55 349-00-09</a></li>
-            <li>Royal<a href="#"> +994 51 100 34-10</a></li>
-          </ul>
-          <ul>
-            <h3>Anbar</h3>
-            <li>Nureddin<a href="#"> +994 55 401-00-12</a></li>
-            <li>Elcan<a href="#"> +994 77 908-77-71</a></li>
-            <li>Semed <a href="#"> +994 50 876-26-65</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+
+      </section>
+
+      <section id="dest24x39">
+
+      </section>
+    </main>
+    <!-- bootstrapt linki -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./assets/js/homeScript.js"></script>
+    <!-- <script src="./assets/js/homeScript.js"></script> -->
+    <script src="./assets/js/productsPage.js"></script>
   </body>
 </html>

@@ -70,7 +70,38 @@ enterTheUserBtn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-// tablet navbar 
+
+// serch input
+const serachIconDiv = document.getElementById("serachIconDiv");
+const closeSearchIcon = document.getElementById("closeSearchIcon");
+const searchMainDiv = document.querySelector(".searchMainDiv");
+const navInfo = document.querySelector(".navInfo");
+const numberAndIcon = document.querySelector(".numberAndIcon");
+
+// console.log(searchMainDiv);
+serachIconDiv.addEventListener("click",(e) => {
+  console.log("lupadan gelen");
+  serachIconDiv.style.display = "none";
+  closeSearchIcon.style.display = "flex";
+  searchMainDiv.style.display = "block";
+  navInfo.style.display = "none";
+  numberAndIcon.style.display = "none";
+
+  e.preventDefault();
+});
+
+closeSearchIcon.addEventListener("click",(e) => {
+  console.log("x den gelen");
+  closeSearchIcon.style.display = "none";
+  serachIconDiv.style.display = "flex";
+  searchMainDiv.style.display = "none";
+  navInfo.style.display = "flex";
+  numberAndIcon.style.display = "block";
+
+});
+
+
+// tablet navbar
 
 const resMenuIcon = document.getElementById("resMenuIcon");
 console.log(resMenuIcon);
@@ -79,27 +110,7 @@ const mobilNav = document.getElementById("mobilNav");
 resMenuIcon.addEventListener("click", () => {
   console.log("salam icondan gelendi");
   mobilNav.classList.toggle("hiddenNav");
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 // api den gelen kardt
 
@@ -112,40 +123,47 @@ function productIpa() {
   fetch("http://localhost:3000/gilan_seramic")
     .then((res) => res.json())
     .then((data) => {
-      // console.log(data);
-      if(cardEnd === data.length){
-        loadMoreBtn.style.display = "none";
-      }
+      console.log(data);
+
       const productsCard = document.getElementById("productsCard");
       // sehifede olan e kard
       for (let i = cardStart; i < cardEnd; i++) {
         console.log("evvelinci qiymet", cardStart);
+        console.log(i);
+        console.log(data[i]);
         console.log("sonuncu  qiymet", cardEnd);
+        if (data[i]) {
+          const mainDiv = document.createElement("div");
+          mainDiv.classList.add("productsCard_api");
+          mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
+          mainDiv.style.backgroundSize = "cover";
+          mainDiv.style.backgroundRepeat = "no-repeat";
+          productsCard.appendChild(mainDiv);
 
-        const mainDiv = document.createElement("div");
-        mainDiv.classList.add("productsCard_api");
-        mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
-        mainDiv.style.backgroundSize = "cover";
-        mainDiv.style.backgroundRepeat = "no-repeat";
-        productsCard.appendChild(mainDiv);
+          // wish list hearth div
+          const mainDivIconDiv = document.createElement("div");
+          const iconTag = document.createElement("i");
+          mainDivIconDiv.classList.add("herthIcon");
+          iconTag.classList.add("fa-regular", "fa-heart");
+          mainDiv.appendChild(mainDivIconDiv);
+          mainDivIconDiv.appendChild(iconTag);
 
-        // wish list hearth div
-        const mainDivIconDiv = document.createElement("div");
-        const iconTag = document.createElement("i");
-        mainDivIconDiv.classList.add("herthIcon");
-        iconTag.classList.add("fa-regular", "fa-heart");
-        mainDiv.appendChild(mainDivIconDiv);
-        mainDivIconDiv.appendChild(iconTag);
+          // product name
 
-        // product name
+          const productNameDiv = document.createElement("div");
+          productNameDiv.classList.add("productName");
+          const aTag = document.createElement("a");
+          aTag.href = "#";
+          aTag.innerText = data[i].productName;
+          productNameDiv.appendChild(aTag);
+          mainDiv.appendChild(productNameDiv);
+        } else {
+          console.log("data bitdi");
+        }
+      }
 
-        const productNameDiv = document.createElement("div");
-        productNameDiv.classList.add("productName");
-        const aTag = document.createElement("a");
-        aTag.href = "#";
-        aTag.innerText = data[i].productName;
-        productNameDiv.appendChild(aTag);
-        mainDiv.appendChild(productNameDiv);
+      if (cardEnd >= data.length) {
+        loadMoreBtn.style.display = "none";
       }
       cardStart += 3;
       cardEnd += 3;
@@ -177,25 +195,22 @@ function startCalculator() {
 
   const resultCalculator = document.getElementById("resultCalculator");
 
-
   resultButtonCalculator.addEventListener("click", () => {
     // console.log("sala,");
     // console.log(en.value);
     resultCalculator.innerHTML = "";
     console.log(productSizeCalculator.value);
     const tileWidth = +productSizeCalculator.value.substring(0, 2);
-    const tileHeight = +productSizeCalculator.value.substring(2,4)
+    const tileHeight = +productSizeCalculator.value.substring(2, 4);
     console.log(tileWidth);
     console.log(tileHeight);
 
-    let S = en.value * uzunluq.value ;
-    let pilteSayi = Math.floor(S / ((tileWidth * tileHeight)/10000)); 
-    let qutuSayi = Math.ceil(pilteSayi / 10 ) ;
+    let S = en.value * uzunluq.value;
+    let pilteSayi = Math.floor(S / ((tileWidth * tileHeight) / 10000));
+    let qutuSayi = Math.ceil(pilteSayi / 10);
     const pTag = document.createElement("p");
-    pTag.innerText = `Ümumi sahə: ${S} m² \n Ehtiyac olunan plitə sayı : ${pilteSayi}  \n Qutu sayı : ${qutuSayi}` ;
+    pTag.innerText = `Ümumi sahə: ${S} m² \n Ehtiyac olunan plitə sayı : ${pilteSayi}  \n Qutu sayı : ${qutuSayi}`;
     resultCalculator.appendChild(pTag);
-
-    
   });
 }
 

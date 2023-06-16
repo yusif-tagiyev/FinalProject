@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- font awasome lini -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,10 +13,80 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- bootstrapt v5.3.0 linki -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- css linki -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <nav>
+      <div class="mainDivNavbar container">
+        <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
+        <div class="navInfo">
+          <ul class="mainUl">
+            <li id="dorpdownLi">
+              <a href="./productsPage.html"
+                >Mehsullar
+                <div class="line"></div
+              ></a>
+              <div class="mainDivDorpdown">
+                <div id="mehsullarDropDown">
+                  <ul class="mehsullarUl">
+                    <li>
+                      <div><a href="#">Dest 24 X 39</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Dest 25 X 40</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Dest 30 X 60</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Metbex 30 X 60</a></div>
+                    </li>
+                    <li>
+                      <div><a href="#">Doseme 40 X 40</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="./about.html"
+                >Haqqımızda
+                <div class="line"></div
+              ></a>
+            </li>
+            <li>
+              <a href="./productionPage.html">
+                İstehsalat
+                <div class="line"></div
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="serachIconDiv">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="closeSearchIcon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="searchMainDiv">
+          <input type="search" id="search" placeholder="Search product" />
+        </div>
+        <div>
+          <h1>Welcome Admin</h1>
+        </div>
+      </div>
+    </nav>
     <main>
+      <!-- post methodu -->
       <section id="addNewProduct">
         <h1>Yeni mehsul elave ed</h1>
         <form id="newInfoForm">
@@ -36,10 +107,20 @@
           />
           <input
             type="text"
+            id="newProductStatus"
+            placeholder="Enter the new product status"
+          />
+          <input
+            type="text"
             placeholder="Enter the new product image URL"
             id="newProductImage"
           />
-          <label >MORE INFO</label>
+          <input
+            type="text"
+            id="newProductColor"
+            placeholder="Enter the new product color"
+          />
+          <label>MORE INFO</label>
           <input
             id="newProductMoreInfoMetlaq"
             type="text"
@@ -60,14 +141,35 @@
             type="text"
             placeholder="Enter the new product : fon decor image URL"
           />
+
           <div>
             <button id="addBtn">Add</button>
             <button id="closeBtn" type="reset">Resert</button>
           </div>
         </form>
       </section>
+      <!-- id e gore delete methodu -->
+      <section id="topdanSatisTable" class="container">
+        <div class="container mainDivTable">
+          <table id="productTable">
+            <tr class="staticTr">
+              <th class="staticTh">Mehsulun Kodu</th>
+              <th class="staticTh">Mehsulun olcusu</th>
+              <th class="staticTh">Mehsulun statusu</th>
+              <th class="mehsulQiymeti">Mehsulun topdan qiymeti</th>
+              <th class="emptyTh"></th>
+            </tr>
+          </table>
+        </div>
+      </section>
     </main>
-
+    <!-- bootstrapt link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main js link -->
     <script src="./assets/js/adminPanel.js"></script>
   </body>
 </html>
