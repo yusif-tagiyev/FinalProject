@@ -195,22 +195,20 @@ nav .mainDivNavbar #resMenuIcon {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 992px) {
-  nav img {
-    width: 100px;
-  }
+@media only screen and (max-width: 576px) {
   nav .mainDivNavbar .navInfo {
     display: none;
   }
-  nav .mainDivNavbar #resMenuIcon {
-    display: none;
-  }
-}
-@media only screen and (max-width: 576px) {
   nav .mainDivNavbar .numberAndIcon {
     display: none;
   }
-  nav .mainDivNavbar .navInfo {
+  nav .mainDivNavbar #serachIconDiv {
+    display: none;
+  }
+  nav .mainDivNavbar #closeSearchIcon {
+    display: none;
+  }
+  nav .mainDivNavbar #closeSearchIcon .searchMainDiv {
     display: none;
   }
   nav .mainDivNavbar .navAdimPanel {
@@ -221,8 +219,9 @@ nav .mainDivNavbar #resMenuIcon {
   }
 }
 #mobilNav {
-  width: 100%;
-  border: 1px solid black;
+  width: 0;
+  height: 0;
+  overflow: hidden;
   display: none;
   justify-content: center;
   align-items: center;
@@ -240,13 +239,14 @@ nav .mainDivNavbar #resMenuIcon {
 #mobilNav .navInfoMobil ul li a {
   font-size: 16px;
 }
-#mobilNav .navInfoMobil.hiddenNav {
-  height: 300px;
-  transition: 1s;
-}
 #mobilNav .numberAndIconMobil {
   display: flex;
   flex-direction: column;
+}
+#mobilNav .numberAndIconMobil .phonNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mobilNav .numberAndIconMobil .iconsDivMobil {
   text-align: center;
@@ -255,7 +255,17 @@ nav .mainDivNavbar #resMenuIcon {
   display: flex;
   gap: 10px;
 }
+#mobilNav.hiddenNav {
+  height: 200px;
+  width: 100%;
+  transition: 1s;
+}
 
+@media only screen and (max-width: 576px) {
+  #mobilNav {
+    display: block;
+  }
+}
 .adminPanelPassword {
   width: 100%;
   height: 200px;
@@ -728,6 +738,25 @@ main #topdanSatisTable .mainDivTable #productTable .staticTr .emptyTh {
   color: rgb(255, 255, 255);
   width: 100px;
 }
+main #topdanSatisTable .confirmDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+main #topdanSatisTable .confirmDiv #confirmBtn {
+  width: 30%;
+  height: 48px;
+  border: none;
+}
+main #topdanSatisTable .confirmDiv #confirmBtn:hover {
+  background-color: blue;
+}
+
+.btnBackgroundColor {
+  background-color: green;
+}
 
 .addBtn {
   margin-left: 10px;
@@ -1002,6 +1031,29 @@ main #zavod .mainDivZavod .gilanSeramicMMC {
   padding-top: 100px;
   width: 50%;
 }
+@media only screen and (max-width: 576px) {
+  main #zavod {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  main #zavod .mainDivZavod {
+    display: flex;
+    flex-direction: column;
+  }
+  main #zavod .mainDivZavod .zavodHaqqda {
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+  main #zavod .mainDivZavod .zavodHaqqda h1 {
+    font-size: 32px;
+  }
+  main #zavod .mainDivZavod .gilanSeramicMMC {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
 main #factoryImg .mainDivFactoryImg {
   width: 100%;
 }
@@ -1012,6 +1064,14 @@ main #factoryImg .mainDivFactoryImg img {
 main #factoryImg .mainDivFactoryImg p {
   padding-top: 20px;
   color: rgb(152, 152, 152);
+}
+@media only screen and (max-width: 576px) {
+  main #factoryImg .mainDivFactoryImg img {
+    height: 50vh;
+  }
+  main #factoryImg .mainDivFactoryImg p {
+    font-size: 16px;
+  }
 }
 main #ourDifference {
   padding-top: 60px;
@@ -1043,6 +1103,31 @@ main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari {
 }
 main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari p {
   width: 70%;
+}
+@media only screen and (max-width: 576px) {
+  main #ourDifference {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main #ourDifference .mainDivOurDifference {
+    display: flex;
+    flex-direction: column;
+  }
+  main #ourDifference .mainDivOurDifference .ferqliliyimiz {
+    width: 100%;
+  }
+  main #ourDifference .mainDivOurDifference .ferqliliyimiz h3 {
+    padding: 0;
+  }
+  main #ourDifference .mainDivOurDifference .ferqliliyimiz .line {
+    display: none;
+  }
+  main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari {
+    width: 100%;
+  }
+  main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari p {
+    width: 100%;
+  }
 }
 main #factoryDifferentImg {
   padding-top: 30px;
@@ -1086,6 +1171,33 @@ main #factoryDifferentImg .maindivDifferentImg .thirdImg img:hover {
   scale: 1.1;
   transition: 600ms;
 }
+@media only screen and (max-width: 576px) {
+  main #factoryDifferentImg .maindivDifferentImg {
+    display: flex;
+    flex-direction: column;
+  }
+  main #factoryDifferentImg .maindivDifferentImg .firstImg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main #factoryDifferentImg .maindivDifferentImg .firstImg img {
+    height: 300px;
+  }
+  main #factoryDifferentImg .maindivDifferentImg .secondImg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main #factoryDifferentImg .maindivDifferentImg .secondImg img {
+    height: 300px;
+  }
+  main #factoryDifferentImg .maindivDifferentImg .thirdImg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main #factoryDifferentImg .maindivDifferentImg .thirdImg img {
+    height: 300px;
+  }
+}
 main #missiyamiz {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -1105,10 +1217,22 @@ main #missiyamiz .mainDivForMissiamiz h1 {
 main #missiyamiz .mainDivForMissiamiz .nailiyyetler {
   padding-right: 250px;
 }
+@media only screen and (max-width: 576px) {
+  main #missiyamiz {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main #missiyamiz .mainDivForMissiamiz {
+    padding-left: 11px;
+  }
+  main #missiyamiz .mainDivForMissiamiz .nailiyyetler {
+    padding: 0;
+  }
+}
 main #sertifikatlar {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #F7F9FD;
+  background-color: #f7f9fd;
 }
 main #sertifikatlar .mainDivForSertifikatlar {
   width: 100%;
@@ -1154,6 +1278,39 @@ main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat
 }
 main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo p {
   padding-left: 25px;
+}
+@media only screen and (max-width: 576px) {
+  main #sertifikatlar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .yuksekStandart {
+    padding-left: 15px;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .yuksekStandart p {
+    padding-top: 15px;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .sertificateImages {
+    display: flex;
+    flex-direction: column;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .imgDiv {
+    width: 100%;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .imgDiv img {
+    width: 65%;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo {
+    width: 100%;
+  }
+  main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo p {
+    padding-left: 0;
+  }
 }
 
 footer {

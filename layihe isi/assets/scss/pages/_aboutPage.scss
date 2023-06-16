@@ -27,6 +27,30 @@ main {
     }
   }
 
+  @media only screen and (max-width: 576px) {
+    #zavod {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      .mainDivZavod {
+        display: flex;
+        flex-direction: column;
+        .zavodHaqqda {
+          text-align: start;
+          display: flex;
+          justify-content: start;
+          width: 100%;
+          h1 {
+            font-size: 32px;
+          }
+        }
+        .gilanSeramicMMC {
+          width: 100%;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
   // zavodun sekili
 
   #factoryImg {
@@ -39,6 +63,18 @@ main {
       p {
         padding-top: 20px;
         color: rgb(152, 152, 152);
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    #factoryImg {
+      .mainDivFactoryImg {
+        img {
+          height: 50vh;
+        }
+        p {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -72,6 +108,32 @@ main {
         width: 65%;
         p {
           width: 70%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #ourDifference {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .mainDivOurDifference {
+        display: flex;
+        flex-direction: column;
+        .ferqliliyimiz {
+          width: 100%;
+          h3 {
+            padding: 0;
+          }
+          .line {
+            display: none;
+          }
+        }
+        .sirketinTexnologiyalari {
+          width: 100%;
+          p {
+            width: 100%;
+          }
         }
       }
     }
@@ -122,82 +184,155 @@ main {
       }
     }
   }
-
+  @media only screen and (max-width: 576px) {
+    #factoryDifferentImg {
+      .maindivDifferentImg {
+        display: flex;
+        flex-direction: column;
+        .firstImg {
+          padding-left: 30px;
+          padding-right: 30px;
+          img {
+            height: 300px;
+          }
+        }
+        .secondImg {
+          padding-left: 30px;
+          padding-right: 30px;
+          img {
+            height: 300px;
+          }
+        }
+        .thirdImg {
+          padding-left: 30px;
+          padding-right: 30px;
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
   // missiamiz
 
   #missiyamiz {
     padding-top: 70px;
     padding-bottom: 70px;
     .mainDivForMissiamiz {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
-        padding-left: 200px;
-        h1{
-            font-size: 24px;
-            color: grey;
-
-        }
-        .nailiyyetler{
-            padding-right: 250px;
-        }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      padding-left: 200px;
+      h1 {
+        font-size: 24px;
+        color: grey;
+      }
+      .nailiyyetler {
+        padding-right: 250px;
+      }
     }
   }
 
-//   sertifikatlar
+  @media only screen and (max-width: 576px) {
+    #missiyamiz {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .mainDivForMissiamiz {
+        padding-left: 11px;
+        .nailiyyetler {
+          padding: 0;
+        }
+      }
+    }
+  }
 
-#sertifikatlar{
+  //   sertifikatlar
+
+  #sertifikatlar {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color:#F7F9FD;
-    .mainDivForSertifikatlar{
-        width: 100%;
+    background-color: #f7f9fd;
+    .mainDivForSertifikatlar {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .yuksekStandart {
+        padding-left: 100px;
+        h1 {
+          font-weight: 700;
+          color: blue;
+        }
+        p {
+          color: rgb(73, 73, 73);
+        }
+      }
+      .sertificateImages {
+        padding-top: 60px;
         display: flex;
-        flex-direction: column;
-        .yuksekStandart{
-            padding-left: 100px;
-            h1{
-                font-weight: 700;
-                color: blue;
+        .kafelSertifikat {
+          width: 100%;
+          display: flex;
+          .imgDiv {
+            width: 40%;
+            img {
+              width: 100%;
+              height: 300px;
             }
-            p{
-                color: rgb(73, 73, 73);
-            }
-        }
-        .sertificateImages{
-            padding-top: 60px;
+          }
+          .uyqunluqNo {
+            width: 50%;
             display: flex;
-            .kafelSertifikat{
-                width: 100%;
-                display: flex;
-                .imgDiv{
-                    width: 40%;
-                    img{
-                        width: 100%;
-                        height: 300px;
-                    }
-                }
-                .uyqunluqNo{
-                    width: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    color: rgb(0, 0, 0);
-                    h3{
-                        padding-top: 34px;
-                        font-size: 16px;
-                    }
-                    p{
-                        padding-left: 25px;
-                    }
-                   
-                }
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(0, 0, 0);
+            h3 {
+              padding-top: 34px;
+              font-size: 16px;
             }
+            p {
+              padding-left: 25px;
+            }
+          }
         }
-
+      }
     }
-}
+  }
+  @media only screen and (max-width: 576px) {
+    #sertifikatlar {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .mainDivForSertifikatlar {
+        .yuksekStandart {
+          padding-left: 15px;
+          p {
+            padding-top: 15px;
+          }
+        }
+        .sertificateImages {
+          display: flex;
+          flex-direction: column;
+          .kafelSertifikat {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .imgDiv {
+              width: 100%;
+              img {
+                width: 65%;
+              }
+            }
+            .uyqunluqNo {
+              width: 100%;
+              p {
+                padding-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

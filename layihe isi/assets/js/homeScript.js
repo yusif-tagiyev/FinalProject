@@ -10,6 +10,19 @@ adminPanel.addEventListener("click", () => {
   adminPanelPassword.classList.toggle("adminPanelHidden");
 });
 
+// mobi; versiya ucun
+// const topdanAlisVeris = document.getElementById("topdanAlisVeris");
+// const topdanSatisQeydiyyat = document.querySelector(".topdanSatisQeydiyyat");
+// topdanAlisVeris.addEventListener("click", () => {
+//   topdanSatisQeydiyyat.classList.toggle("qeydiyyat");
+// });
+
+// const adminPanel = document.getElementById("adminPanel");
+// const adminPanelPassword = document.querySelector(".adminPanelPassword");
+// adminPanel.addEventListener("click", () => {
+//   adminPanelPassword.classList.toggle("adminPanelHidden");
+// });
+
 // admin panele kecid
 
 const adminPageBtn = document.getElementById("adminPageBtn");

@@ -8,56 +8,66 @@ main {
       align-items: center;
     }
   }
-  #topdanSatisTable{
+  #topdanSatisTable {
     padding-top: 40px;
     padding-bottom: 40px;
     background-image: url("https://www.gilanseramik.az/images/logo.svg");
-   background-repeat: no-repeat;
-   background-color: rgb(88, 115, 115);
-   background-position: center;
-   background-size: 40%;
-    .mainDivTable{
+    background-repeat: no-repeat;
+    background-color: rgb(88, 115, 115);
+    background-position: center;
+    background-size: 40%;
+    .mainDivTable {
+      width: 100%;
+      #productTable {
         width: 100%;
-        #productTable{
-           
-           width: 100%;
-           // border-style: double;
-           .staticTr{
-               // border: double;
-               .staticTh{
-                    color: rgb(255, 255, 255);
-                    border: 2px solid black;
-                    text-align: center;
-                    height: 42px;
-                }
-                .mehsulQiymeti{
-                    border: 2px solid black;
-                    color: rgb(255, 255, 255);
-                    width: 100px;
-                    text-align: center;
-                }
-                .emptyTh{
-                    border: 2px solid black;
-                    color: rgb(255, 255, 255);
-                    width: 100px;
-                   
-                   
-                    
-                }
-            }
+        // border-style: double;
+        .staticTr {
+          // border: double;
+          .staticTh {
+            color: rgb(255, 255, 255);
+            border: 2px solid black;
+            text-align: center;
+            height: 42px;
+          }
+          .mehsulQiymeti {
+            border: 2px solid black;
+            color: rgb(255, 255, 255);
+            width: 100px;
+            text-align: center;
+          }
+          .emptyTh {
+            border: 2px solid black;
+            color: rgb(255, 255, 255);
+            width: 100px;
+          }
         }
+      }
     }
-
-    
+    .confirmDiv {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      #confirmBtn {
+        width: 30%;
+        height: 48px;
+        border: none;
+        &:hover{
+          background-color: blue;
+        }
+      }
+    }
   }
 }
+.btnBackgroundColor {
+  background-color: green;
+}
 
-.addBtn{
+.addBtn {
   margin-left: 10px;
   margin-top: 3px;
   width: 80%;
   border: none;
   border: 1px solid #000000;
-  
 }
-

@@ -42,15 +42,46 @@ function getData() {
 
         const tdTagForProductAdd = document.createElement("button");
         tdTagForProductAdd.classList.add("addBtn");
+        tdTagForProductAdd.addEventListener("click", (e) => {
+          // console.log("salam al dan gelenem");
+          tdTagForProductAdd.classList.toggle("btnBackgroundColor");
+
+          // local storage ye yazdirmaq
+          let arr = [];
+
+          let obj = {
+            productName: "",
+            productSize: "",
+            productStatus: "",
+            productPrice: "",
+          };
+
+          obj.productName = tdTagForProductName.innerText;
+          obj.productSize = tdTagForProductSize.innerText;
+          obj.productStatus = tdTagForProductStatus.innerText;
+          obj.productPrice = tdTagForProductPrices.innerText;
+
+          arr.push(obj);
+
+          localStorage.setItem("arr", JSON.stringify(arr));
+
+          e.preventDefault();
+
+          // tesdiq et butonun click hadisesi
+          confirmBtn.addEventListener("click", (e) => {
+            console.log(arr);
+  
+            e.preventDefault();
+          });
+        });
         tdTagForProductAdd.innerText = "Al";
         dinamicTr.appendChild(tdTagForProductAdd);
         tdTagForProductEmpty.appendChild(tdTagForProductAdd);
         dinamicTr.appendChild(tdTagForProductEmpty);
-
-       
       }
     })
     .catch((err) => console.log(err));
+  const confirmBtn = document.getElementById("confirmBtn");
 }
 
 getData();

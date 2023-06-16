@@ -121,12 +121,12 @@ nav {
       align-items: center;
       font-size: 24px;
       z-index: 15;
-      &:hover{
+      &:hover {
         border: 1px solid black;
         transition: 1s;
       }
     }
-    #closeSearchIcon{
+    #closeSearchIcon {
       position: absolute;
       right: 280px;
       display: none;
@@ -139,7 +139,7 @@ nav {
       align-items: center;
       font-size: 24px;
       z-index: 15;
-      &:hover{
+      &:hover {
         color: blue;
       }
     }
@@ -186,34 +186,28 @@ nav {
     }
   }
 }
-
-@media only screen and (max-width: 992px) {
-  nav {
-    img {
-      width: 100px;
-    }
-    .mainDivNavbar {
-      .navInfo {
-        display: none;
-      }
-      #resMenuIcon {
-        display: none;
-      }
-    }
-  }
-}
 @media only screen and (max-width: 576px) {
   nav {
     .mainDivNavbar {
+      .navInfo {
+        display: none;
+      }
       .numberAndIcon {
         display: none;
       }
-      .navInfo {
+      #serachIconDiv {
         display: none;
+      }
+      #closeSearchIcon{
+        display: none;
+        .searchMainDiv {
+          display: none;
+        }
       }
       .navAdimPanel {
         display: none;
       }
+     
       #resMenuIcon {
         display: block;
       }
@@ -221,9 +215,27 @@ nav {
   }
 }
 
+// @media only screen and (max-width: 992px) {
+//   nav {
+//     img {
+//       width: 100px;
+//     }
+//     .mainDivNavbar {
+//       .navInfo {
+//         display: none;
+//       }
+//       #resMenuIcon {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
 #mobilNav {
-  width: 100%;
-  border: 1px solid black;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  // border: 1px solid black;
   display: none;
   justify-content: center;
   align-items: center;
@@ -241,15 +253,17 @@ nav {
         }
       }
     }
-    &.hiddenNav {
-      height: 300px;
-      transition: 1s;
-    }
+    
   }
 
   .numberAndIconMobil {
     display: flex;
     flex-direction: column;
+    .phonNumber{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .iconsDivMobil {
       text-align: center;
       justify-content: center;
@@ -257,6 +271,16 @@ nav {
       display: flex;
       gap: 10px;
     }
+  }
+  &.hiddenNav {
+    height: 200px;
+    width: 100%;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 576px){
+  #mobilNav {
+    display: block;
   }
 }
 
