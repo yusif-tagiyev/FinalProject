@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- animasiya linki -->
@@ -29,20 +28,14 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <!-- page navbar start -->
     <nav>
       <div class="mainDivNavbar container">
         <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
         <div class="navInfo">
-          
           <ul class="mainUl">
-            <li>
-              <a href="./homePage.html">
-                Əsas səhifə
-                <div class="line"></div>
-              </a>
-            </li>
             <li id="dorpdownLi">
-              <a href="#"
+              <a href="./productsPage.html"
                 >Mehsullar
                 <div class="line"></div
               ></a>
@@ -86,10 +79,9 @@
           <div class="phonNumber">
             <a href="#">info@gilanseramik.az</a>
           </div>
-          <div class="iconsDiv">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+          <div class="signupAndLoginDiv">
+            <button id="logInBtnForNoutbook">Log in</button>
+            <button id="signUpBtnForNoutbook">Sign Up</button>
           </div>
         </div>
         <div id="serachIconDiv">
@@ -99,11 +91,14 @@
           <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="searchMainDiv">
-          <input type="search" id="search" placeholder="Search product" />
+          <input type="text" id="search" placeholder="Search product" />
         </div>
         <div class="navAdimPanel">
           <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-          <p class="adminPAnelP" id="adminPanel">Admin</p>
+          <p class="adminPAnelP" id="adminPanel">
+            <i class="fa-solid fa-user"></i> Admin
+          </p>
+          <p class="adminPAnelP" id="myFavorite">My favorit products</p>
         </div>
         <div id="resMenuIcon">
           <i class="fa-solid fa-bars"></i>
@@ -116,13 +111,7 @@
       <div class="navInfoMobil">
         <ul>
           <li>
-            <a href="./homePage.html"
-              >Esas sehife
-              <div class="line"></div
-            ></a>
-          </li>
-          <li>
-            <a href="./productsPage.html"
+            <a href="#"
               >Mehsullar
               <div class="line"></div
             ></a>
@@ -151,99 +140,76 @@
           <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
         </div>
       </div>
-      <div class="navAdimPanelMobil">
-        <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-        <p class="adminPAnelP" id="adminPanel">Admin</p>
+      <div class="login">
+        <button id="logInBtn">Log in</button>
+        <button id="signUpBtn">Sign up</button>
       </div>
     </div>
+    <!-- login form -->
+    <div class="loginFormDiv container">
+      <form action="">
+        <input type="text" id="userName" placeholder="Enter the user name" />
+
+        <input
+          type="text"
+          type="password"
+          id="userPasswordLogIn"
+          placeholder="Enter the password"
+        />
+
+        <button id="logInBtnForEnterPage">Log In</button>
+      </form>
+    </div>
+    <!-- sign up form -->
+    <div class="sigUpFormDiv container">
+      <h1>Qeydiyyatdan kecin.</h1>
+      <form>
+        <input type="text" id="userNameInput" placeholder="Enter your name " />
+        <input
+          type="text"
+          id="userSurnameInput"
+          placeholder="Enter your surname"
+        />
+        <input type="number" id="userAgeInput" placeholder="Enter your age" />
+        <input type="text" id="userCityInput" placeholder="Enter the city" />
+        <input
+          type="number"
+          id="userNumber"
+          placeholder="Enter your phone number"
+        />
+        <input type="password" id="userPassword" placeholder="Enter password" />
+        <div id="genderDiv">
+          <label for="genderMan">Man</label>
+          <input type="radio" id="genderMan" name="gender" value="man" />
+          <label for="genderWoman">Woman</label>
+          <input type="radio" id="genderWoman" name="gender" value="woman" />
+        </div>
+      </form>
+      <button id="signUpBtnforData">Sign up</button>
+    </div>
     <!-- admin panele giris -->
-    <div class="adminPanelPassword">
+    <div class="adminPanelPassword container">
       <form>
         <input id="adminName" type="text" placeholder="Admin adı" />
         <input id="parol" type="password" placeholder="Parol" />
         <button id="adminPageBtn">Enter the Admin page</button>
       </form>
     </div>
+    <!-- topdan satis seyfesine giriw -->
+    <div class="topdanSatisQeydiyyat container">
+      <form>
+        <input id="musteriAdi" type="text" placeholder="Müştəri adı soyadı" />
+        <input id="sheher" type="text" placeholder="Şəhər" />
+        <button id="enterTheUserBtn">Daxil ol</button>
+      </form>
+    </div>
 
-    <main>
-      <!-- sectionlsr -->
-      <!-- topdan alis veris -->
-      <section id="topdanSatisHeader">
-        <div class="container">
-          <h1>Topdan alış-veriş</h1>
-        </div>
-      </section>
-      <!-- mehsullarin siyahisi -->
-      <section id="topdanSatisTable">
-        <div class="container mainDivTable">
-          <table id="productTable">
-            <tr class="staticTr">
-              <th class="staticTh">Mehsulun Kodu</th>
-              <th class="staticTh">Mehsulun olcusu</th>
-              <th class="staticTh">Mehsulun statusu</th>
-              <th class="mehsulQiymeti">Mehsulun topdan qiymeti</th>
-              <th class="emptyTh"></th>
-            </tr>
-          </table>
-          <div class="confirmDiv">
-            <button id="confirmBtn">Tesdiq Et</button>
-          </div>
-        </div>
-      </section>
-      <!-- ALDIQI MEHSULLARIN SIYAHISI -->
-      <section id="aldiqiqiMehsullar">
-        <div class="mainDivAldiqiMEhsullar container">
-          <table id="aldiqiMehsulTable">
-            <tr class="staticTr">
-              <th class="staticTh">Mehsulun adi</th>
-              <th class="staticTh">Mehsulun olcusu</th>
-              <th class="staticTh">Mehsulun qiymeti</th>
-              <th class="staticTh">Mehsuln sayi (Palet ile)</th>
-            </tr>
-          </table>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footerMainDuv">
-        <div class="pageLogoFooter">
-          <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
-          <p>© 2023 Bütün hüquqlar qorunur</p>
-        </div>
-        <div class="mehsullarimizFooter">
-          <ul>
-            <h1>Məhsullarimiz</h1>
-            <li><a href="#">Dəst 24x39</a></li>
-            <li><a href="#">Dəst 25x40</a></li>
-            <li><a href="#">Dəst 30x60</a></li>
-            <li><a href="#">Mətbəx 30x60</a></li>
-            <li><a href="#">Döşəmə 40x40</a></li>
-          </ul>
-        </div>
-        <div class="elaqeFooter">
-          <ul>
-            <h1>Əlaqə</h1>
-            <li>Huseyn <a href="#"> +994 50 734-44-34</a></li>
-            <li>Shamil<a href="#"> +994 55 349-00-09</a></li>
-            <li>Royal<a href="#"> +994 51 100 34-10</a></li>
-          </ul>
-          <ul>
-            <h3>Anbar</h3>
-            <li>Nureddin<a href="#"> +994 55 401-00-12</a></li>
-            <li>Elcan<a href="#"> +994 77 908-77-71</a></li>
-            <li>Semed <a href="#"> +994 50 876-26-65</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <!-- bootstrapt linki -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/homeScript.js"></script>
-    <!-- <script src="./assets/js/homeScript.js"></script> -->
-    <script src="./assets/js/topdanSatis.js"></script>
+    <script src="./assets/js/favoritePage.js"></script>
   </body>
 </html>

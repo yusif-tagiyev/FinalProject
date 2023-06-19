@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <!-- page navbar start -->
     <nav>
       <div class="mainDivNavbar container">
         <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
@@ -36,7 +37,7 @@
           <ul class="mainUl">
             <li>
               <a href="./homePage.html"
-                >Esas sehife
+                >Əsas səhifə
                 <div class="line"></div
               ></a>
             </li>
@@ -85,10 +86,9 @@
           <div class="phonNumber">
             <a href="#">info@gilanseramik.az</a>
           </div>
-          <div class="iconsDiv">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+          <div class="signupAndLoginDiv">
+            <button id="logInBtnForNoutbook">Log in</button>
+            <button id="signUpBtnForNoutbook">Sign Up</button>
           </div>
         </div>
         <div id="serachIconDiv">
@@ -98,23 +98,26 @@
           <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="searchMainDiv">
-          <input type="search" id="search" placeholder="Search product" />
+          <input type="text" id="search" placeholder="Search product" />
         </div>
         <div class="navAdimPanel">
           <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-          <p class="adminPAnelP" id="adminPanel">Admin</p>
+          <p class="adminPAnelP" id="adminPanel">
+            <i class="fa-solid fa-user"></i> Admin
+          </p>
         </div>
         <div id="resMenuIcon">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </nav>
+
     <!-- mobil navbar -->
     <div id="mobilNav" class="container">
       <div class="navInfoMobil">
         <ul>
           <li>
-            <a href="./productsPage.html"
+            <a href="#"
               >Mehsullar
               <div class="line"></div
             ></a>
@@ -126,8 +129,8 @@
             ></a>
           </li>
           <li>
-            <a href="./productionPage.html"
-              >Istehsalat
+            <a href="./contactPage.html"
+              >Bizimle elaqe
               <div class="line"></div
             ></a>
           </li>
@@ -143,13 +146,60 @@
           <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
         </div>
       </div>
-      <div class="navAdimPanelMobil">
-        <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-        <p class="adminPAnelP" id="adminPanel"><i class="fa-solid fa-user"></i> Admin</p>
+      <div class="login">
+        <button id="logInBtn">Log in</button>
+        <button id="signUpBtn">Sign up</button>
       </div>
     </div>
+    <!-- login form -->
+    <div class="loginFormDiv container">
+      <form action="">
+        <input type="text" id="userName" placeholder="Enter the user name" />
+
+        <input
+          type="text"
+          type="password"
+          id="userPasswordLogIn"
+          placeholder="Enter the password"
+        />
+
+        <button id="logInBtnForEnterPage">Log In</button>
+      </form>
+    </div>
+    <!-- sign up form -->
+    <div class="sigUpFormDiv container">
+      <h1>Qeydiyyatdan kecin.</h1>
+      <form>
+        <input type="text" id="userNameInput" placeholder="Enter your name " />
+        <input
+          type="text"
+          id="userSurnameInput"
+          placeholder="Enter your surname"
+        />
+        <input type="number" id="userAgeInput" placeholder="Enter your age" />
+        <input type="text" id="userCityInput" placeholder="Enter the city" />
+        <input
+          type="number"
+          id="userNumber"
+          placeholder="Enter your phone number"
+        />
+        <input
+          type="password"
+          value=""
+          id="userPassword"
+          placeholder="Enter password"
+        />
+        <div id="genderDiv">
+          <label for="genderMan">Man</label>
+          <input type="radio" id="genderMan" name="gender" value="man" />
+          <label for="genderWoman">Woman</label>
+          <input type="radio" id="genderWoman" name="gender" value="woman" />
+        </div>
+      </form>
+      <button id="signUpBtnforData">Sign up</button>
+    </div>
     <!-- admin panele giris -->
-    <div class="adminPanelPassword">
+    <div class="adminPanelPassword container">
       <form>
         <input id="adminName" type="text" placeholder="Admin adı" />
         <input id="parol" type="password" placeholder="Parol" />
@@ -157,7 +207,7 @@
       </form>
     </div>
     <!-- topdan satis seyfesine giriw -->
-    <div class="topdanSatisQeydiyyat">
+    <div class="topdanSatisQeydiyyat container">
       <form>
         <input id="musteriAdi" type="text" placeholder="Müştəri adı soyadı" />
         <input id="sheher" type="text" placeholder="Şəhər" />
@@ -269,7 +319,6 @@
         </div>
       </section>
 
-
       <!-- sertifikatlarimiz  -->
 
       <section id="sertifikatlar">
@@ -317,7 +366,7 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
     </main>
     <!-- footer strated -->
     <footer>

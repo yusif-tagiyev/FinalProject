@@ -8,6 +8,14 @@ main {
       align-items: center;
     }
   }
+  
+  // @media only screen and (max-width: 576px){
+  // #topdanSatisHeader{
+  //   div{
+  //     height: 50px;
+  //   }
+  // }
+  // }
   #topdanSatisTable {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -59,7 +67,14 @@ main {
       }
     }
   }
+  // @media only screen and (max-width: 576px){
+  // #topdanSatisTable{
+  //   padding-top: 0;
+  // }
+  // }
 }
+
+
 .btnBackgroundColor {
   background-color: green;
 }
@@ -70,4 +85,61 @@ main {
   width: 80%;
   border: none;
   border: 1px solid #000000;
+}
+
+
+#aldiqiqiMehsullar {
+  display: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(88, 115, 115);
+  .mainDivAldiqiMEhsullar {
+    width: 100%;
+    #aldiqiMehsulTable {
+      width: 100%;
+      .staticTr {
+        .staticTh {
+          color: rgb(255, 255, 255);
+          border: 2px solid black;
+          text-align: center;
+          height: 42px;
+        }
+        .mehsulQiymeti {
+          border: 2px solid black;
+          color: rgb(255, 255, 255);
+          width: 100px;
+          text-align: center;
+        }
+        .emptyTh {
+          border: 2px solid black;
+          color: rgb(255, 255, 255);
+          width: 100px;
+        }
+      }
+    }
+  }
+  .confirmDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    #confirmBtn {
+      width: 30%;
+      height: 48px;
+      border: none;
+      &:hover{
+        background-color: blue;
+      }
+    }
+  }
+}
+
+
+.plusAndMinusBtnStyle{
+  margin: 10px 0px;
+  width: 30%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }

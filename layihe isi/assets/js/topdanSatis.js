@@ -47,7 +47,7 @@ function getData() {
           tdTagForProductAdd.classList.toggle("btnBackgroundColor");
 
           // local storage ye yazdirmaq
-          let arr = [];
+          let products_arr = [];
 
           let obj = {
             productName: "",
@@ -61,16 +61,77 @@ function getData() {
           obj.productStatus = tdTagForProductStatus.innerText;
           obj.productPrice = tdTagForProductPrices.innerText;
 
-          arr.push(obj);
-
-          localStorage.setItem("arr", JSON.stringify(arr));
+          products_arr.push(obj);
 
           e.preventDefault();
 
+          const aldiqiqiMehsullar =
+            document.getElementById("aldiqiqiMehsullar");
+
           // tesdiq et butonun click hadisesi
           confirmBtn.addEventListener("click", (e) => {
-            console.log(arr);
-  
+            // console.log(products_arr);
+            aldiqiqiMehsullar.style.display = "block";
+            const aldiqiMehsulTable =
+              document.getElementById("aldiqiMehsulTable");
+            for (let i = 0; i < products_arr.length; i++) {
+              // console.log(products_arr[i].productName);
+
+              const trTag = document.createElement("tr");
+              trTag.classList.add("staticTr");
+              aldiqiMehsulTable.appendChild(trTag);
+
+              const tdTagForName = document.createElement("td");
+              tdTagForName.classList.add("staticTh");
+              tdTagForName.innerText = products_arr[i].productName;
+              trTag.appendChild(tdTagForName);
+
+              const tdTagForSize = document.createElement("td");
+              tdTagForSize.classList.add("staticTh");
+              tdTagForSize.innerText = products_arr[i].productSize;
+              trTag.appendChild(tdTagForSize);
+
+              const tdTagForPrices = document.createElement("td");
+              tdTagForPrices.classList.add("staticTh");
+              tdTagForPrices.innerText = products_arr[i].productPrice;
+              trTag.appendChild(tdTagForPrices);
+
+              const tdTagFormehsulSayi = document.createElement("td");
+              tdTagFormehsulSayi.classList.add("staticTh");
+
+              const buttonPlus = document.createElement("button");
+              buttonPlus.innerHTML = "+";
+              buttonPlus.classList.add("plusAndMinusBtnStyle");
+              const numberDiv = document.createElement("div");
+              numberDiv.innerHTML = "1";
+              const buttonMinus = document.createElement("button");
+              buttonMinus.innerHTML = "-";
+              buttonMinus.classList.add("plusAndMinusBtnStyle");
+
+              // say artimi
+              buttonPlus.onclick = () => {
+                numberDiv.innerHTML++;
+              };
+
+              // say azalmasi
+
+              buttonMinus.onclick = () => {
+                if (numberDiv.innerHTML === "1") {
+                  return;
+                }
+                numberDiv.innerHTML--;
+              };
+
+              tdTagFormehsulSayi.appendChild(buttonPlus);
+              tdTagFormehsulSayi.appendChild(numberDiv);
+              tdTagFormehsulSayi.appendChild(buttonMinus);
+
+              trTag.appendChild(tdTagFormehsulSayi);
+
+              const cekiCapEt = document.createElement("button");
+
+            }
+
             e.preventDefault();
           });
         });

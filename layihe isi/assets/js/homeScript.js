@@ -83,7 +83,6 @@ enterTheUserBtn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-
 // serch input
 const serachIconDiv = document.getElementById("serachIconDiv");
 const closeSearchIcon = document.getElementById("closeSearchIcon");
@@ -92,7 +91,7 @@ const navInfo = document.querySelector(".navInfo");
 const numberAndIcon = document.querySelector(".numberAndIcon");
 
 // console.log(searchMainDiv);
-serachIconDiv.addEventListener("click",(e) => {
+serachIconDiv.addEventListener("click", (e) => {
   console.log("lupadan gelen");
   serachIconDiv.style.display = "none";
   closeSearchIcon.style.display = "flex";
@@ -103,16 +102,14 @@ serachIconDiv.addEventListener("click",(e) => {
   e.preventDefault();
 });
 
-closeSearchIcon.addEventListener("click",(e) => {
+closeSearchIcon.addEventListener("click", (e) => {
   console.log("x den gelen");
   closeSearchIcon.style.display = "none";
   serachIconDiv.style.display = "flex";
   searchMainDiv.style.display = "none";
   navInfo.style.display = "flex";
   numberAndIcon.style.display = "block";
-
 });
-
 
 // tablet navbar
 
@@ -123,6 +120,103 @@ const mobilNav = document.getElementById("mobilNav");
 resMenuIcon.addEventListener("click", () => {
   console.log("salam icondan gelendi");
   mobilNav.classList.toggle("hiddenNav");
+});
+
+// log in ve sidhn up  funksiyalari
+
+const logInBtnForNoutbook = document.getElementById("logInBtnForNoutbook");
+// console.log(logInBtnForNoutbook);
+const loginFormDiv = document.querySelector(".loginFormDiv");
+logInBtnForNoutbook.addEventListener("click", (e) => {
+  // console.log("loginden gelen");
+  loginFormDiv.classList.toggle("loginFormHidden");
+  e.preventDefault();
+});
+
+const signUpBtnForNoutbook = document.getElementById("signUpBtnForNoutbook");
+console.log(signUpBtnForNoutbook);
+const sigUpFormDiv = document.querySelector(".sigUpFormDiv");
+console.log(sigUpFormDiv);
+signUpBtnForNoutbook.addEventListener("click", () => {
+  console.log("salam signupdan gelen");
+  sigUpFormDiv.classList.toggle("signupFormHidden");
+});
+
+// sign up qeydiyyat ( melumatlari jsona post etmek)
+
+const signUpBtnforData = document.getElementById("signUpBtnforData");
+
+signUpBtnforData.addEventListener("click", (e) => {
+  // console.log("salam signupdan gelen 3");
+
+  // melumatlari j sona post edir
+  const userNameInput = document.getElementById("userNameInput");
+  const userSurnameInput = document.getElementById("userSurnameInput");
+  const userAgeInput = document.getElementById("userAgeInput");
+  const userCityInput = document.getElementById("userCityInput");
+  const userNumber = document.getElementById("userNumber");
+  const userPassword = document.getElementById("userPassword");
+  console.log(userPassword);
+  const genderMan = document.getElementById("genderMan");
+  const genderWoman = document.getElementById("genderWoman");
+
+  if (
+    userNameInput.value != "" &&
+    userSurnameInput.value != "" &&
+    userAgeInput.value != "" &&
+    userCityInput.value != "" &&
+    userNumber.value != "" &&
+    userPassword.vlue != "" &&
+    genderMan.value != "" || 
+    genderWoman.value!= ""
+  ) {
+    fetch("http://localhost:3000/users", {
+      method: "POST",
+      body: JSON.stringify({
+        name: userNameInput.value,
+        surname: userSurnameInput.value,
+        age: userAgeInput.value,
+        city: userCityInput.value,
+        phoneNumber: userNumber.value,
+        password: userPassword.value,
+        gender: genderMan.checked === true ? genderMan.value : genderWoman.value,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  } else {
+    alert("melumat yarimciqdir. yeniden cehd edin");
+  }
+
+  e.preventDefault();
+});
+
+const logInBtnForEnterPage = document.getElementById("logInBtnForEnterPage");
+
+const userName = document.getElementById("userName");
+const userPasswordLogIn = document.getElementById("userPasswordLogIn");
+
+
+logInBtnForEnterPage.addEventListener("click", (e) => {
+  // console.log("loginden gelen 300");
+  fetch("http://localhost:3000/users")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      for (let i = 0; i < data.length; i++) {
+        console.log(data[i].name);
+          if (data[i].name == userName.value && data[i].surname == userPasswordLogIn.value) {
+            window.location.assign("./productsPage.html");
+        }
+      }
+    })
+    .catch((err) => console.log(err));
+
+  e.preventDefault();
 });
 
 // api den gelen kardt

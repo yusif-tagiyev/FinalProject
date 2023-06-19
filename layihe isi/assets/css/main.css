@@ -113,15 +113,24 @@ nav .mainDivNavbar .navInfo .mainUl #dorpdownLi:hover .mainDivDorpdown #mehsulla
 nav .mainDivNavbar .numberAndIcon .phonNumber a {
   text-decoration: none;
 }
-nav .mainDivNavbar .numberAndIcon .iconsDiv {
-  padding-top: 20px;
+nav .mainDivNavbar .numberAndIcon .signupAndLoginDiv {
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-nav .mainDivNavbar .numberAndIcon .iconsDiv i:hover {
-  color: red;
+nav .mainDivNavbar .numberAndIcon .signupAndLoginDiv button {
+  width: 50%;
+  height: 32px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+nav .mainDivNavbar .numberAndIcon .signupAndLoginDiv button:hover {
+  background-color: red;
+  color: black;
 }
 nav .mainDivNavbar #serachIconDiv {
   position: absolute;
@@ -196,6 +205,9 @@ nav .mainDivNavbar #resMenuIcon {
 }
 
 @media only screen and (max-width: 576px) {
+  nav .mainDivNavbar img {
+    width: 30%;
+  }
   nav .mainDivNavbar .navInfo {
     display: none;
   }
@@ -212,7 +224,7 @@ nav .mainDivNavbar #resMenuIcon {
     display: none;
   }
   nav .mainDivNavbar .navAdimPanel {
-    display: none;
+    display: block;
   }
   nav .mainDivNavbar #resMenuIcon {
     display: block;
@@ -255,6 +267,26 @@ nav .mainDivNavbar #resMenuIcon {
   display: flex;
   gap: 10px;
 }
+#mobilNav .login {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#mobilNav .login #logInBtn {
+  width: 70px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+#mobilNav .login #signUpBtn {
+  width: 70px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
 #mobilNav.hiddenNav {
   height: 200px;
   width: 100%;
@@ -266,6 +298,96 @@ nav .mainDivNavbar #resMenuIcon {
     display: block;
   }
 }
+.loginFormDiv {
+  width: 100%;
+  overflow: hidden;
+  height: 0px;
+}
+.loginFormDiv form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.loginFormDiv form input {
+  height: 32px;
+  padding-left: 10px;
+  border: none;
+  border-top-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  background-color: rgb(207, 207, 207);
+}
+.loginFormDiv form button {
+  border: none;
+  width: 80px;
+  background-color: blue;
+  color: white;
+  height: 32px;
+  border-radius: 20px;
+}
+.loginFormDiv form button:hover {
+  background-color: red;
+  color: black;
+}
+.loginFormDiv.loginFormHidden {
+  height: 180px;
+  transition: 1s;
+}
+
+.sigUpFormDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+}
+.sigUpFormDiv h1 {
+  font-size: 32px;
+}
+.sigUpFormDiv form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.sigUpFormDiv form input {
+  width: 250px;
+  padding-left: 10px;
+  height: 38px;
+  border: none;
+  border-top-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  background-color: rgb(207, 207, 207);
+}
+.sigUpFormDiv form #genderDiv {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.sigUpFormDiv form #genderDiv input {
+  width: auto;
+  height: auto;
+}
+.sigUpFormDiv button {
+  width: 250px;
+  height: 35px;
+  border: navajowhite;
+  background-color: blue;
+  border-radius: 20px;
+}
+.sigUpFormDiv button:hover {
+  background-color: red;
+  color: black;
+}
+.sigUpFormDiv.signupFormHidden {
+  height: 430px;
+  opacity: 1;
+  transition: 1s;
+}
+
 .adminPanelPassword {
   width: 100%;
   height: 200px;
@@ -301,6 +423,11 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 800ms;
 }
 
+@media only screen and (max-width: 576px) {
+  .adminPanelPassword form input {
+    max-width: 300px;
+  }
+}
 .topdanSatisQeydiyyat {
   width: 100%;
   height: 200px;
@@ -341,6 +468,11 @@ nav .mainDivNavbar #resMenuIcon {
   height: 100vh;
 }
 
+@media only screen and (max-width: 576px) {
+  .myClassImgSize {
+    height: 80vh;
+  }
+}
 .carouselMyCaption {
   position: absolute;
   top: 40%;
@@ -358,22 +490,13 @@ nav .mainDivNavbar #resMenuIcon {
   color: rgb(6, 12, 102);
   font-weight: 900;
 }
-.carouselMyCaption #dahaEtrafli {
-  width: 130px;
-  height: 32px;
-  border: none;
-  border-radius: 30px;
-}
-.carouselMyCaption #dahaEtrafli:hover {
-  background-color: rgb(82, 82, 82);
-  color: rgb(6, 12, 102);
-  font-weight: 600;
-  transition: 300ms;
-}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .carouselMyCaption {
     display: block !important;
+  }
+  .carouselMyCaption h5 {
+    font-size: 24px;
   }
 }
 #someProducts .mainDivSomeProducts .məhsullarimiz {
@@ -470,13 +593,28 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 600ms;
 }
 
+@media only screen and (max-width: 576px) {
+  #someProducts .mainDivSomeProducts .məhsullarimiz {
+    padding-top: 30px;
+  }
+  #someProducts .mainDivSomeProducts .məhsullarimiz h1 {
+    font-size: 24px;
+  }
+  #someProducts .mainDivSomeProducts #productsCard {
+    display: flex;
+    flex-direction: column;
+  }
+  #someProducts .mainDivSomeProducts #productsCard .productsCard_api {
+    width: 100%;
+  }
+}
 #storeLocation .mainDivStoreLocation {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-block: 100px;
+  padding-top: 100px;
 }
 #storeLocation .mainDivStoreLocation .filiallarimiz h1 {
   font-size: 72px;
@@ -503,6 +641,17 @@ nav .mainDivNavbar #resMenuIcon {
   height: 100vh;
 }
 
+@media only screen and (max-width: 576px) {
+  #storeLocation .mainDivStoreLocation {
+    padding-top: 30px;
+  }
+  #storeLocation .mainDivStoreLocation .filiallarimiz h1 {
+    font-size: 24px;
+  }
+  #storeLocation .mainDivStoreLocation .storeImgDiv img {
+    height: 80vh;
+  }
+}
 #calculator {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -598,6 +747,35 @@ nav .mainDivNavbar #resMenuIcon {
   scale: 1.1;
 }
 
+@media only screen and (max-width: 576px) {
+  #calculator .calculatorMainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  #calculator .calculatorMainDiv .kafelMetlaxDiv {
+    width: 100%;
+  }
+  #calculator .calculatorMainDiv .calculatorAction {
+    width: 100%;
+  }
+  #calculator .calculatorMainDiv .calculatorAction form .firstDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  #calculator .calculatorMainDiv .calculatorAction form .firstDiv .inputDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+  }
+  #calculator .calculatorMainDiv .calculatorAction form .secondDiv select {
+    width: 50%;
+  }
+  #calculator .calculatorMainDiv #resultButtonCalculator {
+    margin-top: 30px;
+  }
+}
 #addNewProduct {
   width: 100%;
   display: flex;
@@ -764,6 +942,158 @@ main #topdanSatisTable .confirmDiv #confirmBtn:hover {
   width: 80%;
   border: none;
   border: 1px solid #000000;
+}
+
+#aldiqiqiMehsullar {
+  display: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(88, 115, 115);
+}
+#aldiqiqiMehsullar .mainDivAldiqiMEhsullar {
+  width: 100%;
+}
+#aldiqiqiMehsullar .mainDivAldiqiMEhsullar #aldiqiMehsulTable {
+  width: 100%;
+}
+#aldiqiqiMehsullar .mainDivAldiqiMEhsullar #aldiqiMehsulTable .staticTr .staticTh {
+  color: rgb(255, 255, 255);
+  border: 2px solid black;
+  text-align: center;
+  height: 42px;
+}
+#aldiqiqiMehsullar .mainDivAldiqiMEhsullar #aldiqiMehsulTable .staticTr .mehsulQiymeti {
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  text-align: center;
+}
+#aldiqiqiMehsullar .mainDivAldiqiMEhsullar #aldiqiMehsulTable .staticTr .emptyTh {
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  width: 100px;
+}
+#aldiqiqiMehsullar .confirmDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+#aldiqiqiMehsullar .confirmDiv #confirmBtn {
+  width: 30%;
+  height: 48px;
+  border: none;
+}
+#aldiqiqiMehsullar .confirmDiv #confirmBtn:hover {
+  background-color: blue;
+}
+
+.plusAndMinusBtnStyle {
+  margin: 10px 0px;
+  width: 30%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+main #istehsalProssesimiz {
+  background-color: rgb(94, 94, 235);
+}
+main #istehsalProssesimiz .mainDivForIstehsal {
+  display: flex;
+}
+main #istehsalProssesimiz .mainDivForIstehsal .istehsal {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main #istehsalProssesimiz .mainDivForIstehsal .istehsal h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: white;
+}
+main #istehsalProssesimiz .mainDivForIstehsal .beynelxalqStandartlar {
+  width: 50%;
+}
+main #istehsalProssesimiz .mainDivForIstehsal .beynelxalqStandartlar p {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  width: 500px;
+  color: white;
+}
+@media only screen and (max-width: 576px) {
+  main #istehsalProssesimiz .mainDivForIstehsal {
+    display: flex;
+    flex-direction: column;
+  }
+  main #istehsalProssesimiz .mainDivForIstehsal .istehsal {
+    width: 100%;
+  }
+  main #istehsalProssesimiz .mainDivForIstehsal .istehsal h1 {
+    padding-top: 30px;
+    font-size: 32px;
+  }
+  main #istehsalProssesimiz .mainDivForIstehsal .beynelxalqStandartlar {
+    width: 100%;
+  }
+  main #istehsalProssesimiz .mainDivForIstehsal .beynelxalqStandartlar p {
+    padding-top: 20px;
+    width: auto;
+  }
+}
+main #xammalBazasi .mainDivXammalBazasi {
+  width: 100%;
+  padding-top: 20px;
+}
+main #xammalBazasi .mainDivXammalBazasi .xammal {
+  width: 100%;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+main #xammalBazasi .mainDivXammalBazasi .xammal .xammalFirstDiv {
+  width: 40%;
+  position: relative;
+}
+main #xammalBazasi .mainDivXammalBazasi .xammal .xammalFirstDiv h1 {
+  font-size: 32px;
+  color: rgb(146, 146, 146);
+}
+main #xammalBazasi .mainDivXammalBazasi .xammal .xammalFirstDiv .lineXammalBazasi {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(201, 201, 201);
+}
+main #xammalBazasi .mainDivXammalBazasi .xammal .xammalSecondDiv {
+  width: 60%;
+}
+@media only screen and (max-width: 576px) {
+  main #xammalBazasi .mainDivXammalBazasi .xammal {
+    display: flex;
+    flex-direction: column;
+  }
+  main #xammalBazasi .mainDivXammalBazasi .xammal .xammalFirstDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #xammalBazasi .mainDivXammalBazasi .xammal .xammalFirstDiv .lineXammalBazasi {
+    display: none;
+  }
+  main #xammalBazasi .mainDivXammalBazasi .xammal .xammalSecondDiv {
+    width: 100%;
+  }
+}
+main .bootstraptSliderMyImgSize {
+  width: 100%;
+  height: 80vh;
 }
 
 main #products {
@@ -1318,7 +1648,7 @@ footer {
   height: 80vh;
   background-image: url("https://www.gilanseramik.az/images/bricks.png");
   background-repeat: no-repeat;
-  background-color: #7E828B;
+  background-color: #7e828b;
 }
 footer .footerMainDuv {
   width: 100%;
@@ -1385,4 +1715,28 @@ footer .footerMainDuv .elaqeFooter ul li {
 }
 footer .footerMainDuv .elaqeFooter ul li a {
   color: red;
+}
+
+@media only screen and (max-width: 576px) {
+  footer {
+    height: auto;
+  }
+  footer .footerMainDuv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerMainDuv .pageLogoFooter {
+    width: 100%;
+    height: auto;
+  }
+  footer .footerMainDuv .pageLogoFooter p {
+    padding-top: 10px;
+  }
+  footer .footerMainDuv .mehsullarimizFooter {
+    width: 100%;
+  }
+  footer .footerMainDuv .elaqeFooter {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

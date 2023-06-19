@@ -42,13 +42,13 @@
         <div class="navInfo">
           <ul class="mainUl">
             <li>
-              <a href="./homePage.html"
-                >Esas sehife
-                <div class="line"></div
-              ></a>
+              <a href="./homePage.html">
+                Əsas səhifə
+                <div class="line"></div>
+              </a>
             </li>
             <li id="dorpdownLi">
-              <a href="#"
+              <a href="./productsPage.html"
                 >Mehsullar
                 <div class="line"></div
               ></a>
@@ -92,10 +92,9 @@
           <div class="phonNumber">
             <a href="#">info@gilanseramik.az</a>
           </div>
-          <div class="iconsDiv">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+          <div class="signupAndLoginDiv">
+            <button id="logInBtnForNoutbook">Log in</button>
+            <button id="signUpBtnForNoutbook">Sign Up</button>
           </div>
         </div>
         <div id="serachIconDiv">
@@ -109,7 +108,9 @@
         </div>
         <div class="navAdimPanel">
           <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-          <p class="adminPAnelP" id="adminPanel">Admin</p>
+          <p class="adminPAnelP" id="adminPanel">
+            <i class="fa-solid fa-user"></i> Admin
+          </p>
         </div>
         <div id="resMenuIcon">
           <i class="fa-solid fa-bars"></i>
@@ -121,12 +122,6 @@
     <div id="mobilNav" class="container">
       <div class="navInfoMobil">
         <ul>
-          <li>
-            <a href="./homePage.html"
-              >Esas sehife
-              <div class="line"></div>
-            </a>
-          </li>
           <li>
             <a href="#"
               >Mehsullar
@@ -157,13 +152,29 @@
           <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
         </div>
       </div>
-      <div class="navAdimPanelMobil">
-        <p class="adminPAnelP" id="topdanAlisVeris">Topdan alış-veriş</p>
-        <p class="adminPAnelP" id="adminPanel">Admin</p>
+      <div class="login">
+        <button id="logInBtn">Log in</button>
+        <button id="signUpBtn">Sign up</button>
       </div>
     </div>
+    <!-- login form -->
+
+    <div class="loginFormDiv container">
+      <form action="">
+        <input type="text" id="userName" placeholder="Enter the user name" />
+
+        <input
+          type="text"
+          type="password"
+          id="userPassword"
+          placeholder="Enter the password"
+        />
+
+        <button>Log In</button>
+      </form>
+    </div>
     <!-- admin panele giris -->
-    <div class="adminPanelPassword">
+    <div class="adminPanelPassword container">
       <form>
         <input id="adminName" type="text" placeholder="Admin adı" />
         <input id="parol" type="password" placeholder="Parol" />
@@ -171,7 +182,7 @@
       </form>
     </div>
     <!-- topdan satis seyfesine giriw -->
-    <div class="topdanSatisQeydiyyat">
+    <div class="topdanSatisQeydiyyat container">
       <form>
         <input id="musteriAdi" type="text" placeholder="Müştəri adı soyadı" />
         <input id="sheher" type="text" placeholder="Şəhər" />
@@ -196,59 +207,24 @@
               <div id="sizeDiv__ul">
                 <ul>
                   <li>Hamisi</li>
-                  <li> <a href="#">Dest 24 X 39</a></li>
-                  <li> <a href="#">Dest 25 X 40</a></li>
-                  <li> <a href="#">Dest 30 X 60</a></li>
-                  <li> <a href="#">Metbex 30 X 60</a></li>
-                  <li> <a href="#">Doseme 40 X 40</a></li>
+                  <li><a href="#">Dest 24 X 39</a></li>
+                  <li><a href="#">Dest 25 X 40</a></li>
+                  <li><a href="#">Dest 30 X 60</a></li>
+                  <li><a href="#">Metbex 30 X 60</a></li>
+                  <li><a href="#">Doseme 40 X 40</a></li>
                 </ul>
               </div>
             </div>
-            <div class="kafelinOlcusu__mainDiv">
-              <h3>Kafelin rengi</h3>
-              <div class="hamisiDivForColor">
-                <p>Hamisi</p>
-                <i id="colorIcon" class="fa-solid fa-chevron-down"></i>
-              </div>
-              <div id="colorDiv__ul">
-                <ul>
-                  <li>
-                    <div class="colorBeyaz"></div>
-                    <a href="#">Beyaz</a> 
-                  </li>
-                  <li>
-                    <div class="colorQara"></div>
-                    <a href="#">Qara</a> 
-                  </li>
-                  <li>
-                    <div class="colorBej"></div>
-                    <a href="#">Bej</a>
-                  </li>
-                  <li>
-                    <div class="colorBoz"></div>
-                    <a href="#">Boz</a>
-                  </li>
-                  <li>
-                    <div class="colorMavi"></div>
-                    <a href="#">Mavi</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
       <!-- butun mehsllar -->
       <section id="allProductCart">
-        <div id="allProductCardForProductsPage" class="container">
-
-        </div>
-
+        <div id="allProductCardForProductsPage" class="container"></div>
       </section>
 
-      <section id="dest24x39">
-
-      </section>
+      <section id="dest24x39"></section>
     </main>
     <!-- bootstrapt linki -->
     <script

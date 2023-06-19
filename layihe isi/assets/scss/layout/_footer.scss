@@ -1,9 +1,9 @@
 footer {
   width: 100%;
   height: 80vh;
-  background-image:  url("https://www.gilanseramik.az/images/bricks.png");
+  background-image: url("https://www.gilanseramik.az/images/bricks.png");
   background-repeat: no-repeat;
-  background-color:#7E828B;
+  background-color: #7e828b;
   .footerMainDuv {
     width: 100%;
     display: flex;
@@ -24,54 +24,76 @@ footer {
       justify-content: center;
       align-items: center;
       color: white;
-      ul{
+      ul {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        h1{
+        h1 {
           padding-bottom: 30px;
         }
-        li{
-          a{
+        li {
+          a {
             color: blue;
             font-size: 24px;
-            &:hover{
+            &:hover {
               color: red;
               transition: 300ms;
             }
           }
-
         }
       }
     }
-    .elaqeFooter{
+    .elaqeFooter {
       width: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      ul{
+      ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        h1{
+        h1 {
           padding-bottom: 10px;
           color: white;
         }
-        h3{
+        h3 {
           padding-top: 25px;
           padding-bottom: 10px;
           color: white;
         }
-        li{
+        li {
           color: blue;
           font-size: 20px;
-          a{
+          a {
             color: red;
           }
         }
       }
- 
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer {
+    height: auto;
+    .footerMainDuv {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .pageLogoFooter {
+        width: 100%;
+        height: auto;
+        p {
+          padding-top: 10px;
+        }
+      }
+      .mehsullarimizFooter {
+        width: 100%;
+      }
+      .elaqeFooter {
+        width: 100%;
+      }
     }
   }
 }

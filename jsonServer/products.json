@@ -21,7 +21,6 @@
       "productPrice": "10.50 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Qara",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Imperia-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Imperiya--40X40.jpg",
@@ -51,7 +50,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Bej",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Ibiza-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/IBIZA-SEVILLA-40x40.jpg",
@@ -67,7 +65,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Beyaz",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Absheron-Beyaz-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Forma-white-40-x-40.jpg",
@@ -83,7 +80,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Bej",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Agdere-Bej-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Agdere-Bej.jpg",
@@ -99,7 +95,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Mavi",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Agdere-Mavi-1-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Agdere-Mavi-33x33.jpg",
@@ -115,7 +110,6 @@
       "productPrice": "13 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Beyaz",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Mebel-Arasi-1b0001.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -131,7 +125,6 @@
       "productPrice": "13 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Bej",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Kux-Rectain-Yellow.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -147,7 +140,6 @@
       "productPrice": "10.50 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Bej",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Monaco-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Monako--40X40.jpg",
@@ -163,7 +155,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Beyaz",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Beyaz-1-02.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Sheki-Beyaz-40x40.jpg",
@@ -179,7 +170,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Bej",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Roma-1-01.jpg",
       "productMoreInfo": {
         "metlagImg": "https://www.gilanseramik.az/storage/assorments/Roma-Dark-40x40.jpg",
@@ -195,7 +185,6 @@
       "productPrice": "11 AZN",
       "productStatus": "Anbarda Var",
       "productColor": "Bej",
-
       "productImage": "https://www.gilanseramik.az/storage/products/Sheki-Bej-01.jpg",
       "productMoreInfo": {
         "metlagImg": "Yoxdur",
@@ -489,21 +478,6 @@
       "id": 32
     },
     {
-      "productName": "Mebel arası - 1",
-      "productSize": "30 X 60",
-      "productPrice": "13 AZN",
-      "productStatus": "Anbarda Var",
-      "productColor": "Bej",
-      "productImage": "https://www.gilanseramik.az/storage/products/Kux---Mebel-Arasi-20002.jpg",
-      "productMoreInfo": {
-        "metlagImg": "Yoxdur",
-        "forWallDark": "Yoxdur",
-        "forWallLight": "https://www.gilanseramik.az/storage/assorments/B1-A--30x60.jpg",
-        "fonDekor": "Yoxdur"
-      },
-      "id": 33
-    },
-    {
       "productName": "Mebel arası - 2",
       "productSize": "30 X 60",
       "productPrice": "13 AZN",
@@ -652,6 +626,18 @@
         "fonDekor": "Yoxdur"
       },
       "id": 43
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Yusif",
+      "surname": "Tagiyev",
+      "age": "23",
+      "city": "Masalli",
+      "phoneNumber": "0516153324",
+      "password": "besiktas123",
+      "gender": "man"
     }
   ]
 }

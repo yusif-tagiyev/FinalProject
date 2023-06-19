@@ -96,15 +96,22 @@ nav {
           text-decoration: none;
         }
       }
-      .iconsDiv {
-        padding-top: 20px;
+      .signupAndLoginDiv {
+        padding-top: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        i {
-          &:hover {
-            color: red;
+        button{
+          width: 50%;
+          height: 32px;
+          border: none;
+          background-color: blue;
+          color: white;
+          border-radius: 10px;
+          &:hover{
+            background-color: red;
+            color: black;
           }
         }
       }
@@ -189,6 +196,9 @@ nav {
 @media only screen and (max-width: 576px) {
   nav {
     .mainDivNavbar {
+      img {
+        width: 30%;
+      }
       .navInfo {
         display: none;
       }
@@ -198,16 +208,16 @@ nav {
       #serachIconDiv {
         display: none;
       }
-      #closeSearchIcon{
+      #closeSearchIcon {
         display: none;
         .searchMainDiv {
           display: none;
         }
       }
       .navAdimPanel {
-        display: none;
+        display: block;
       }
-     
+
       #resMenuIcon {
         display: block;
       }
@@ -253,13 +263,12 @@ nav {
         }
       }
     }
-    
   }
 
   .numberAndIconMobil {
     display: flex;
     flex-direction: column;
-    .phonNumber{
+    .phonNumber {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -272,16 +281,140 @@ nav {
       gap: 10px;
     }
   }
+
+
+  .login {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    #logInBtn {
+      width: 70px;
+      border: none;
+      background-color: blue;
+      color: white;
+    }
+    #signUpBtn {
+      width: 70px;
+      border: none;
+      background-color: blue;
+      color: white;
+    }
+  }
   &.hiddenNav {
     height: 200px;
     width: 100%;
     transition: 1s;
   }
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
   #mobilNav {
     display: block;
   }
+}
+
+// mobil navbardaki login hadisesi
+.loginFormDiv {
+  width: 100%;
+  overflow: hidden;
+  height: 0px;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    input{
+      height: 32px;
+      padding-left: 10px;
+      border: none;
+      border-top-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+      background-color: rgb(207, 207, 207);
+
+
+    }
+    button {
+      border: none;
+      width: 80px;
+      background-color: blue;
+      color: white;
+      height: 32px;
+      border-radius: 20px;
+      &:hover{
+        background-color: red;
+        color: black;
+      }
+    }
+  }
+  &.loginFormHidden{
+    height: 180px;
+    transition: 1s;
+  
+  }
+}
+
+// sign u form div
+
+.sigUpFormDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+  h1{
+    font-size: 32px;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    input{
+      width: 250px;
+      padding-left: 10px;
+      height: 38px;
+      border: none;
+      border-top-left-radius: 17px;
+      border-bottom-right-radius: 17px;
+      background-color: rgb(207, 207, 207);
+
+    }
+    #genderDiv{
+      display: flex;
+      gap: 20px;
+      padding-bottom: 20px;
+      input{
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  button{
+    width: 250px;
+    height: 35px;
+    border: navajowhite;
+    background-color: blue;
+   border-radius: 20px;
+   &:hover{
+    background-color: red;
+    color: black;
+  }
+
+  }
+
+  &.signupFormHidden{
+    height: 430px;
+    opacity: 1;
+    transition: 1s;
+  
+  }
+
+
 }
 
 // @media only screen and (max-width: 992px) {
@@ -326,11 +459,15 @@ nav {
   }
 }
 
-// @media only screen and (max-width: 992px) {
-//   .adminPanelPassword {
-//     display: none;
-//   }
-// }
+@media only screen and (max-width: 576px) {
+  .adminPanelPassword {
+    form {
+      input {
+        max-width: 300px;
+      }
+    }
+  }
+}
 
 .topdanSatisQeydiyyat {
   width: 100%;

@@ -24,67 +24,110 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <nav>
-      <div class="mainDivNavbar container">
-        <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
-        <div class="navInfo">
-          <ul class="mainUl">
-            <li id="dorpdownLi">
-              <a href="./productsPage.html"
-                >Mehsullar
-                <div class="line"></div
-              ></a>
-              <div class="mainDivDorpdown">
-                <div id="mehsullarDropDown">
-                  <ul class="mehsullarUl">
-                    <li>
-                      <div><a href="#">Dest 24 X 39</a></div>
-                    </li>
-                    <li>
-                      <div><a href="#">Dest 25 X 40</a></div>
-                    </li>
-                    <li>
-                      <div><a href="#">Dest 30 X 60</a></div>
-                    </li>
-                    <li>
-                      <div><a href="#">Metbex 30 X 60</a></div>
-                    </li>
-                    <li>
-                      <div><a href="#">Doseme 40 X 40</a></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="./about.html"
-                >Haqqımızda
-                <div class="line"></div
-              ></a>
-            </li>
-            <li>
-              <a href="./productionPage.html">
-                İstehsalat
-                <div class="line"></div
-              ></a>
-            </li>
-          </ul>
-        </div>
+ <!-- page navbar start  -->
+ <nav>
+  <div class="mainDivNavbar container">
+    <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
+    <div class="navInfo">
+      <ul class="mainUl">
+        <li id="dorpdownLi">
+          <a href="./productsPage.html"
+            >Mehsullar
+            <div class="line"></div
+          ></a>
+          <div class="mainDivDorpdown">
+            <div id="mehsullarDropDown">
+              <ul class="mehsullarUl">
+                <li>
+                  <div><a href="#">Dest 24 X 39</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Dest 25 X 40</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Dest 30 X 60</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Metbex 30 X 60</a></div>
+                </li>
+                <li>
+                  <div><a href="#">Doseme 40 X 40</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="./about.html"
+            >Haqqımızda
+            <div class="line"></div
+          ></a>
+        </li>
+        <li>
+          <a href="./productionPage.html">
+            İstehsalat
+            <div class="line"></div
+          ></a>
+        </li>
+      </ul>
+    </div>
+  
+    
+    <div class="navAdimPanel">
+      <p class="adminPAnelP" id="adminPanel">
+        <i class="fa-solid fa-user"></i> Admin
+      </p>
+    </div>
+    <div id="resMenuIcon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</nav>
 
-        <div id="serachIconDiv">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div id="closeSearchIcon">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="searchMainDiv">
-          <input type="search" id="search" placeholder="Search product" />
-        </div>
-        <div>
-          <h1>Welcome Admin</h1>
-        </div>
-      </div>
-    </nav>
+<!-- mobil navbar -->
+<div id="mobilNav" class="container">
+  <div class="navInfoMobil">
+    <ul>
+      <li>
+        <a href="#"
+          >Mehsullar
+          <div class="line"></div
+        ></a>
+      </li>
+      <li>
+        <a href="./about.html"
+          >Haqqimizda
+          <div class="line"></div
+        ></a>
+      </li>
+      <li>
+        <a href="./contactPage.html"
+          >Bizimle elaqe
+          <div class="line"></div
+        ></a>
+      </li>
+    </ul>
+  </div>
+  <div class="numberAndIconMobil">
+    <div class="phonNumber">
+      <a href="#">+99450-615-33-24</a>
+    </div>
+    <div class="iconsDivMobil">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+  </div>
+  <div class="login">
+    <button id="logInBtn">Log in</button>
+    <button id="signUpBtn">Sign up</button>
+  </div>
+</div>
+
+
+
+
+
     <main>
       <!-- post methodu -->
       <section id="addNewProduct">
