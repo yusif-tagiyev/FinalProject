@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- slick linki -->
+    <!-- yazi fontu linki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+
+  
 
     <!-- animasiya linki -->
     <link
@@ -166,12 +169,39 @@
         <input
           type="text"
           type="password"
-          id="userPassword"
+          id="userPasswordLogIn"
           placeholder="Enter the password"
         />
 
         <button>Log In</button>
       </form>
+    </div>
+    <!-- sign up form -->
+    <div class="sigUpFormDiv container">
+      <h1>Qeydiyyatdan kecin.</h1>
+      <form>
+        <input type="text" id="userNameInput" placeholder="Enter your name " />
+        <input
+          type="text"
+          id="userSurnameInput"
+          placeholder="Enter your surname"
+        />
+        <input type="number" id="userAgeInput" placeholder="Enter your age" />
+        <input type="text" id="userCityInput" placeholder="Enter the city" />
+        <input
+          type="number"
+          id="userNumber"
+          placeholder="Enter your phone number"
+        />
+        <input type="password" id="userPassword" placeholder="Enter password" />
+        <div id="genderDiv">
+          <label for="genderMan">Man</label>
+          <input type="radio" id="genderMan" name="gender" value="man" />
+          <label for="genderWoman">Woman</label>
+          <input type="radio" id="genderWoman" name="gender" value="woman" />
+        </div>
+      </form>
+      <button id="signUpBtnforData">Sign up</button>
     </div>
     <!-- admin panele giris -->
     <div class="adminPanelPassword container">
@@ -191,7 +221,7 @@
     </div>
 
     <main>
-      <!-- mehsullarin renge ve olcuye gore filteri -->
+      <!-- mehsullarin  olcuye gore filteri -->
       <section id="products" class="container">
         <div class="mainDivProducts">
           <div class="mehsullarimizProducts">
@@ -201,21 +231,20 @@
             <div class="kafelinOlcusu__mainDiv">
               <h3>Kafelin olcusu</h3>
               <div class="hamisiDivForSize">
-                <p>Hamisi</p>
+                <p id="StaticHamisi">Hamisi</p>
                 <i id="sizeIcon" class="fa-solid fa-chevron-down"></i>
               </div>
               <div id="sizeDiv__ul">
                 <ul>
-                  <li>Hamisi</li>
-                  <li><a href="#">Dest 24 X 39</a></li>
-                  <li><a href="#">Dest 25 X 40</a></li>
-                  <li><a href="#">Dest 30 X 60</a></li>
-                  <li><a href="#">Metbex 30 X 60</a></li>
-                  <li><a href="#">Doseme 40 X 40</a></li>
+                  <li id="hamisi">Hamisi</li>
+                  <li id="dest2439"><a href="#">Dest 24 X 39</a></li>
+                  <li id="dest2540"><a href="#">Dest 25 X 40</a></li>
+                  <li id="dest3060"><a href="#">Dest 30 X 60</a></li>
+                  <li id="metbex3060"><a href="#">Metbex 30 X 60</a></li>
+                  <li id="metlaq4040"><a href="#">Doseme 40 X 40</a></li>
                 </ul>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -226,6 +255,73 @@
 
       <section id="dest24x39"></section>
     </main>
+    <!-- footer -->
+    <footer>
+      <div class="mainDivForFooter container">
+        <div class="footerLeftDiv">
+          <div class="logoDiv">
+            <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
+            <p>© 2023 Bütün hüquqlar qorunur</p>
+          </div>
+          <div class="contactUsFooter">
+            <h3>Bizi sosial şəbəkələrdə izləyin</h3>
+            <div class="iconsDivFooter">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerRightDiv">
+          <div class="firstDiv">
+            <div class="footerMenu">
+              <a href="./about.html"
+                >HAQQIMIZDA
+                <div class="lineForFooter"></div
+              ></a>
+            </div>
+            <div class="footerMenu">
+              <a href="./productionPage.html"
+                >İSTEHSALAT
+                <div class="lineForFooter"></div
+              ></a>
+            </div>
+            <div class="footerMenu">
+              <a href="./productsPage.html"
+                >MƏHSULLAR
+                <div class="lineForFooter"></div
+              ></a>
+            </div>
+          </div>
+          <div class="secondDiv">
+            <div class="secondDiv_leftDiv">
+              <h2>MƏHSULLAR</h2>
+              <ul>
+                <li><a href="#">Dəst 24x39</a></li>
+                <li><a href="#">Dəst 25x40</a></li>
+                <li><a href="#">Dəst 30x60</a></li>
+                <li><a href="#">Mətbəx 30x60</a></li>
+                <li><a href="#">Döşəmə 40x40</a></li>
+              </ul>
+            </div>
+            <div class="secondDiv_rightDiv">
+              <h3 class="elaqe">ƏLAQƏ</h3>
+              <h3 class="satisMerkezi">SATIŞ MƏRKƏZİ:</h3>
+              <p>Moskva Prospekti 73A</p>
+              <div class="numberDiv">
+                <a href="#">+994 12 511 51 14</a>
+                <a href="#">+994 50 705 05 05</a>
+              </div>
+              <br />
+              <br />
+              <div class="mailAdres">
+                <a href="#">info@consdealer.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- bootstrapt linki -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

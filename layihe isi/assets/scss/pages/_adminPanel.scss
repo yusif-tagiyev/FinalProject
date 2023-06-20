@@ -1,113 +1,120 @@
-#addNewProduct{
-    width: 100%;
+#addNewProduct {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  h1 {
+    font-size: 42px;
+  }
+  #newInfoForm {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    h1{
-        font-size: 42px;
+    gap: 10px;
+    width: 70%;
+    padding-top: 30px;
+    input {
+      width: 100%;
+      height: 35px;
+      padding-left: 15px;
+      border-radius: 20px;
+      border: double;
+      text-align: start;
     }
-    #newInfoForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 700px;
-        padding-top: 30px;
-        input{
-            width: 70%;
-            height: 35px;
-            padding-left: 15px;
-            border-radius: 20px;
-            border: double;
-            text-align: start;
+    div {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+      #addBtn {
+        width: 70%;
+        height: 25px;
+        background-color: white;
+        &:hover {
+          background-color: rgb(8, 180, 8);
+          border: none;
+          color: white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+            rgb(51, 51, 51) 0px 0px 0px 3px;
+          transition: 500ms;
         }
-        div{
-            width: 30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2px;
-            #addBtn{
-                width: 70%;
-                height: 25px;
-                background-color: white;
-                &:hover{
-                    background-color: rgb(8, 180, 8);
-                    border: none;
-                    color: white;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;;
-                    transition: 500ms;
-                }
-            }
-            #closeBtn{
-                width: 30%;
-                height: 25px;
-                background-color: white;
-                &:hover{
-                    background-color: red;
-                    border: none;
-                    color: white;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;;
-                    transition: 500ms;
-                }
+      }
+      #closeBtn {
+        width: 30%;
+        height: 25px;
+        background-color: white;
+        &:hover {
+          background-color: red;
+          border: none;
+          color: white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+            rgb(51, 51, 51) 0px 0px 0px 3px;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+}
 
-            }
-        }
-        
+@media only screen and (max-width: 768px) {
+  #addNewProduct {
+    h1 {
+      font-size: 32px;
     }
+    #newInfoForm {
+      div {
+        width: 70%;
+        
+      }
+    }
+  }
 }
 // products table for delete method
-#topdanSatisTable{
-    margin-top: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-image: url("https://www.gilanseramik.az/images/logo.svg");
-   background-repeat: no-repeat;
-   background-color: rgb(88, 115, 115);
-   background-position: center;
-   background-size: 40%;
-    .mainDivTable{
-        width: 100%;
-        #productTable{
-           
-           width: 100%;
-           // border-style: double;
-           .staticTr{
-               // border: double;
-               .staticTh{
-                    color: rgb(255, 255, 255);
-                    border: 2px solid black;
-                    text-align: center;
-                    height: 42px;
-                }
-                .mehsulQiymeti{
-                    border: 2px solid black;
-                    color: rgb(255, 255, 255);
-                    width: 100px;
-                    text-align: center;
-                }
-                .emptyTh{
-                    border: 2px solid black;
-                    color: rgb(255, 255, 255);
-                    width: 100px;
-                   
-                   
-                    
-                }
-            }
+#topdanSatisTable {
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("https://www.gilanseramik.az/images/logo.svg");
+  background-repeat: no-repeat;
+  background-color: rgb(88, 115, 115);
+  background-position: center;
+  background-size: 40%;
+  .mainDivTable {
+    width: 100%;
+    #productTable {
+      width: 100%;
+      // border-style: double;
+      .staticTr {
+        // border: double;
+        .staticTh {
+          color: rgb(255, 255, 255);
+          border: 2px solid black;
+          text-align: center;
+          height: 42px;
         }
+        .mehsulQiymeti {
+          border: 2px solid black;
+          color: rgb(255, 255, 255);
+          width: 100px;
+          text-align: center;
+        }
+        .emptyTh {
+          border: 2px solid black;
+          color: rgb(255, 255, 255);
+          width: 100px;
+        }
+      }
     }
+  }
+}
 
-    
-  }
-  
-.deleteBtn{
-    margin-left: 10px;
-    margin-top: 3px;
-    width: 80%;
-    border: none;
-    border: 1px solid #000000;
-    
-  }
+.deleteBtn {
+  margin-left: 10px;
+  margin-top: 3px;
+  width: 80%;
+  border: none;
+  border: 1px solid #000000;
+}

@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- yazi fontu linki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- animasiya linki -->
     <link
       rel="stylesheet"
@@ -117,7 +125,13 @@
       <div class="navInfoMobil">
         <ul>
           <li>
-            <a href="#"
+            <a href="./homePage.html"
+              >Əsas səhifə
+              <div class="line"></div
+            ></a>
+          </li>
+          <li>
+            <a href="./productsPage.html"
               >Mehsullar
               <div class="line"></div
             ></a>
@@ -129,8 +143,8 @@
             ></a>
           </li>
           <li>
-            <a href="./contactPage.html"
-              >Bizimle elaqe
+            <a href="./productionPage.html"
+              >Istehsalat
               <div class="line"></div
             ></a>
           </li>
@@ -370,38 +384,71 @@
     </main>
     <!-- footer strated -->
     <footer>
-      <div class="footerMainDuv">
-        <div class="pageLogoFooter">
-          <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
-          <p>© 2023 Bütün hüquqlar qorunur</p>
+      <div class="mainDivForFooter container">
+        <div class="footerLeftDiv ">
+          <div class="logoDiv">
+            <img src="https://www.gilanseramik.az/images/logo.svg" alt="" />
+            <p>© 2023 Bütün hüquqlar qorunur</p>
+          </div>
+          <div class="contactUsFooter">
+            <h3>Bizi sosial şəbəkələrdə izləyin</h3>
+            <div class="iconsDivFooter">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="mehsullarimizFooter">
-          <ul>
-            <h1>Məhsullarimiz</h1>
-            <li><a href="#">Dəst 24x39</a></li>
-            <li><a href="#">Dəst 25x40</a></li>
-            <li><a href="#">Dəst 30x60</a></li>
-            <li><a href="#">Mətbəx 30x60</a></li>
-            <li><a href="#">Döşəmə 40x40</a></li>
-          </ul>
-        </div>
-        <div class="elaqeFooter">
-          <ul>
-            <h1>Əlaqə</h1>
-            <li>Huseyn <a href="#"> +994 50 734-44-34</a></li>
-            <li>Shamil<a href="#"> +994 55 349-00-09</a></li>
-            <li>Royal<a href="#"> +994 51 100 34-10</a></li>
-          </ul>
-          <ul>
-            <h3>Anbar</h3>
-            <li>Nureddin<a href="#"> +994 55 401-00-12</a></li>
-            <li>Elcan<a href="#"> +994 77 908-77-71</a></li>
-            <li>Semed <a href="#"> +994 50 876-26-65</a></li>
-          </ul>
+        <div class="footerRightDiv">
+          <div class="firstDiv">
+            <div class="footerMenu">
+              <a href="./about.html"
+                >HAQQIMIZDA
+                <div class="lineForFooter"></div
+              ></a>
+            </div>
+            <div class="footerMenu">
+              <a href="./productionPage.html"
+                >İSTEHSALAT
+                <div class="lineForFooter"></div
+              ></a>
+            </div>
+            <div class="footerMenu">
+              <a href="./productsPage.html"
+                >MƏHSULLAR
+                <div class="lineForFooter"></div
+              ></a>
+            </div>
+          </div>
+          <div class="secondDiv">
+            <div class="secondDiv_leftDiv">
+              <h2>MƏHSULLAR</h2>
+              <ul>
+                <li><a href="#">Dəst 24x39</a></li>
+                <li><a href="#">Dəst 25x40</a></li>
+                <li><a href="#">Dəst 30x60</a></li>
+                <li><a href="#">Mətbəx 30x60</a></li>
+                <li><a href="#">Döşəmə 40x40</a></li>
+              </ul>
+            </div>
+            <div class="secondDiv_rightDiv">
+              <h3 class="elaqe">ƏLAQƏ</h3>
+              <h3 class="satisMerkezi">SATIŞ MƏRKƏZİ:</h3>
+              <p>Moskva Prospekti 73A</p>
+              <div class="numberDiv">
+                <a href="#">+994 12 511 51 14</a>
+                <a href="#">+994 50 705 05 05</a>
+              </div>
+              <br />
+              <br />
+              <div class="mailAdres">
+                <a href="#">info@consdealer.com</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-
     <!-- bootstrapt linki -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

@@ -1,3 +1,8 @@
+
+
+
+
+
 const productTable = document.getElementById("productTable");
 // console.log(productTable);
 

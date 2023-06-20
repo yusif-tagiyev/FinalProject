@@ -53,7 +53,7 @@ adminPageBtn.addEventListener("click", (e) => {
     }
   }
   if (count == 0) {
-    alert("Please");
+    alert("Ad ve ya Parol shevdi, yeniden cehd edin");
   }
 
   e.preventDefault();
@@ -156,7 +156,6 @@ signUpBtnforData.addEventListener("click", (e) => {
   const userCityInput = document.getElementById("userCityInput");
   const userNumber = document.getElementById("userNumber");
   const userPassword = document.getElementById("userPassword");
-  console.log(userPassword);
   const genderMan = document.getElementById("genderMan");
   const genderWoman = document.getElementById("genderWoman");
 
@@ -167,9 +166,10 @@ signUpBtnforData.addEventListener("click", (e) => {
     userCityInput.value != "" &&
     userNumber.value != "" &&
     userPassword.vlue != "" &&
-    genderMan.value != "" || 
-    genderWoman.value!= ""
+    (genderMan.checked == true || genderWoman.checked == true)
   ) {
+    window.location.assign("./productsPage.html");
+
     fetch("http://localhost:3000/users", {
       method: "POST",
       body: JSON.stringify({
@@ -179,7 +179,8 @@ signUpBtnforData.addEventListener("click", (e) => {
         city: userCityInput.value,
         phoneNumber: userNumber.value,
         password: userPassword.value,
-        gender: genderMan.checked === true ? genderMan.value : genderWoman.value,
+        gender:
+          genderMan.checked === true ? genderMan.value : genderWoman.value,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -200,7 +201,6 @@ const logInBtnForEnterPage = document.getElementById("logInBtnForEnterPage");
 const userName = document.getElementById("userName");
 const userPasswordLogIn = document.getElementById("userPasswordLogIn");
 
-
 logInBtnForEnterPage.addEventListener("click", (e) => {
   // console.log("loginden gelen 300");
   fetch("http://localhost:3000/users")
@@ -209,13 +209,34 @@ logInBtnForEnterPage.addEventListener("click", (e) => {
       console.log(data);
       for (let i = 0; i < data.length; i++) {
         console.log(data[i].name);
-          if (data[i].name == userName.value && data[i].surname == userPasswordLogIn.value) {
-            window.location.assign("./productsPage.html");
+        if (
+          data[i].name == userName.value &&
+          data[i].password == userPasswordLogIn.value
+        ) {
+          window.location.assign("./productsPage.html");
         }
       }
     })
     .catch((err) => console.log(err));
 
+  e.preventDefault();
+});
+
+
+// log in btn mobilm ucun
+
+
+const logInBtn =  document.getElementById("logInBtn");
+// console.log(logInBtn);
+logInBtn.addEventListener("click", (e) => {
+  loginFormDiv.classList.toggle("loginFormHidden");
+  e.preventDefault();
+});
+
+const signUpBtn = document.getElementById("signUpBtn");
+
+signUpBtn.addEventListener("click", (e) => {
+  sigUpFormDiv.classList.toggle("signupFormHidden");
   e.preventDefault();
 });
 
@@ -322,3 +343,14 @@ function startCalculator() {
 }
 
 startCalculator();
+
+// kafel olcsu olan div
+const sizeDiv__ul = document.getElementById("sizeDiv__ul");
+const hamisiDivForSize = document.querySelector(".hamisiDivForSize");
+const sizeIcon = document.getElementById("sizeIcon");
+
+hamisiDivForSize.addEventListener("click", (e) => {
+  sizeDiv__ul.classList.toggle("dBlock");
+  sizeIcon.classList.toggle("rotate");
+  e.preventDefault();
+});

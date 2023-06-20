@@ -8,17 +8,7 @@ hamisiDivForSize.addEventListener("click", (e) => {
   sizeIcon.classList.toggle("rotate");
   e.preventDefault();
 });
-// reng secimi olan div
-const hamisiDivForColor = document.querySelector(".hamisiDivForColor");
-const colorDiv__ul = document.getElementById("colorDiv__ul");
-const colorIcon = document.getElementById("colorIcon");
 
-hamisiDivForColor.addEventListener("click", (e) => {
-  // console.log("salam");
-  colorDiv__ul.classList.toggle("dBlock");
-  colorIcon.classList.toggle("rotate");
-  e.preventDefault();
-});
 // adminpanel ve topdan aliwverise kecid
 const topdanAlisVeris = document.getElementById("topdanAlisVeris");
 const topdanSatisQeydiyyat = document.querySelector(".topdanSatisQeydiyyat");
@@ -31,7 +21,6 @@ const adminPanelPassword = document.querySelector(".adminPanelPassword");
 adminPanel.addEventListener("click", () => {
   adminPanelPassword.classList.toggle("adminPanelHidden");
 });
-
 
 const adminPageBtn = document.getElementById("adminPageBtn");
 const parol = document.getElementById("parol");
@@ -98,15 +87,17 @@ const logInBtnForNoutbook = document.getElementById("logInBtnForNoutbook");
 const loginFormDiv = document.querySelector(".loginFormDiv");
 logInBtnForNoutbook.addEventListener("click", () => {
   // console.log("loginden gelen");
-  loginFormDiv.classList.toggle("loginFormHidden")
-
+  loginFormDiv.classList.toggle("loginFormHidden");
 });
 
-
-
-//  burani unutma
-// ipd dan gelecey
-const loadMoreBtn = document.getElementById("loadMoreBtn");
+const signUpBtnForNoutbook = document.getElementById("signUpBtnForNoutbook");
+// console.log(signUpBtnForNoutbook);
+const sigUpFormDiv = document.querySelector(".sigUpFormDiv");
+// console.log(sigUpFormDiv);
+signUpBtnForNoutbook.addEventListener("click", () => {
+  // console.log("salam signupdan gelen");
+  sigUpFormDiv.classList.toggle("signupFormHidden");
+});
 
 function productIpa() {
   fetch("http://localhost:3000/gilan_seramic")
@@ -118,18 +109,55 @@ function productIpa() {
         "allProductCardForProductsPage"
       );
       // sehifede olan e kard
-      for (let i = cardStart; i < cardEnd; i++) {
-        console.log("evvelinci qiymet", cardStart);
-        console.log(i);
-        console.log(data[i]);
-        console.log("sonuncu  qiymet", cardEnd);
-        if (data[i]) {
+      for (let i = 0; i < data.length; i++) {
+        const mainDiv = document.createElement("div");
+        mainDiv.classList.add("productsCard_api");
+        mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
+        mainDiv.style.backgroundSize = "cover";
+        mainDiv.style.backgroundRepeat = "no-repeat";
+        allProductCardForProductsPage.appendChild(mainDiv);
+
+        // wish list hearth div
+        const mainDivIconDiv = document.createElement("div");
+        const iconTag = document.createElement("i");
+        mainDivIconDiv.classList.add("herthIcon");
+        iconTag.classList.add("fa-regular", "fa-heart");
+        mainDiv.appendChild(mainDivIconDiv);
+        mainDivIconDiv.appendChild(iconTag);
+
+        // product name
+
+        const productNameDiv = document.createElement("div");
+        productNameDiv.classList.add("productName");
+        const aTag = document.createElement("a");
+        aTag.href = "#";
+        aTag.innerText = data[i].productName;
+        productNameDiv.appendChild(aTag);
+        mainDiv.appendChild(productNameDiv);
+      }
+    })
+    .catch((err) => console.log(err));
+}
+
+function productsize2439() {
+  fetch("http://localhost:3000/gilan_seramic")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+
+      const allProductCardForProductsPage = document.getElementById(
+        "allProductCardForProductsPage"
+      );
+      // sehifede olan e kard
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].productSize == "24 X 39") {
           const mainDiv = document.createElement("div");
           mainDiv.classList.add("productsCard_api");
           mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
           mainDiv.style.backgroundSize = "cover";
           mainDiv.style.backgroundRepeat = "no-repeat";
-          productsCard.appendChild(mainDiv);
+          allProductCardForProductsPage.appendChild(mainDiv);
 
           // wish list hearth div
           const mainDivIconDiv = document.createElement("div");
@@ -148,18 +176,220 @@ function productIpa() {
           aTag.innerText = data[i].productName;
           productNameDiv.appendChild(aTag);
           mainDiv.appendChild(productNameDiv);
-        } else {
-          console.log("data bitdi");
         }
       }
+    })
+    .catch((err) => console.log(err));
+}
+function productsize3060() {
+  fetch("http://localhost:3000/gilan_seramic")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
 
-      if (cardEnd >= data.length) {
-        loadMoreBtn.style.display = "none";
+      const allProductCardForProductsPage = document.getElementById(
+        "allProductCardForProductsPage"
+      );
+      // sehifede olan e kard
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].productSize == "30 X 60") {
+          const mainDiv = document.createElement("div");
+          mainDiv.classList.add("productsCard_api");
+          mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
+          mainDiv.style.backgroundSize = "cover";
+          mainDiv.style.backgroundRepeat = "no-repeat";
+          allProductCardForProductsPage.appendChild(mainDiv);
+
+          // wish list hearth div
+          const mainDivIconDiv = document.createElement("div");
+          const iconTag = document.createElement("i");
+          mainDivIconDiv.classList.add("herthIcon");
+          iconTag.classList.add("fa-regular", "fa-heart");
+          mainDiv.appendChild(mainDivIconDiv);
+          mainDivIconDiv.appendChild(iconTag);
+
+          // product name
+
+          const productNameDiv = document.createElement("div");
+          productNameDiv.classList.add("productName");
+          const aTag = document.createElement("a");
+          aTag.href = "#";
+          aTag.innerText = data[i].productName;
+          productNameDiv.appendChild(aTag);
+          mainDiv.appendChild(productNameDiv);
+        }
       }
-      cardStart += 3;
-      cardEnd += 3;
     })
     .catch((err) => console.log(err));
 }
 
-productIpa();
+function productsize4040() {
+  fetch("http://localhost:3000/gilan_seramic")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+
+      const allProductCardForProductsPage = document.getElementById(
+        "allProductCardForProductsPage"
+      );
+      // sehifede olan e kard
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].productSize == "40 X 40") {
+          const mainDiv = document.createElement("div");
+          mainDiv.classList.add("productsCard_api");
+          mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
+          mainDiv.style.backgroundSize = "cover";
+          mainDiv.style.backgroundRepeat = "no-repeat";
+          allProductCardForProductsPage.appendChild(mainDiv);
+
+          // wish list hearth div
+          const mainDivIconDiv = document.createElement("div");
+          const iconTag = document.createElement("i");
+          mainDivIconDiv.classList.add("herthIcon");
+          iconTag.classList.add("fa-regular", "fa-heart");
+          mainDiv.appendChild(mainDivIconDiv);
+          mainDivIconDiv.appendChild(iconTag);
+
+          // product name
+
+          const productNameDiv = document.createElement("div");
+          productNameDiv.classList.add("productName");
+          const aTag = document.createElement("a");
+          aTag.href = "#";
+          aTag.innerText = data[i].productName;
+          productNameDiv.appendChild(aTag);
+          mainDiv.appendChild(productNameDiv);
+        }
+      }
+    })
+    .catch((err) => console.log(err));
+}
+
+function productsizeMebelArasi3060() {
+  fetch("http://localhost:3000/gilan_seramic")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+
+      const allProductCardForProductsPage = document.getElementById(
+        "allProductCardForProductsPage"
+      );
+      // sehifede olan e kard
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].productSize == "Mebel arasi 30 X 60") {
+          const mainDiv = document.createElement("div");
+          mainDiv.classList.add("productsCard_api");
+          mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
+          mainDiv.style.backgroundSize = "cover";
+          mainDiv.style.backgroundRepeat = "no-repeat";
+          allProductCardForProductsPage.appendChild(mainDiv);
+
+          // wish list hearth div
+          const mainDivIconDiv = document.createElement("div");
+          const iconTag = document.createElement("i");
+          mainDivIconDiv.classList.add("herthIcon");
+          iconTag.classList.add("fa-regular", "fa-heart");
+          mainDiv.appendChild(mainDivIconDiv);
+          mainDivIconDiv.appendChild(iconTag);
+
+          // product name
+
+          const productNameDiv = document.createElement("div");
+          productNameDiv.classList.add("productName");
+          const aTag = document.createElement("a");
+          aTag.href = "#";
+          aTag.innerText = data[i].productName;
+          productNameDiv.appendChild(aTag);
+          mainDiv.appendChild(productNameDiv);
+        }
+      }
+    })
+    .catch((err) => console.log(err));
+}
+
+function productsize2540() {
+  fetch("http://localhost:3000/gilan_seramic")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+
+      const allProductCardForProductsPage = document.getElementById(
+        "allProductCardForProductsPage"
+      );
+      // sehifede olan e kard
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].productSize == "25 X 40") {
+          const mainDiv = document.createElement("div");
+          mainDiv.classList.add("productsCard_api");
+          mainDiv.style.backgroundImage = `url(${data[i].productImage} )`;
+          mainDiv.style.backgroundSize = "cover";
+          mainDiv.style.backgroundRepeat = "no-repeat";
+          allProductCardForProductsPage.appendChild(mainDiv);
+
+          // wish list hearth div
+          const mainDivIconDiv = document.createElement("div");
+          const iconTag = document.createElement("i");
+          mainDivIconDiv.classList.add("herthIcon");
+          iconTag.classList.add("fa-regular", "fa-heart");
+          mainDiv.appendChild(mainDivIconDiv);
+          mainDivIconDiv.appendChild(iconTag);
+
+          // product name
+
+          const productNameDiv = document.createElement("div");
+          productNameDiv.classList.add("productName");
+          const aTag = document.createElement("a");
+          aTag.href = "#";
+          aTag.innerText = data[i].productName;
+          productNameDiv.appendChild(aTag);
+          mainDiv.appendChild(productNameDiv);
+        }
+      }
+    })
+    .catch((err) => console.log(err));
+}
+const StaticHamisi = document.getElementById("StaticHamisi");
+const hamisi = document.getElementById("hamisi");
+console.log(hamisi);
+const dest2439 = document.getElementById("dest2439");
+const dest2540 = document.getElementById("dest2540");
+const dest3060 = document.getElementById("dest3060");
+const metbex3060 = document.getElementById("metbex3060");
+const metlaq4040 = document.getElementById("metlaq4040");
+
+hamisi.addEventListener("click", () => {
+  StaticHamisi.innerText = "Hamisi";
+  productIpa();
+});
+
+dest2439.addEventListener("click", () => {
+  StaticHamisi.innerText = "Dest 24 X 39";
+  productsize2439();
+});
+
+dest2540.addEventListener("click", () => {
+  StaticHamisi.innerText = "Dest 25 X 40";
+  productsize2540();
+});
+
+dest3060.addEventListener("click", () => {
+  StaticHamisi.innerText = "Dest 30 X 60";
+  productsize3060();
+});
+
+metbex3060.addEventListener("click", () => {
+  StaticHamisi.innerText = "Metbex 30 X 60";
+  productsizeMebelArasi3060();
+});
+
+metlaq4040.addEventListener("click", () => {
+  StaticHamisi.innerText = "Doseme 40 X 40";
+  productsize4040();
+});
+
+// ipd dan gelecey
+const loadMoreBtn = document.getElementById("loadMoreBtn");

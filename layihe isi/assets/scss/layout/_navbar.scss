@@ -102,14 +102,14 @@ nav {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        button{
+        button {
           width: 50%;
           height: 32px;
           border: none;
           background-color: blue;
           color: white;
           border-radius: 10px;
-          &:hover{
+          &:hover {
             background-color: red;
             color: black;
           }
@@ -193,7 +193,7 @@ nav {
     }
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   nav {
     .mainDivNavbar {
       img {
@@ -282,7 +282,6 @@ nav {
     }
   }
 
-
   .login {
     padding-top: 20px;
     width: 100%;
@@ -309,7 +308,7 @@ nav {
     transition: 1s;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #mobilNav {
     display: block;
   }
@@ -326,15 +325,13 @@ nav {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    input{
+    input {
       height: 32px;
       padding-left: 10px;
       border: none;
       border-top-left-radius: 17px;
       border-bottom-right-radius: 17px;
       background-color: rgb(207, 207, 207);
-
-
     }
     button {
       border: none;
@@ -343,38 +340,37 @@ nav {
       color: white;
       height: 32px;
       border-radius: 20px;
-      &:hover{
+      &:hover {
         background-color: red;
         color: black;
       }
     }
   }
-  &.loginFormHidden{
+  &.loginFormHidden {
     height: 180px;
     transition: 1s;
-  
   }
 }
 
 // sign u form div
 
-.sigUpFormDiv{
+.sigUpFormDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 0px;
   overflow: hidden;
-  h1{
+  h1 {
     font-size: 32px;
   }
-  form{
+  form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    input{
+    input {
       width: 250px;
       padding-left: 10px;
       height: 38px;
@@ -382,39 +378,34 @@ nav {
       border-top-left-radius: 17px;
       border-bottom-right-radius: 17px;
       background-color: rgb(207, 207, 207);
-
     }
-    #genderDiv{
+    #genderDiv {
       display: flex;
       gap: 20px;
       padding-bottom: 20px;
-      input{
+      input {
         width: auto;
         height: auto;
       }
     }
   }
-  button{
+  button {
     width: 250px;
     height: 35px;
     border: navajowhite;
     background-color: blue;
-   border-radius: 20px;
-   &:hover{
-    background-color: red;
-    color: black;
+    border-radius: 20px;
+    &:hover {
+      background-color: red;
+      color: black;
+    }
   }
 
-  }
-
-  &.signupFormHidden{
+  &.signupFormHidden {
     height: 430px;
     opacity: 1;
     transition: 1s;
-  
   }
-
-
 }
 
 // @media only screen and (max-width: 992px) {
@@ -459,7 +450,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .adminPanelPassword {
     form {
       input {

@@ -1,72 +1,136 @@
 footer {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-image: url("https://www.gilanseramik.az/images/bricks.png");
   background-repeat: no-repeat;
-  background-color: #7e828b;
-  .footerMainDuv {
-    width: 100%;
+  background-color: #8a8b8d;
+  .mainDivForFooter {
     display: flex;
-    .pageLogoFooter {
+    .footerLeftDiv {
+      text-align: center;
       width: 40%;
-      min-height: 80vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      p {
-        padding-top: 30px;
-      }
-    }
-    .mehsullarimizFooter {
-      width: 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      ul {
+      height: 100vh;
+      .logoDiv {
+        width: 100%;
+        height: 50%;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        gap: 20px;
-        h1 {
-          padding-bottom: 30px;
+        p {
+          padding-top: 20px;
+          color: blue;
         }
-        li {
+      }
+      .contactUsFooter {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+          color: rgb(0, 0, 0);
+        }
+        .iconsDivFooter {
+          padding-top: 20px;
+          display: flex;
+          gap: 30px;
           a {
             color: blue;
-            font-size: 24px;
+
             &:hover {
-              color: red;
-              transition: 300ms;
+              color: black;
+              transition: 500ms;
+              scale: 2;
             }
           }
         }
       }
     }
-    .elaqeFooter {
-      width: 30%;
+    .footerRightDiv {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        h1 {
-          padding-bottom: 10px;
-          color: white;
-        }
-        h3 {
-          padding-top: 25px;
-          padding-bottom: 10px;
-          color: white;
-        }
-        li {
-          color: blue;
-          font-size: 20px;
+      width: 60%;
+      .firstDiv {
+        width: 32%;
+        padding-top: 100px;
+        padding-left: 10px;
+        .footerMenu {
+          padding-top: 20px;
           a {
-            color: red;
+            color: rgb(0, 0, 0);
+            .lineForFooter {
+              width: 0px;
+              background-color: black;
+              height: 0px;
+            }
+            &:hover {
+              color: blue;
+              .lineForFooter {
+                width: 55%;
+                height: 1px;
+                background-color: blue;
+                transition: 600ms;
+              }
+            }
+          }
+        }
+      }
+      .secondDiv {
+        width: 100%;
+        display: flex;
+        .secondDiv_leftDiv {
+          width: 50%;
+          padding-top: 120px;
+          h2 {
+            font-size: 16px;
+          }
+          ul {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              a {
+                color: black;
+                &:hover {
+                  color: blue;
+                }
+              }
+            }
+          }
+        }
+        .secondDiv_rightDiv {
+          width: 50%;
+          .elaqe {
+            padding-top: 120px;
+            font-size: 16px;
+          }
+          .satisMerkezi {
+            padding-top: 20px;
+            font-size: 24px;
+          }
+          p {
+            color: blue;
+          }
+          .numberDiv {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-top: 20px;
+            a {
+              color: black;
+              &:hover {
+                color: blue;
+              }
+            }
+          }
+          .mailAdres {
+            padding-top: 95px;
+            a {
+              font-size: 24px;
+              color: black;
+            }
           }
         }
       }
@@ -74,25 +138,76 @@ footer {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   footer {
-    height: auto;
-    .footerMainDuv {
-      width: 100%;
+    padding-bottom: 10px;
+    .mainDivForFooter {
       display: flex;
       flex-direction: column;
-      .pageLogoFooter {
+      .footerLeftDiv {
         width: 100%;
         height: auto;
-        p {
-          padding-top: 10px;
+        display: flex;
+        .logoDiv {
+          padding-top: 20px;
+          img {
+            width: 50%;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .contactUsFooter {
+          padding-top: 20px;
+          h3 {
+            font-size: 16px;
+          }
+          .iconsDivFooter {
+            padding-top: 0;
+          }
         }
       }
-      .mehsullarimizFooter {
+      .footerRightDiv {
         width: 100%;
-      }
-      .elaqeFooter {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .firstDiv {
+          width: 100%;
+          padding-top: 10px;
+          padding-left: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .secondDiv {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          // align-items: center;
+          .secondDiv_leftDiv {
+            width: 50%;
+            padding-top: 20px;
+            padding-left: 30px;
+          }
+          .secondDiv_rightDiv {
+            width: 50%;
+            padding-right: 30px;
+            text-align: end;
+            .elaqe {
+              padding-top: 20px;
+            }
+            .satisMerkezi {
+              font-size: 16px;
+            }
+            .numberDiv{
+              font-size: 14px
+            }
+            .mailAdres {
+              display: none;
+            }
+          }
+        }
       }
     }
   }

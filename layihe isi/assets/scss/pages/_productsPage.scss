@@ -56,25 +56,7 @@ main {
               }
             }
           }
-          .hamisiDivForColor {
-            padding: 10px;
-            height: 40px;
-            width: 100%;
-            background-color: #f7f9fd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            a {
-              color: grey;
-            }
-            #colorIcon {
-              color: rgb(58, 58, 58);
-              &.rotate{
-                transform: rotate(180deg);
-                transition: 500ms;
-              }
-            }
-          }
+          
           #sizeDiv__ul {
             display: none;
             width: 180px;
@@ -103,76 +85,7 @@ main {
                 display: block;
               }
           }
-          #colorDiv__ul {
-            display: none;
-            width: 180px;
-            height: auto;
-            background-color: rgb(238, 234, 234);
-            color: white;
-            position: absolute;
-            top: 86px;
-            padding-left: 30px;
-            ul {
-              display: flex;
-              flex-direction: column;
-              gap: 5px;
-              position: relative;
-              a{
-                color: rgb(73, 73, 73);
-                &:hover{
-                    color: blue;
-                }
-              }
-              .colorBeyaz{
-                top: 5px;
-                left: -25px;
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                border-radius: 5px;
-                background-color: white;
-              }
-              .colorQara{
-                top: 34px;
-                left: -25px;
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                border-radius: 5px;
-                background-color: rgb(0, 0, 0);
-              }
-              .colorBej{
-                top: 63px;
-                left: -25px;
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                border-radius: 5px;
-                background-color: #FFF2CC;
-              }
-              .colorBoz{
-                top: 93px;
-                left: -25px;
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                border-radius: 5px;
-                background-color:grey;
-              }
-              .colorMavi{
-                top: 121px;
-                left: -25px;
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                border-radius: 5px;
-                background-color: blue;
-              }
-            }
-            &.dBlock {
-              display: block;
-            }
-          }
+          
         }
       }
     }
@@ -180,7 +93,7 @@ main {
 //  rezmere gore secim zamani yaranacaq kartin stili
   #allProductCart{
     width: 100%;
-    border: 1px solid black;
+    padding-top: 160px;
     #allProductCardForProductsPage{
       width: 100%;
       display: flex;

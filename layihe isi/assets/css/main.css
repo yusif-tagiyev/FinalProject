@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
 
 a {
@@ -204,7 +205,7 @@ nav .mainDivNavbar #resMenuIcon {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   nav .mainDivNavbar img {
     width: 30%;
   }
@@ -293,7 +294,7 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 1s;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #mobilNav {
     display: block;
   }
@@ -423,7 +424,7 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 800ms;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .adminPanelPassword form input {
     max-width: 300px;
   }
@@ -468,7 +469,7 @@ nav .mainDivNavbar #resMenuIcon {
   height: 100vh;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .myClassImgSize {
     height: 80vh;
   }
@@ -491,7 +492,7 @@ nav .mainDivNavbar #resMenuIcon {
   font-weight: 900;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .carouselMyCaption {
     display: block !important;
   }
@@ -593,7 +594,7 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 600ms;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #someProducts .mainDivSomeProducts .məhsullarimiz {
     padding-top: 30px;
   }
@@ -641,7 +642,7 @@ nav .mainDivNavbar #resMenuIcon {
   height: 100vh;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #storeLocation .mainDivStoreLocation {
     padding-top: 30px;
   }
@@ -747,7 +748,7 @@ nav .mainDivNavbar #resMenuIcon {
   scale: 1.1;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   #calculator .calculatorMainDiv {
     display: flex;
     flex-direction: column;
@@ -792,11 +793,11 @@ nav .mainDivNavbar #resMenuIcon {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 700px;
+  width: 70%;
   padding-top: 30px;
 }
 #addNewProduct #newInfoForm input {
-  width: 70%;
+  width: 100%;
   height: 35px;
   padding-left: 15px;
   border-radius: 20px;
@@ -835,6 +836,14 @@ nav .mainDivNavbar #resMenuIcon {
   transition: 500ms;
 }
 
+@media only screen and (max-width: 768px) {
+  #addNewProduct h1 {
+    font-size: 32px;
+  }
+  #addNewProduct #newInfoForm div {
+    width: 70%;
+  }
+}
 #topdanSatisTable {
   margin-top: 100px;
   padding-top: 40px;
@@ -1024,7 +1033,7 @@ main #istehsalProssesimiz .mainDivForIstehsal .beynelxalqStandartlar p {
   width: 500px;
   color: white;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #istehsalProssesimiz .mainDivForIstehsal {
     display: flex;
     flex-direction: column;
@@ -1073,7 +1082,7 @@ main #xammalBazasi .mainDivXammalBazasi .xammal .xammalFirstDiv .lineXammalBazas
 main #xammalBazasi .mainDivXammalBazasi .xammal .xammalSecondDiv {
   width: 60%;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #xammalBazasi .mainDivXammalBazasi .xammal {
     display: flex;
     flex-direction: column;
@@ -1094,6 +1103,12 @@ main #xammalBazasi .mainDivXammalBazasi .xammal .xammalSecondDiv {
 main .bootstraptSliderMyImgSize {
   width: 100%;
   height: 80vh;
+}
+@media only screen and (max-width: 768px) {
+  main .bootstraptSliderMyImgSize {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 main #products {
@@ -1156,25 +1171,6 @@ main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDi
   transform: rotate(180deg);
   transition: 500ms;
 }
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor {
-  padding: 10px;
-  height: 40px;
-  width: 100%;
-  background-color: #f7f9fd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor a {
-  color: grey;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor #colorIcon {
-  color: rgb(58, 58, 58);
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv .hamisiDivForColor #colorIcon.rotate {
-  transform: rotate(180deg);
-  transition: 500ms;
-}
 main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul {
   display: none;
   width: 180px;
@@ -1203,79 +1199,9 @@ main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv_
 main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #sizeDiv__ul.dBlock {
   display: block;
 }
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul {
-  display: none;
-  width: 180px;
-  height: auto;
-  background-color: rgb(238, 234, 234);
-  color: white;
-  position: absolute;
-  top: 86px;
-  padding-left: 30px;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  position: relative;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul a {
-  color: rgb(73, 73, 73);
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul a:hover {
-  color: blue;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorBeyaz {
-  top: 5px;
-  left: -25px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 5px;
-  background-color: white;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorQara {
-  top: 34px;
-  left: -25px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 5px;
-  background-color: rgb(0, 0, 0);
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorBej {
-  top: 63px;
-  left: -25px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 5px;
-  background-color: #FFF2CC;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorBoz {
-  top: 93px;
-  left: -25px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 5px;
-  background-color: grey;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul ul .colorMavi {
-  top: 121px;
-  left: -25px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 5px;
-  background-color: blue;
-}
-main #products .mainDivProducts .kafelinOlcusu .kafelinOlcusu__mainDiv #colorDiv__ul.dBlock {
-  display: block;
-}
 main #allProductCart {
   width: 100%;
-  border: 1px solid black;
+  padding-top: 160px;
 }
 main #allProductCart #allProductCardForProductsPage {
   width: 100%;
@@ -1361,7 +1287,7 @@ main #zavod .mainDivZavod .gilanSeramicMMC {
   padding-top: 100px;
   width: 50%;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #zavod {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -1395,7 +1321,7 @@ main #factoryImg .mainDivFactoryImg p {
   padding-top: 20px;
   color: rgb(152, 152, 152);
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #factoryImg .mainDivFactoryImg img {
     height: 50vh;
   }
@@ -1434,7 +1360,7 @@ main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari {
 main #ourDifference .mainDivOurDifference .sirketinTexnologiyalari p {
   width: 70%;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #ourDifference {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1501,7 +1427,7 @@ main #factoryDifferentImg .maindivDifferentImg .thirdImg img:hover {
   scale: 1.1;
   transition: 600ms;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #factoryDifferentImg .maindivDifferentImg {
     display: flex;
     flex-direction: column;
@@ -1547,7 +1473,7 @@ main #missiyamiz .mainDivForMissiamiz h1 {
 main #missiyamiz .mainDivForMissiamiz .nailiyyetler {
   padding-right: 250px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #missiyamiz {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1609,7 +1535,7 @@ main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat
 main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat .uyqunluqNo p {
   padding-left: 25px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   main #sertifikatlar {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1645,98 +1571,211 @@ main #sertifikatlar .mainDivForSertifikatlar .sertificateImages .kafelSertifikat
 
 footer {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-image: url("https://www.gilanseramik.az/images/bricks.png");
   background-repeat: no-repeat;
-  background-color: #7e828b;
+  background-color: #8a8b8d;
 }
-footer .footerMainDuv {
-  width: 100%;
+footer .mainDivForFooter {
   display: flex;
 }
-footer .footerMainDuv .pageLogoFooter {
+footer .mainDivForFooter .footerLeftDiv {
+  text-align: center;
   width: 40%;
-  min-height: 80vh;
+  height: 100vh;
+}
+footer .mainDivForFooter .footerLeftDiv .logoDiv {
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-footer .footerMainDuv .pageLogoFooter p {
-  padding-top: 30px;
+footer .mainDivForFooter .footerLeftDiv .logoDiv p {
+  padding-top: 20px;
+  color: blue;
 }
-footer .footerMainDuv .mehsullarimizFooter {
-  width: 30%;
+footer .mainDivForFooter .footerLeftDiv .contactUsFooter {
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  flex-direction: column;
 }
-footer .footerMainDuv .mehsullarimizFooter ul {
+footer .mainDivForFooter .footerLeftDiv .contactUsFooter h3 {
+  color: rgb(0, 0, 0);
+}
+footer .mainDivForFooter .footerLeftDiv .contactUsFooter .iconsDivFooter {
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+footer .mainDivForFooter .footerLeftDiv .contactUsFooter .iconsDivFooter a {
+  color: blue;
+}
+footer .mainDivForFooter .footerLeftDiv .contactUsFooter .iconsDivFooter a:hover {
+  color: black;
+  transition: 500ms;
+  scale: 2;
+}
+footer .mainDivForFooter .footerRightDiv {
+  display: flex;
+  width: 60%;
+}
+footer .mainDivForFooter .footerRightDiv .firstDiv {
+  width: 32%;
+  padding-top: 100px;
+  padding-left: 10px;
+}
+footer .mainDivForFooter .footerRightDiv .firstDiv .footerMenu {
+  padding-top: 20px;
+}
+footer .mainDivForFooter .footerRightDiv .firstDiv .footerMenu a {
+  color: rgb(0, 0, 0);
+}
+footer .mainDivForFooter .footerRightDiv .firstDiv .footerMenu a .lineForFooter {
+  width: 0px;
+  background-color: black;
+  height: 0px;
+}
+footer .mainDivForFooter .footerRightDiv .firstDiv .footerMenu a:hover {
+  color: blue;
+}
+footer .mainDivForFooter .footerRightDiv .firstDiv .footerMenu a:hover .lineForFooter {
+  width: 55%;
+  height: 1px;
+  background-color: blue;
+  transition: 600ms;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv {
+  width: 100%;
+  display: flex;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_leftDiv {
+  width: 50%;
+  padding-top: 120px;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_leftDiv h2 {
+  font-size: 16px;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_leftDiv ul {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-footer .footerMainDuv .mehsullarimizFooter ul h1 {
-  padding-bottom: 30px;
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_leftDiv ul li a {
+  color: black;
 }
-footer .footerMainDuv .mehsullarimizFooter ul li a {
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_leftDiv ul li a:hover {
   color: blue;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv {
+  width: 50%;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .elaqe {
+  padding-top: 120px;
+  font-size: 16px;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .satisMerkezi {
+  padding-top: 20px;
   font-size: 24px;
 }
-footer .footerMainDuv .mehsullarimizFooter ul li a:hover {
-  color: red;
-  transition: 300ms;
-}
-footer .footerMainDuv .elaqeFooter {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-footer .footerMainDuv .elaqeFooter ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-footer .footerMainDuv .elaqeFooter ul h1 {
-  padding-bottom: 10px;
-  color: white;
-}
-footer .footerMainDuv .elaqeFooter ul h3 {
-  padding-top: 25px;
-  padding-bottom: 10px;
-  color: white;
-}
-footer .footerMainDuv .elaqeFooter ul li {
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv p {
   color: blue;
-  font-size: 20px;
 }
-footer .footerMainDuv .elaqeFooter ul li a {
-  color: red;
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .numberDiv {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .numberDiv a {
+  color: black;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .numberDiv a:hover {
+  color: blue;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .mailAdres {
+  padding-top: 95px;
+}
+footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .mailAdres a {
+  font-size: 24px;
+  color: black;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   footer {
-    height: auto;
+    padding-bottom: 10px;
   }
-  footer .footerMainDuv {
+  footer .mainDivForFooter {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .mainDivForFooter .footerLeftDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  footer .mainDivForFooter .footerLeftDiv .logoDiv {
+    padding-top: 20px;
+  }
+  footer .mainDivForFooter .footerLeftDiv .logoDiv img {
+    width: 50%;
+  }
+  footer .mainDivForFooter .footerLeftDiv .logoDiv p {
+    font-size: 12px;
+  }
+  footer .mainDivForFooter .footerLeftDiv .contactUsFooter {
+    padding-top: 20px;
+  }
+  footer .mainDivForFooter .footerLeftDiv .contactUsFooter h3 {
+    font-size: 16px;
+  }
+  footer .mainDivForFooter .footerLeftDiv .contactUsFooter .iconsDivFooter {
+    padding-top: 0;
+  }
+  footer .mainDivForFooter .footerRightDiv {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  footer .footerMainDuv .pageLogoFooter {
+  footer .mainDivForFooter .footerRightDiv .firstDiv {
     width: 100%;
-    height: auto;
-  }
-  footer .footerMainDuv .pageLogoFooter p {
     padding-top: 10px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  footer .footerMainDuv .mehsullarimizFooter {
+  footer .mainDivForFooter .footerRightDiv .secondDiv {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  footer .footerMainDuv .elaqeFooter {
-    width: 100%;
+  footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_leftDiv {
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+  footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv {
+    width: 50%;
+    padding-right: 30px;
+    text-align: end;
+  }
+  footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .elaqe {
+    padding-top: 20px;
+  }
+  footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .satisMerkezi {
+    font-size: 16px;
+  }
+  footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .numberDiv {
+    font-size: 14px;
+  }
+  footer .mainDivForFooter .footerRightDiv .secondDiv .secondDiv_rightDiv .mailAdres {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

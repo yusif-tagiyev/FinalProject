@@ -27,7 +27,7 @@ main {
     }
   }
 
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     #istehsalProssesimiz {
       .mainDivForIstehsal {
         display: flex;
@@ -81,7 +81,7 @@ main {
       }
     }
   }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     #xammalBazasi {
       .mainDivXammalBazasi {
         .xammal {
@@ -109,6 +109,13 @@ main {
   .bootstraptSliderMyImgSize {
     width: 100%;
     height: 80vh;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .bootstraptSliderMyImgSize{
+      width: 100%;
+      height: 50%;
+    }
   }
 
 //   
